@@ -17,6 +17,9 @@ const Nav = () => {
                 <li>
                     <Link to='/photos'>Photos</Link>
                 </li>
+                <li>
+                    <Link to='/contact'>Photos</Link>
+                </li>
            </ul>
         </nav>
     )
