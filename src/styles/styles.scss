@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 body, main {
    width: 100vw;
    max-width: 2560;
@@ -8,11 +7,15 @@ body, main {
    padding: 0;
    background-color:#f8f8f8;
 
-   font-family: 'Assistant', sans-serif;
+   font-family: 'Work Sans', sans-serif;
 }
 
 header h1 {
     color: #0B1E32;
     margin: 0;
     padding: 0;
+}
+
+.logo {
+    width: 123px;
 }

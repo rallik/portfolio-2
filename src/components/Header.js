@@ -1,9 +1,11 @@
 import React from 'react'
+import Logo from '../assets/logo.svg'
 
 const Header = () => {
     return (
         <header>
-            <h1>Reuben Allik</h1>
+            <h1 hidden>Reuben Allik's Portfolio</h1>
+            <Logo className='logo'/>
         </header>
     )
 }

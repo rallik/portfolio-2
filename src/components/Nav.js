@@ -3,22 +3,22 @@ import { Link } from 'gatsby'
 
 const Nav = () => {
     return (
-        <nav>
-            <ul>
-                <li>
+        <nav className='navbar'>
+            <ul className='nav-elements'>
+                <li className='nav-element-li'>
                     <Link to='/'>Home</Link>
                 </li>
-                <li>
+                <li className='nav-element-li'>
                     <Link to='/about'>About</Link>
                 </li>
-                <li>
+                <li className='nav-element-li'>
                     <Link to='/projects'>Projects</Link>
                 </li>
-                <li>
+                <li className='nav-element-li'>
                     <Link to='/photos'>Photos</Link>
                 </li>
-                <li>
-                    <Link to='/contact'>Photos</Link>
+                <li className='nav-element-li'>
+                    <Link to='#contact'>Contact</Link>
                 </li>
            </ul>
         </nav>
