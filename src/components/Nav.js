@@ -18,7 +18,7 @@ const Nav = () => {
                     <Link to='/photos'>Photos</Link>
                 </li>
                 <li className='nav-element-li'>
-                    <Link to='#contact'>Contact</Link>
+                    <Link to='/contact'>Contact</Link>
                 </li>
            </ul>
         </nav>

@@ -1,12 +1,15 @@
 import React from 'react'
 import Layout from '../layouts/layout'
+import Hero from '../components/Hero'
 import '../styles/styles.scss'
+
+const myName = 'Hello, my Name is Reuben Allik.'
 
 const index = () => {
   return (
     <main>
       <Layout>
-        <h1>hello world</h1>
+        <Hero/>
       </Layout>
     </main>
   )

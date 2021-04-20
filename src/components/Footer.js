@@ -7,7 +7,7 @@ import InstagramLogo from '../assets/instagram.svg'
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className='footer'>
             <ul className='social-links'>
                 <li className="social-link-el">
                     <a href="https://www.linkedin.com/in/reuben-allik/">
