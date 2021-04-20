@@ -9,7 +9,6 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
     background-color: $light-main-color;
     font-family: 'Work Sans', sans-serif;
@@ -32,7 +31,7 @@ header {
     // grid-column: 1 / 2;
     // grid-row: 1 / 4;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 32px;
     left: 24px;
 }
@@ -46,19 +45,22 @@ header {
 .navbar {
     // grid-row: 1 / 2;
     // grid-column: 8 / 13;
+    display: block;
     margin: 0;
     padding: 0;
     position: fixed;
     top: 32px;
     right: 24px;
-    z-index: 1;
+    z-index: 2;
     width: min-content;
     height: auto;
     min-height: 3rem;
     box-sizing: content-box;
 
     @media screen and (max-width: 960px) {
-        position: relative;
+        // position: relative;
+        // top: 0px;
+        // right: 0px;
     }
 }
 
@@ -148,10 +150,17 @@ header {
 
 .social-links {
     position: fixed;
+    height: min-content;
+    min-width: min-content;
     left: 24px;
     bottom: 32px;
     margin: 0;
     padding: 0;
+
+    @media screen and (max-width: 960px) {
+        bottom: 9.8%;
+        
+    }
 }
 
 .social-links-list {
@@ -161,13 +170,28 @@ header {
     margin: 0;
     padding: 0;
     height: 100%;
+
+    @media screen and (max-width: 960px) {
+        display: none;
+        
+    }
 }
 
 .social-links-el {
     width: min-content;
     height: min-content;
-    padding: 0.95rem 0;
+    padding: 2rem 0;
     color: $dark-main-color;
+
+    @media screen and (max-width: 1440px) {
+        padding: 1.05rem 0;
+        
+    }
+    @media screen and (max-width: 1280px) {
+        padding: 0.95rem 0;
+        
+    }
+
 }
 
 .social-links-el:first-child {
@@ -178,6 +202,18 @@ header {
     padding-bottom: 0;
 }
 
+.social-icon {
+    display: none;
+    @media screen and (max-width: 960px) {
+        display: block;
+        left: -0.5rem;
+        padding: 0.25rem 1.25rem;
+        border: 1.5px solid $dark-main-color;
+        border-radius: 20px;
+    }
+}
+
+
 .hero {
     width: 100vw;
     height: 100vh;
@@ -185,7 +221,10 @@ header {
     padding: 32px 24px;
     box-sizing: border-box;
     display: grid;
-
+    z-index: 1;
+    position: relative;
+    // top: -100;
+    left: 0;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     gap: 16px 16px;
@@ -194,6 +233,16 @@ header {
         margin: 0;
         padding: 0;
     }
+
+
+    @media screen and (max-width: 960px) {
+        padding: 16px 12px;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        gap: 2px 2px;
+        // bottom: 48px
+    }
+
 }
 
 .my-name {
@@ -202,6 +251,14 @@ header {
         grid-row: 5 / 6;
         grid-column: 3 / 11;
         color: $dark-main-color;
+
+        @media screen and (max-width: 960px) {
+            font-size: 18px;
+            grid-row: 4 / 5;
+            grid-column: 2 / 9;
+            align-self: end; 
+
+        }
     }
 .what-i-do {
     font-weight: 600;
@@ -209,6 +266,12 @@ header {
     grid-row: 6 / 8;
     grid-column: 3 / 12;
     color: $dark-second-color;
+
+    @media screen and (max-width: 960px) {
+        font-size: 24px;
+        grid-row: 6 / 9;
+        grid-column: 2 / 8;
+    }
 
 }
 
@@ -225,10 +288,27 @@ header {
     white-space: nowrap;
     background-color: #232424;
     grid-row: 11 / 12;
-    grid-column: 10 / 12;
+    grid-column: 10 / 13;
     border-radius: 30px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: 1rem;
     color: $light-main-color;
+    align-self: center;
+    justify-self: center; 
+
+    @media screen and (max-width: 1440px) {
+        grid-row: 11 / 12;
+        grid-column: 9 / 12;
+        align-self: center;
+    }
+
+    @media screen and (max-width: 960px) {
+        font-size: 24px;
+        grid-row: 11 / 12;
+        grid-column: 5 / 9;
+
+        font-size: 0.8rem;
+        align-self: end; 
+    }
 }

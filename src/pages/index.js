@@ -8,7 +8,7 @@ const index = () => {
   return (
     <main>
       <Layout>
-        <Hero/>
+        <Hero />
       </Layout>
     </main>
   )
