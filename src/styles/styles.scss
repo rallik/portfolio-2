@@ -39,7 +39,12 @@ header {
 .logo {
     width: 123px;
     margin: -6px 0 0 -5px;
-    color: $dark-main-color
+    color: $dark-main-color;
+
+    @media screen and (max-width: 960px) {
+        width: 86px;
+    }
+    
 }
 
 .navbar {
@@ -51,7 +56,7 @@ header {
     position: fixed;
     top: 32px;
     right: 24px;
-    z-index: 2;
+    z-index: 3;
     width: min-content;
     height: auto;
     min-height: 3rem;
@@ -86,7 +91,22 @@ header {
 
     @media screen and (max-width: 960px) {
         flex-direction: column;
-        display: none;
+        position: absolute;
+        right: -100%;
+        transition: all 0.5s ease;
+    }
+}
+
+.nav-elements.active {
+    @media screen and (max-width: 960px) {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease;
+        opacity: 1;
+        z-index: 3;
+        background-color: $light-main-color;
     }
 }
 
@@ -218,7 +238,7 @@ header {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    padding: 32px 24px;
+    padding: 32px 16px;
     box-sizing: border-box;
     display: grid;
     z-index: 1;
@@ -227,7 +247,7 @@ header {
     left: 0;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    gap: 16px 16px;
+    gap: 12px 12px;
 
     h2, h3 {
         margin: 0;
@@ -253,11 +273,18 @@ header {
         color: $dark-main-color;
 
         @media screen and (max-width: 960px) {
-            font-size: 18px;
             grid-row: 4 / 5;
             grid-column: 2 / 9;
             align-self: end; 
-
+        }
+        @media screen and (max-width: 800px) {
+            font-size: 28px; 
+        }
+        @media screen and (max-width: 690px) {
+            font-size: 24px; 
+        }
+        @media screen and (max-width: 540px) {
+            font-size: 18px; 
         }
     }
 .what-i-do {
@@ -268,9 +295,17 @@ header {
     color: $dark-second-color;
 
     @media screen and (max-width: 960px) {
-        font-size: 24px;
         grid-row: 6 / 9;
         grid-column: 2 / 8;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: 48px;
+    }
+    @media screen and (max-width: 690px) {
+        font-size: 36px;
+    }
+    @media screen and (max-width: 540px) {
+        font-size: 24px;
     }
 
 }

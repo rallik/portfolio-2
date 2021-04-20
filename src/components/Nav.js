@@ -18,7 +18,7 @@ const Nav = () => {
             <i className='menu-icon' onClick={handleClick}>
                 {clicked ? <MenuX/> : <Menu/>}
             </i>
-            <ul className='nav-elements'>
+            <ul className={clicked ? 'nav-elements active': 'nav-elements'}>
                 <li className='nav-element-li'>
                     <Link to='/'>Home</Link>
                 </li>
