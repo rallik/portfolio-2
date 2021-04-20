@@ -82,7 +82,7 @@ header {
 
 // asdasdasdasd
 
-.footer {
+.social-links {
     position: fixed;
     left: 24px;
     bottom: 32px;
@@ -90,7 +90,7 @@ header {
     padding: 0;
 }
 
-.social-links {
+.social-links-list {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -99,18 +99,18 @@ header {
     height: 100%;
 }
 
-.social-link-el {
+.social-links-el {
     width: min-content;
     height: min-content;
     padding: 0.95rem 0;
     color: $dark-main-color;
 }
 
-.social-link-el:first-child {
+.social-links-el:first-child {
     padding-top: 0;
 }
 
-.social-link-el:last-child {
+.social-links-el:last-child {
     padding-bottom: 0;
 }
 
