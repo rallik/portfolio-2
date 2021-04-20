@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import LinkedinLogo from '../assets/linkedin.svg'
 import GithubLogo from '../assets/github.svg'
 import TwitterLogo from '../assets/twitter.svg'
 import InstagramLogo from '../assets/instagram.svg'
 
 const Social = () => {
+    const [ clicked, setClicked ] = useState(false);
+
+    const handleClick = () => {
+        setClicked(!clicked);
+    }
+
     return (
         <section className='social-links'>
             <ul className='social-links-list'>

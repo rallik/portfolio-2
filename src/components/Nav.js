@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import Menu from '../assets/menu.svg'
-import MenuX from '../assets/menu.svg'
+import MenuX from '../assets/menuX.svg'
 
 
 const Nav = () => {
@@ -9,24 +9,14 @@ const Nav = () => {
 
     const handleClick = () => {
         setClicked(!clicked);
-        console.log(clicked)
     }
 
-    const MenuIcon = ({clicked}) => {
-        console.log(clicked)
-        switch (clicked) {
-            case true:
-                return <MenuX />;
-        
-            default:
-                return <Menu />;
-        }
-}
+
 
     return (
         <nav className='navbar'>
-            <i className='menu-icon' onClick={handleClick} >
-                <MenuIcon clicked={clicked} />
+            <i className='menu-icon' onClick={handleClick}>
+                {clicked ? <MenuX/> : <Menu/>}
             </i>
             <ul className='nav-elements'>
                 <li className='nav-element-li'>

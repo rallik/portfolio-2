@@ -52,7 +52,24 @@ header {
     top: 32px;
     right: 24px;
     z-index: 1;
+    width: min-content;
+    height: auto;
+    min-height: 3rem;
+    box-sizing: content-box;
 
+    @media screen and (max-width: 960px) {
+        position: relative;
+    }
+}
+
+.menu-icon {
+    display: none;
+    @media screen and (max-width: 960px) {
+        display: block;
+        position: fixed;
+        top: 32px;
+        right: 24px;
+    }
 }
 
 .nav-elements {
@@ -61,24 +78,71 @@ header {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    height: 1rem;
+    height: 100%;
     margin: 0;
     padding: 0;
+
+    @media screen and (max-width: 960px) {
+        flex-direction: column;
+        display: none;
+    }
 }
 
 .nav-element-li {
     width: min-content;
+    height: min-content;
     text-align: center;
-    padding: 0 1.5rem;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
     color: $dark-main-color;
+    text-decoration: none;
+    cursor: pointer;
+    
+    a {
+        line-height: normal;
+    }
+    
+    a, a:visited {
+        text-decoration: none;
+        background-image:
+          linear-gradient(
+                transparent 1.5px,
+                black 1.5px,
+                black 2.5px,
+                transparent 2.5px
+          ),
+          linear-gradient(
+                transparent 1.5px,
+                white 1.5px,
+                white 2.5px,
+                transparent 2.5px
+          );
+        background-size: 0% 6px, 100% 6px;
+        background-position: 0 bottom, 0 bottom;
+        transition: background-size 0.2s ease-in-out;
+        background-repeat: no-repeat;
+        padding-bottom: 6px;
+        border-bottom: 6px solid transparent;
+    }
+    
+    a:active {
+        background-size: 100% 6px;
+    }
+    
+    a:hover {
+        background-size: 100% 6px;
+        padding-bottom: 6px;
+    }
 }
 
-.nav-element-li:first-child {
-    padding-left: 0;
-}
-.nav-element-li:last-child {
-    padding-right: 0;
-}
+
+// .nav-element-li:first-child {
+//     padding-left: 0;
+// }
+// .nav-element-li:last-child {
+//     padding-right: 0;
+// }
+
 
 // asdasdasdasd
 
@@ -153,13 +217,18 @@ header {
 }
 
 .my-work-btn {
-    width: 162px;
-    height: 56px;
+    width: min-content;
+    height: min-content;
+    line-height: normal;
+    border: 0;
+    padding: 1rem 2.5rem;
+    white-space: nowrap;
     background-color: #232424;
     grid-row: 11 / 12;
     grid-column: 10 / 12;
     border-radius: 30px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+    font-size: 1rem;
     color: $light-main-color;
 }
