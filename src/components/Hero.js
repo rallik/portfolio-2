@@ -1,6 +1,6 @@
 import React from 'react'
 
-const myName = 'Hi, my Name is Reuben Allik.'
+const myName = 'Hi, my name is Reuben Allik.'
 
 
 const Hero = () => {
