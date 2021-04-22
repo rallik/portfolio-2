@@ -14,28 +14,29 @@ const Nav = () => {
 
 
     return (
-        <nav className='navbar'>
-            <i className='menu-icon' onClick={handleClick}>
-                {clicked ? <MenuX/> : <Menu/>}
-            </i>
-            <ul className={clicked ? 'nav-elements active': 'nav-elements'}>
-                <li className='nav-element-li'>
-                    <Link to='/'>Home</Link>
-                </li>
-                <li className='nav-element-li'>
-                    <Link to='/about'>About</Link>
-                </li>
-                <li className='nav-element-li'>
-                    <Link to='/projects'>Projects</Link>
-                </li>
-                <li className='nav-element-li'>
-                    <Link to='/photos'>Photos</Link>
-                </li>
-                <li className='nav-element-li'>
-                    <Link to='/contact'>Contact</Link>
-                </li>
-           </ul>
-        </nav>
+        <React.Fragment>
+            <i className={clicked ? 'nav-icon active': 'nav-icon'} onClick={handleClick}></i>
+            <nav className='navbar'>
+                <ul className={clicked ? 'nav-elements active': 'nav-elements'}>
+                    <li className='nav-element-li'>
+                        <Link to='/'>Home</Link>
+                    </li>
+                    <li className='nav-element-li'>
+                        <Link className='nav-link' to='/about'>About</Link>
+                    </li>
+                    <li className='nav-element-li'>
+                        <Link className='nav-link' to='/projects'>Projects</Link>
+                    </li>
+                    <li className='nav-element-li'>
+                        <Link className='nav-link' to='/photos'>Photos</Link>
+                    </li>
+                    <li className='nav-element-li'>
+                        <Link className='nav-link' to='/contact'>Contact</Link>
+                    </li>
+                </ul>
+            </nav>
+        </React.Fragment>
+        
     )
 }
 
