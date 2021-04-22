@@ -17,10 +17,10 @@ const Social = () => {
 
     return (
         <React.Fragment>
-            <i className='social-icon' onClick={handleClick}>
+            <i className={clicked ? 'social-icon active' : 'social-icon'} onClick={handleClick}>
                 {clicked ? <SocialMobileX/> : <SocialMobile/>}
             </i>
-            <section className='social-links'>
+            <section className={clicked ? 'social-links active' : 'social-links'}>
                 <ul className='social-links-list'>
                     <li className="social-links-el">
                         <a href="https://www.linkedin.com/in/reuben-allik/">

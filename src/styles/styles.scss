@@ -73,18 +73,23 @@ header {
         right: 0px;
         left: 0px;
         height: 100vh;
+        mix-blend-mode: normal;
     }
 }
 
 .nav-icon {
     display: none;
-    z-index: 10;
+    z-index: 11;
     position: fixed;
     top: 32px;
     right: 24px;
     width: 40px;
     height: 40px;
-    color: $light-main-color;
+
+    svg path {
+        stroke: $light-main-color;
+    }
+
     @media screen and (max-width: 960px) {
         display: block;
         mix-blend-mode: difference;
@@ -121,8 +126,10 @@ header {
         right: 0;
         transition: all 0.5s ease;
         opacity: 1;
-        // z-index: 3;
+        z-index: 12;
         background-color: $dark-main-color;
+        mix-blend-mode: difference;
+
 }
 
 .nav-element-li {
@@ -187,7 +194,6 @@ header {
         justify-content: center;
 
         a {
-            color: $light-main-color;
             font-weight: 600;
             font-size: 24px;
         }
@@ -232,7 +238,6 @@ header {
     height: 100%;
 
     @media screen and (max-width: 960px) {
-        display: none;
         
     }
 }
@@ -269,12 +274,11 @@ header {
 }
 
 .social-icon {
-    display: none;
     @media screen and (max-width: 960px) {
         display: block;
         left: -0.5rem;
         padding: 0.25rem 1.25rem;
-        border: 1.5px solid $dark-main-color;
+        border: 1.5px solid $light-main-color;
         border-radius: 20px;
     }
 }
