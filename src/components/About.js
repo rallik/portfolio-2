@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 const About = () => {
     return (
         <section className='about'>
-            <h2>About</h2>
+            <h2 className='about-header'>About</h2>
             <p className='about-text'>
                 Hello! I'm a 2020 graduate of Boston College where
                 I studied Economics, Computer Science, and Marketing.
@@ -13,8 +13,13 @@ const About = () => {
                 free time I take photos.
             </p>
             
-            <Link to='/about'>Details</Link>
-            
+            <button className='details-link'>
+                <Link  to='/about'>Details</Link>
+            </button>
+            <h3 className='tools-header'>Tools</h3>
+            <table className='tools-table'>
+
+            </table>
         </section>
     )
 }
