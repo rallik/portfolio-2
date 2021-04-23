@@ -1,4 +1,6 @@
 $dark-main-color: #232424;
+// $dark-main-color: #071626;
+
 $light-main-color: #fdfdfd;
 $dark-second-color: #575757;
 
@@ -41,7 +43,7 @@ header {
     z-index: 10;
     
     path {
-        stroke: $light-main-color;
+        stroke: $dark-main-color;
         fill: $light-main-color;
         mix-blend-mode: difference;
     }
@@ -376,7 +378,7 @@ header {
     border: 0;
     padding: 1rem 2.5rem;
     white-space: nowrap;
-    background-color: #232424;
+    background-color: $dark-main-color;
     grid-row: 11 / 12;
     grid-column: 10 / 13;
     border-radius: 30px;
@@ -426,6 +428,21 @@ header {
         padding: 0;
     }
 
+    h2 {
+        grid-row: 3 /  4;
+        grid-column: 3 / 5;
+        font-weight: '600';
+        text-decoration: underline;
+    }
+
+    .about-text {
+        grid-row: 3 / 7;
+        grid-column: 5 / 11;
+        font-weight: '600';
+        font-size: 32px;
+        line-height: 40px;
+    }
+
 
     a {
         z-index: 10;
@@ -463,3 +480,4 @@ header {
     background-color: $light-main-color;
     mix-blend-mode: difference;
 }
+
