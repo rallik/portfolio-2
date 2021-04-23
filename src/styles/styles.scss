@@ -4,17 +4,22 @@ $dark-main-color: #232424;
 $light-main-color: #fdfdfd;
 $dark-second-color: #575757;
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap');
 body {
     width: 100vw;
     max-width: 2560;
     height: 100vh;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     background-color: $dark-main-color;
     font-family: 'Work Sans', sans-serif;
+    scrollbar-width: none;
+   -ms-overflow-style: none;
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 main {
     // display: grid;
@@ -35,15 +40,18 @@ header {
     position: fixed;
     top: 32px;
     left: 24px;
+    z-index: 10;
+    mix-blend-mode: difference;
+
 }
 
 .logo {
     width: 123px;
     margin: -6px 0 0 -5px;
-    z-index: 10;
+  
     
     path {
-        stroke: $dark-main-color;
+        stroke: $light-main-color;
         fill: $light-main-color;
         mix-blend-mode: difference;
     }
@@ -276,8 +284,9 @@ header {
 }
 
 .social-icon {
+    display: none;
     @media screen and (max-width: 960px) {
-        display: block;
+        // display: block;
         left: -0.5rem;
         padding: 0.25rem 1.25rem;
         border: 1.5px solid $light-main-color;
@@ -289,7 +298,6 @@ header {
 
 .hero {
     background-color: $light-main-color;
-    mix-blend-mode: difference;
     isolation: isolate;
     width: 100vw;
     height: 100vh;
@@ -349,7 +357,7 @@ header {
     grid-row: 6 / 8;
     grid-column: 3 / 12;
     color: $dark-second-color;
-    text-align: right;
+    // text-align: right;
 
     @media screen and (max-width: 960px) {
         grid-row: 6 / 9;
@@ -369,6 +377,7 @@ header {
 
 .emp {
     color: $dark-main-color;
+    font-weight: 600;
 }
 
 .my-work-btn {
@@ -422,6 +431,8 @@ header {
     gap: 12px 12px;
     color: $light-main-color;
     // background-color: $dark-main-color;
+    mix-blend-mode: difference;
+
 
     h2, h3 {
         margin: 0;
@@ -430,17 +441,36 @@ header {
 
     h2 {
         grid-row: 3 /  4;
-        grid-column: 3 / 5;
-        font-weight: '600';
-        text-decoration: underline;
+        grid-column: 3 / 4;
+        font-weight: 600;
+        // text-decoration: underline;
+        text-align: left;
     }
 
     .about-text {
+        margin: 0;
+        padding: 0;
         grid-row: 3 / 7;
         grid-column: 5 / 11;
-        font-weight: '600';
+        font-weight: 600;
         font-size: 32px;
-        line-height: 40px;
+        margin-top: -10px;
+        line-height: 60px;
+
+        @media screen and (max-width: 960px) {
+            // grid-row: 6 / 9;
+            // grid-column: 2 / 8;
+        }
+        @media screen and (max-width: 800px) {
+            font-size: 48px;
+        }
+        @media screen and (max-width: 690px) {
+            font-size: 36px;
+        }
+        @media screen and (max-width: 540px) {
+            font-size: 24px;
+        }
+
     }
 
 

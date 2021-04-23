@@ -8,10 +8,10 @@ const Hero = () => {
         <section className='hero'>
             <h3 className='my-name'>{myName}</h3>
             <h2 className='what-i-do'>
-                I build <br/>
+                I build
                 <strong className='emp'> fast</strong>,
                 <strong className='emp'> responsive</strong>, and 
-                <strong className='emp'> accessible </strong><br/>
+                <strong className='emp'> accessible </strong>
                 interfaces for the web
             </h2>
             <button className='my-work-btn'>

@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "portfolio",
+    siteUrl: "http://localhost:9000/"
   },
   plugins: [
     "gatsby-plugin-sharp",
