@@ -324,6 +324,7 @@ header {
         grid-row: 5 / 6;
         grid-column: 3 / 11;
         color: $dark-main-color;
+        // text-align: right;
 
         @media screen and (max-width: 960px) {
             grid-row: 4 / 5;
@@ -346,6 +347,7 @@ header {
     grid-row: 6 / 8;
     grid-column: 3 / 12;
     color: $dark-second-color;
+    text-align: right;
 
     @media screen and (max-width: 960px) {
         grid-row: 6 / 9;
@@ -416,12 +418,20 @@ header {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     gap: 12px 12px;
+    color: $light-main-color;
     // background-color: $dark-main-color;
 
     h2, h3 {
         margin: 0;
         padding: 0;
     }
+
+
+    a {
+        z-index: 10;
+    }
+
+
 
 
     @media screen and (max-width: 960px) {
@@ -432,4 +442,24 @@ header {
         // bottom: 48px
     }
 
+}
+
+/****************** PROJECTS SECTION ********************/
+
+
+.projects {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0 16px;
+    box-sizing: border-box;
+    display: grid;
+    z-index: 1;
+    position: static;
+    left: 0;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 12px 12px;
+    background-color: $light-main-color;
+    mix-blend-mode: difference;
 }
