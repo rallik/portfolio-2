@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
-import Menu from '../assets/menu.svg'
-import MenuX from '../assets/menuX.svg'
+import Menu from '../assets/svg/menu.svg'
+import MenuX from '../assets/svg/menuX.svg'
 
 
 const Nav = () => {

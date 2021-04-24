@@ -1,5 +1,6 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import Tools from '../components/Tools';
 
 const About = () => {
     return (
@@ -16,10 +17,8 @@ const About = () => {
             <button className='details-link'>
                 <Link  to='/about'>Details</Link>
             </button>
-            <h3 className='tools-header'>Tools</h3>
-            <table className='tools-table'>
-
-            </table>
+            
+            <Tools />
         </section>
     )
 }

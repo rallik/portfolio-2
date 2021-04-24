@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import LinkedinLogo from '../assets/linkedin.svg'
-import GithubLogo from '../assets/github.svg'
-import TwitterLogo from '../assets/twitter.svg'
-import InstagramLogo from '../assets/instagram.svg'
-import SocialMobile from '../assets/social.svg'
-import SocialMobileX from '../assets/socialX.svg'
+import LinkedinLogo from '../assets/svg/linkedin.svg'
+import GithubLogo from '../assets/svg/github.svg'
+import TwitterLogo from '../assets/svg/twitter.svg'
+import InstagramLogo from '../assets/svg/instagram.svg'
+import SocialMobile from '../assets/svg/social.svg'
+import SocialMobileX from '../assets/svg/socialX.svg'
 
 
 const Social = () => {
