@@ -9,7 +9,7 @@ const Tools = () => {
                 {
                     skills.map((s) => {
                         return (
-                            <td className='tools-element'>{s.skill}</td>
+                            <td className='tools-element'>- {s.skill}</td>
                         );
                     })
                 }
