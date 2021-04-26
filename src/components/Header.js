@@ -3,7 +3,7 @@ import Logo from '../assets/svg/logo.svg'
 
 const Header = () => {
     return (
-        <header>
+        <header className='header'>
             <h1 hidden>Reuben Allik's Portfolio</h1>
             <Logo className='logo'/>
         </header>
