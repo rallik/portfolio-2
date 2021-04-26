@@ -5,7 +5,7 @@ const myName = 'Hi, my name is Reuben Allik'
 
 const Hero = () => {
     return (
-        <section className='hero'>
+        <section className='section hero'>
             <h3 className='my-name'>{myName}</h3>
             <h2 className='what-i-do'>
                 I build

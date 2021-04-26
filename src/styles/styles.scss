@@ -25,21 +25,23 @@ body {
     margin: 0;
     padding: 0;
     position: fixed;
-    top: 32px;
-    left: 24px;
+    // top: 32px;
+    // left: 24px;
+    top: 24px;
+    left: 16px;
     z-index: 11;
     mix-blend-mode: difference;
-    isolation: isolate;
+    // isolation: isolate;
 }
 
 .logo {
-    width: 123px;
-    margin: -6px 0 0 -5px;
+    // width: 123px;
+    width: 86px;
+    margin: -9.5px 0 0 -4px;
   
     path {
         stroke: $light-main-color;
         fill: $light-main-color;
-        mix-blend-mode: difference;
     }
 }
 
@@ -48,22 +50,25 @@ body {
     margin: 0;
     padding: 0;
     position: fixed;
-    top: 32px;
-    right: 24px;
+    // top: 32px;
+    // right: 24px;
+    top: 24px;
+    right: 16px;
     width: 100vw;
     height: auto;
     min-height: 3rem;
-    box-sizing: content-box;
+    box-sizing: border-box;
     z-index: 10;
     mix-blend-mode: difference;
 }
 
 .nav-icon {
-    display: none;
+    // display: none;
+    display: block;
     z-index: 11;
     position: fixed;
     top: 32px;
-    right: 24px;
+    right: 16px;
     width: 40px;
     height: 40px;
 
@@ -114,10 +119,10 @@ body {
     position: fixed;
     height: min-content;
     min-width: min-content;
-    left: 24px;
-    bottom: 32px;
-    margin: 0;
-    padding: 0;
+    // left: 24px;
+    // bottom: 32px;
+    left: 16px;
+    bottom: 24px;
     mix-blend-mode: difference;
     z-index: 10;
 }
@@ -134,7 +139,8 @@ body {
 .social-links-el {
     width: min-content;
     height: min-content;
-    padding: 2rem 0;
+    // padding: 2rem 0;
+    padding: 0.95rem 0;
 
     a svg path {
         fill: $light-main-color;
@@ -153,39 +159,45 @@ body {
     display: none;
 }
 
+
+/****************** ALL SECTIONS ********************/
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    // z-index: -10;
+}
+
 /****************** HERO SECTION ********************/
 
 .hero {
     background-color: $light-main-color;
-    isolation: isolate;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 32px 16px;
-    box-sizing: border-box;
-    display: grid;
+    padding: 24px 16px;
     position: static;
-    left: 0;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: 30px 1fr 1fr 30px;
+    grid-template-rows: repeat(6, 1fr);
     gap: 12px 12px;
-    z-index: -10;
 }
 
 .my-name {
-        font-weight: 400;
-        font-size: 36px;
-        grid-row: 5 / 6;
-        grid-column: 3 / 11;
-        color: $dark-main-color;
+    color: $dark-main-color;
+    font-weight: 400;
+    font-size: 1em;
+    align-self: end;
+    padding: 2rem 0 0.5rem 0;
+    grid-row: 2 / 3;
+    grid-column: 2 / -2;
 }
 
 .what-i-do {
-    font-weight: 600;
-    font-size: 86px;
-    grid-row: 6 / 8;
-    grid-column: 3 / 12;
     color: $dark-second-color;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding: 1rem 0 0.5rem 0;
+    line-height: 1.75em;
+    grid-row: 3 / 6;
+    grid-column: 2 / -2;
+
 }
 
 .emp {
@@ -194,23 +206,24 @@ body {
 }
 
 .my-work-btn {
+    background-color: $dark-main-color;
     width: min-content;
     height: min-content;
     line-height: normal;
     border: 0;
-    padding: 1rem 2.5rem;
-    white-space: nowrap;
-    background-color: $dark-main-color;
-    grid-row: 11 / 12;
-    grid-column: 10 / 13;
     border-radius: 30px;
+    // padding: 1rem 2.5rem;
+    padding: 0.65rem 1.625rem;
     font-family: 'Work Sans', sans-serif;
+    white-space: nowrap;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: $light-main-color;
-    align-self: center;
-    justify-self: center;
+    align-self: start;
+    justify-self: end;
     cursor: pointer;
+    grid-row: 6 / 7;
+    grid-column: 2 / -2;
 }
 
 /****************** ABOUT SECTION ********************/
@@ -337,24 +350,24 @@ body {
 
 /*************** MEDIA QUERIES ************************/
 @media screen and (max-width: 2232px) {
-    .what-i-do {
-        font-size: 76px;
-    }
+    // .what-i-do {
+    //     font-size: 76px;
+    // }
 }
 
 @media screen and (max-width: 1976px) {
-    .what-i-do {
-        font-size: 68px;
-    }
+    // .what-i-do {
+    //     font-size: 68px;
+    // }
 }
 
 @media screen and (max-width: 1920px) {
     .social-links-el {
         padding: 1.75rem 0;
     }
-    .my-name {
-        font-size: 34px;
-    }
+    // .my-name {
+    //     font-size: 34px;
+    // }
     .tools-header, .about-header, .about-text, .tools-element {
         font-size: 30px;
     }
@@ -368,9 +381,9 @@ body {
 }
 
 @media screen and (max-width: 1776px) {
-    .what-i-do {
-        font-size: 58px;
-    }
+    // .what-i-do {
+    //     font-size: 58px;
+    // }
 }
 
 @media screen and (max-width: 1764px) {
@@ -393,12 +406,12 @@ body {
     .social-links-el {
         padding: 1.45rem 0;
     }
-    .my-name {
-        font-size: 32px;
-    }
-    .what-i-do {
-        font-size: 56px;
-    }
+    // .my-name {
+    //     font-size: 32px;
+    // }
+    // .what-i-do {
+    //     font-size: 56px;
+    // }
     .tools-header, .about-header, .about-text, .tools-element {
         font-size: 24px;
     }
@@ -412,14 +425,14 @@ body {
     .social-links-el {
         padding: 1.05rem 0;
     }
-    .what-i-do {
-        font-size: 52px;
-    }
-    .my-work-btn {
-        grid-row: 11 / 12;
-        grid-column: 9 / 12;
-        align-self: center;
-    }
+    // .what-i-do {
+    //     font-size: 52px;
+    // }
+    // .my-work-btn {
+    //     grid-row: 11 / 12;
+    //     grid-column: 9 / 12;
+    //     align-self: center;
+    // }
     .tools-header, .about-header, .about-text, .tools-element {
         font-size: 22px;
     }
@@ -434,24 +447,24 @@ body {
 }
 
 @media screen and (max-width: 1366px) {
-    .my-name {
-        font-size: 30px;
-    }
+    // .my-name {
+    //     font-size: 30px;
+    // }
 }
 
 @media screen and (max-width: 1280px) {
     .logo {
-        width: 86px;
+            // width: 86px;
     }
     .social-links-el {
         padding: 0.95rem 0;
     }
-    .my-name {
-        font-size: 28px;
-    }
-    .what-i-do {
-        font-size: 48px;
-    }
+    // .my-name {
+    //     font-size: 28px;
+    // }
+    // .what-i-do {
+    //     font-size: 48px;
+    // }
     .about-text {
         line-height: 45px;
     }
@@ -485,12 +498,12 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-    .my-name {
-        font-size: 26px;
-    }
-    .what-i-do {
-        font-size: 42px;
-    }
+    // .my-name {
+    //     font-size: 26px;
+    // }
+    // .what-i-do {
+    //     font-size: 42px;
+    // }
 }
 
 @media screen and (max-width: 960px) {
@@ -536,27 +549,27 @@ body {
         border: 1.5px solid $light-main-color;
         border-radius: 20px;
     }
-    .hero {
-        padding: 16px 12px;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-        gap: 2px 2px;
-    }    
-    .my-name {
-        grid-row: 4 / 5;
-        grid-column: 2 / 9;
-        align-self: end; 
-    }
-    .what-i-do {
-        grid-row: 6 / 9;
-        grid-column: 2 / 8;
-    }
-    .my-work-btn {
-        font-size: 12px;
-        grid-row: 11 / 12;
-        grid-column: 5 / 9;
-        align-self: end; 
-    }
+    // .hero {
+    //     padding: 16px 12px;
+    //     grid-template-columns: repeat(8, 1fr);
+    //     grid-template-rows: repeat(12, 1fr);
+    //     gap: 2px 2px;
+    // }    
+    // .my-name {
+    //     grid-row: 4 / 5;
+    //     grid-column: 2 / 9;
+    //     align-self: end; 
+    // }
+    // .what-i-do {
+    //     grid-row: 6 / 9;
+    //     grid-column: 2 / 8;
+    // }
+    // .my-work-btn {
+    //     font-size: 12px;
+    //     grid-row: 11 / 12;
+    //     grid-column: 5 / 9;
+    //     align-self: end; 
+    // }
     .about {
         padding: 16px 12px;
         grid-template-columns: repeat(8, 1fr);
@@ -590,21 +603,21 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-    .my-name {
-        font-size: 24px;
-    }
+    // .my-name {
+    //     font-size: 24px;
+    // }
     .tools-header, .about-header, .about-text, .tools-element {
         font-size: 18px;
     }
 }
 
 @media screen and (max-width: 690px) {
-    .my-name {
-        font-size: 22px;
-    }
-    .what-i-do {
-        font-size: 36px;
-    }
+    // .my-name {
+    //     font-size: 22px;
+    // }
+    // .what-i-do {
+    //     font-size: 36px;
+    // }
     .about-header, .tools-header, .about-text, .tools-element {
         font-size: 16px;
     }
@@ -625,12 +638,12 @@ body {
         left: 16px;
         bottom: 24px;
     }
-    .my-name {
-        font-size: 18px;
-    }
-    .what-i-do {
-        font-size: 24px;
-    }
+    // .my-name {
+    //     font-size: 18px;
+    // }
+    // .what-i-do {
+    //     font-size: 24px;
+    // }
     
     .details-link {
         grid-row: 7 / 8;
