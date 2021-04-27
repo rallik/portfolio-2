@@ -1,0 +1,33 @@
+.navbar {
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 100vh;
+    mix-blend-mode: normal;
+}
+.nav-icon {
+    display: block;
+    mix-blend-mode: difference;
+}
+.nav-elements {
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.nav-element-li {
+    text-align: left;
+    width: 100%;
+    padding: 3rem 4rem;
+    z-index: 3;
+    color: $light-main-color;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+}
+.nav-element-li a {
+    font-weight: 600;
+    font-size: 24px;
+}

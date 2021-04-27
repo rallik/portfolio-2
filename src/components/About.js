@@ -4,7 +4,7 @@ import Tools from '../components/Tools';
 
 const About = () => {
     return (
-        <section className='about'>
+        <section className='section about'>
             <h2 className='about-header'>About</h2>
             <p className='about-text'>
                 Hello! I'm a 2020 graduate of Boston College where
@@ -14,7 +14,7 @@ const About = () => {
                 free time I take photos.
             </p>
             
-            <button className='details-link'>
+            <button className='details-btn'>
                 <Link  to='/about'>Details</Link>
             </button>
             
