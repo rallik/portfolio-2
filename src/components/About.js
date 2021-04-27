@@ -14,7 +14,7 @@ const About = () => {
                 free time I take photos.
             </p>
             
-            <button className='details-link'>
+            <button className='details-btn'>
                 <Link  to='/about'>Details</Link>
             </button>
             

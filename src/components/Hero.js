@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link, graphql } from 'gatsby';
+
 
 const myName = 'Hi, my name is Reuben Allik'
 
@@ -15,7 +17,7 @@ const Hero = () => {
                 interfaces for the web
             </h2>
             <button className='my-work-btn'>
-                My Work
+                <Link to='/projects'>My work</Link>
             </button>            
         </section>
     )
