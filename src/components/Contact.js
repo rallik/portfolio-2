@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'gatsby';
 
 const Contact = () => {
     return (
-        <div id='contact'>
-            This is a form
-        </div>
+        <section className='contact'>
+            <h2>Get in touch.</h2>
+            <button className='contact-btn'>
+                <Link to='/contact'>Contact Me</Link>
+            </button>
+        </section>
     )
 }
 
