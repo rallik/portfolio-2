@@ -11,7 +11,7 @@ const layout = ({ children }) => {
             <Header />
             <Nav />
             {children}
-            <Social />
+            <Social name={'social-links'} />
             <Footer />
         </React.Fragment>
     )

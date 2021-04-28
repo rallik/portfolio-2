@@ -1,26 +1,28 @@
-import React, { useState } from 'react'
+import React from 'react'
 import LinkedinLogo from '../assets/svg/linkedin.svg'
 import GithubLogo from '../assets/svg/github.svg'
 import TwitterLogo from '../assets/svg/twitter.svg'
 import InstagramLogo from '../assets/svg/instagram.svg'
-import SocialMobile from '../assets/svg/social.svg'
-import SocialMobileX from '../assets/svg/socialX.svg'
+// import SocialMobile from '../assets/svg/social.svg'
+// import SocialMobileX from '../assets/svg/socialX.svg'
 
 
-const Social = () => {
-    const [ clicked, setClicked ] = useState(false);
+const Social = (props) => {
+    // const [ clicked, setClicked ] = useState(false);
 
-    const handleClick = () => {
-        setClicked(!clicked);
-        // console.log(clicked)
-    }
+    // const handleClick = () => {
+    //     setClicked(!clicked);
+    //     // console.log(clicked)
+    // }
+    const { name } = props;
 
     return (
         <React.Fragment>
-            <i className={clicked ? 'social-icon active' : 'social-icon'} onClick={handleClick}>
+            {/* <i className={clicked ? 'social-icon active' : 'social-icon'} onClick={handleClick}>
                 {clicked ? <SocialMobileX/> : <SocialMobile/>}
-            </i>
-            <section className={clicked ? 'social-links active' : 'social-links'}>
+            </i> */}
+            {/* <section className={clicked ? 'social-links active' : 'social-links'}> */}
+            <section className={name}>
                 <ul className='social-links-list'>
                     <li className="social-links-el">
                         <a href="https://www.linkedin.com/in/reuben-allik/">

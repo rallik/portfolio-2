@@ -54,7 +54,8 @@ body {
     top: -100%;
     right: -100%;
     position: fixed;
-    mix-blend-mode: normal;
+    // mix-blend-mode: normal;
+    isolation: isolate;
     transition: all 0.5s ease;
     z-index: 11;
 
@@ -113,18 +114,19 @@ body {
     height: 120%;
     top: -150%;
     right: -80%;
-    padding: 5rem 3rem 11rem 0;
+    padding: 5rem 3rem 23rem 0;
     transition: all 500ms ease;
     border-radius: 0 0 0 50% / 0 0 0 80%;
 }
 
 .nav-elements.active {
+        // background-color: $dark-main-color;
+        background-color: #BED1FE;
         top: -20%;
         left: -20%;
         transition: all 500ms ease;
         opacity: 1;
         z-index: 11;
-        background-color: $dark-main-color;
         mix-blend-mode: difference;
 }
 
@@ -139,11 +141,12 @@ body {
     font-size: 2em;
     a {
         text-decoration: none;
-        color: $light-main-color;
+        color: $dark-main-color;
     }
 }
 
 .social-links {
+    display: none;
     position: fixed;
     height: min-content;
     min-width: min-content;
@@ -155,6 +158,7 @@ body {
     z-index: 11;
 }
 
+
 .social-links-list {
     list-style: none;
     display: flex;
@@ -164,11 +168,23 @@ body {
     height: 100%;
 }
 
+.social-links.mobile {
+    display: block;
+    position: absolute;
+    justify-content: flex-end;
+    left: calc(16px + 30%);
+
+    .social-links-list {
+        flex-direction: row;
+    }
+}
+
 .social-links-el {
     width: min-content;
     height: min-content;
-    // padding: 2rem 0;
-    padding: 0.95rem 0;
+    padding: 0 2rem;
+    // padding: 0.95rem 0;
+
 
     a svg path {
         fill: $light-main-color;
@@ -176,11 +192,11 @@ body {
 }
 
 .social-links-el:first-child {
-    padding-top: 0;
+    padding-left: 0;
 }
 
 .social-links-el:last-child {
-    padding-bottom: 0;
+    padding-right: 0;
 }
 
 .social-icon {
@@ -203,6 +219,7 @@ body {
     background-color: $light-main-color;
     position: static;
     grid-template-rows: minmax(50px, 100px) 1fr 2fr 1fr 0.25fr;
+    grid-template-columns: 8px 1fr 1fr 8px;
     gap: 12px 12px;
 }
 
@@ -217,11 +234,11 @@ body {
 }
 
 .what-i-do {
-    color: $dark-second-color;
+    color: $dark-main-color;
     font-weight: 600;
-    font-size: 1.6em;
+    font-size: 2.5em;
     // padding: 1rem 0 0.5rem 0;
-    line-height: 1.75em;
+    line-height: 1.2em;
     grid-row: 3 / 4;
     grid-column: 2 / -2;
     justify-self: start;
@@ -230,6 +247,11 @@ body {
 .emp {
     color: $dark-main-color;
     font-weight: 600;
+}
+
+.emp:hover {
+    color: #BED1FE;
+    font-style: italic;
 }
 
 .my-work-btn {
@@ -245,7 +267,7 @@ body {
     white-space: nowrap;
     font-weight: 400;
     font-size: 0.8em;
-    align-self: center;
+    align-self: end;
     justify-self: end;
     cursor: pointer;
     grid-row: 4 / 5;
@@ -293,7 +315,6 @@ body {
 
 .details-btn {
     background-color: $light-main-color;
-
     width: min-content;
     height: min-content;
     border: 0;
@@ -493,3 +514,55 @@ body {
         grid-column: 4 / 5;
     }
 }
+
+@media screen and (min-width: 960px) and (min-height: 635px) {
+    .navbar {
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 32px;
+        right: 24px;
+        width: min-content;
+        height: min-content;
+        mix-blend-mode: difference;
+    }
+
+    .nav-elements {
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        padding: 0;
+        transition: none;
+        border-radius: 0;
+    }
+    
+    .nav-element-li {
+        font-size: 1em;
+        padding: 0.8rem 2rem;
+        a {
+            color: $light-main-color;
+        }
+    }
+
+    .nav-icon, .social-links.mobile {
+        display: none;
+    }
+
+    .my-work-btn {
+        font-size: 1em;
+        padding: 0.8rem 2rem;
+    }
+
+    .details-btn {
+        font-size: 1em;
+        padding: 0.7rem 1.75rem;
+
+    }
+
+}
+
+

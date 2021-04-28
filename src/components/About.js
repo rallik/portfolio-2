@@ -15,7 +15,7 @@ const About = () => {
             </p>
             
             <button className='details-btn'>
-                <Link  to='/about'>Details</Link>
+                <Link to='/about'>Details</Link>
             </button>
             
             <Tools />
