@@ -17,7 +17,7 @@ const Nav = () => {
     return (
         <React.Fragment>
             <i className={clicked ? 'nav-icon active' : 'nav-icon'} onClick={handleClick}>
-                {clicked ? <MenuX/> : <Menu/>}
+                <Menu/>
             </i>
             <nav className={clicked ? 'navbar active' : 'navbar'}>
                 <ul className={clicked ? 'nav-elements active': 'nav-elements'}>
