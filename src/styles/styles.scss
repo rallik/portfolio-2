@@ -100,7 +100,6 @@ body {
         height: 40px;
         position: absolute;
         overflow: visible;
-
     }
 
     .line-1, .line-2, .line-3, .line-4 {
@@ -116,9 +115,6 @@ body {
 }
 
 .nav-icon.active {
-    .nav-icon-svg {
-
-    }
     .line-1, .line-4 {
         transform-origin: center;
     }
@@ -132,13 +128,13 @@ body {
     }
 
     .line-2 {
-        transform: rotate(215deg) translate(8%, 10%);
-        transform-origin: center;
+        transform: rotate(-215deg) translate(100%, 50%);
+        transform-origin: right;
         opacity: 0;
     }
     .line-3 {
-        transform: rotate(-215deg) translate(-8%, -10%);
-        transform-origin: center;
+        transform: rotate(215deg) translate(-100%, 30%);
+        transform-origin: left;
         opacity: 0;
 
     }
@@ -594,6 +590,21 @@ body {
     .nav-icon, .social-links.mobile {
         display: none;
         transition: none;
+    }
+
+    .social-links {
+        display: flex;
+    }
+    .social-links-el {
+        padding: 0.95rem 0;
+    }
+
+    .social-links-el:first-child {
+        padding-top: 0;
+    }
+    
+    .social-links-el:last-child {
+        padding-bottom: 0;
     }
 
     .my-work-btn {
