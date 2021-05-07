@@ -7,11 +7,9 @@ const About = () => {
         <section className='section about'>
             <h2 className='about-header'>About</h2>
             <p className='about-text'>
-                Hello! I'm a 2020 graduate of Boston College where
-                I studied Economics, Computer Science, and Marketing.
-                Currently, I’m currently seeking opportunities in Front
-                End Development or Software Engineering Role. In my
-                free time I take photos.
+                I'm a Boston-based Front-end developer.
+                Currently, I’m seeking opportunities in field and
+                taking photos when I can.
             </p>
             
             <button className='details-btn'>

@@ -12,8 +12,8 @@ const Hero = () => {
             <h2 className='what-i-do'>
                 I build
                 <strong className='emp'> fast</strong>,
-                <strong className='emp'> responsive</strong>, and 
-                <strong className='emp'> accessible </strong>
+                <strong className='emp'> responsive</strong>, &#38; 
+                <strong className='emp'> accessible </strong> 
                 interfaces for the web
             </h2>
             <button className='my-work-btn'>

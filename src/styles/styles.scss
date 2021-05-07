@@ -66,22 +66,7 @@ body {
     top: 0;
     right: 30%;
 }
-// .navbar {
-//     display: block;
-//     margin: 0;
-//     padding: 0;
-//     position: fixed;
-//     // top: 32px;
-//     // right: 24px;
-//     top: 24px;
-//     right: 16px;
-//     width: 100vw;
-//     height: auto;
-//     min-height: 3rem;
-//     box-sizing: border-box;
-//     z-index: 10;
-//     mix-blend-mode: difference;
-// }
+
 
 .nav-icon {
     display: flex;
@@ -89,8 +74,8 @@ body {
     align-items: center;
     z-index: 12;
     position: fixed;
-    top: 24px;
-    right: 16px;
+    top: 14px;
+    right: 10px;
     width: 50px;
     height: 50px;
     mix-blend-mode: difference;
@@ -209,11 +194,12 @@ body {
 .social-links.mobile {
     display: block;
     position: absolute;
-    justify-content: flex-end;
     left: calc(16px + 30%);
 
     .social-links-list {
+        width: 122%;
         flex-direction: row;
+        justify-content: space-between;
     }
 }
 
@@ -256,15 +242,17 @@ body {
 .hero {
     background-color: $light-main-color;
     position: static;
-    grid-template-rows: minmax(50px, 100px) 1fr 2fr 1fr 0.25fr;
+    grid-template-rows: minmax(50px, 100px) 1fr 2fr 0.75fr 0.25fr;
     grid-template-columns: 8px 1fr 1fr 8px;
     gap: 12px 12px;
 }
 
 .my-name {
-    color: $dark-main-color;
-    font-weight: 400;
-    font-size: 1.1em;
+    color: $light-main-color;
+  text-shadow:1px 0 0 $dark-main-color,0 1px 0 $dark-main-color,-1px 0 0 $dark-main-color,0 -1px 0 $dark-main-color;
+    font-weight: 600;
+    font-size: 2.8em;
+    line-height: 1.1em;
     align-self: end;
     padding: 1.5rem 0 0.5rem 0;
     grid-row: 2 / 3;
@@ -274,12 +262,12 @@ body {
 .what-i-do {
     color: $dark-main-color;
     font-weight: 600;
-    font-size: 2.5em;
+    font-size: 3.4em;
     // padding: 1rem 0 0.5rem 0;
-    line-height: 1.2em;
+    line-height: 1.1em;
     grid-row: 3 / 4;
     grid-column: 2 / -2;
-    justify-self: start;
+    align-self: end;
 }
 
 .emp {
@@ -359,14 +347,14 @@ body {
     padding: 0.6rem 1.5rem;
     white-space: nowrap;
     grid-row: 4 / 5;
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
     border-radius: 30px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: 0.8em;
     color: $dark-main-color;
     align-self: start;
-    justify-self: end;
+    justify-self: start;
     text-decoration: none;
     z-index: 10;
     mix-blend-mode: difference;
@@ -512,7 +500,7 @@ body {
 
 @media screen and (min-width: 540px) and (min-height: 425px) {
     .my-name {
-        font-size: 1.3em;
+        font-size: 3em;
     }
     .what-i-do {
         font-size: 2.3em;
@@ -529,17 +517,19 @@ body {
         height: 36px;
     }
     .section {
-        grid-template-columns: 42px 42px 1fr 1fr 42px 42px;
+        grid-template-columns: 42px 0.32fr 1fr 1fr 0.32fr 42px;
         gap: 16px;
     }
     .my-name, .what-i-do, .about-header, .about-text, .tools-header, .tools-table {
         grid-column: 3 / -3;
     }
     .my-name {
-        font-size: 1.4em;
+        font-size: 3em;
+        padding-bottom: 0;
     }
     .what-i-do {
-        font-size: 2.5em;
+        font-size: 3em;
+        align-self: start;
         padding-top: 0.5em;
     }
     .about-header, .about-text, .tools-header, .tools-element {
