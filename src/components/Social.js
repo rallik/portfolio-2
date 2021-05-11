@@ -4,7 +4,6 @@ import GithubLogo from '../assets/svg/github.svg'
 import TwitterLogo from '../assets/svg/twitter.svg'
 import InstagramLogo from '../assets/svg/instagram.svg'
 // import SocialMobile from '../assets/svg/social.svg'
-// import SocialMobileX from '../assets/svg/socialX.svg'
 
 
 const Social = (props) => {
