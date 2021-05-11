@@ -34,6 +34,26 @@ const skills = [
     {
         id: 9,
         skill: 'ThreeJS'
+    },
+    {
+        id: 10,
+        skill: 'Webpack'
+    },
+    {
+        id: 11,
+        skill: 'NPM'
+    },
+    {
+        id: 12,
+        skill: 'Git/Github'
+    },
+    {
+        id: 13,
+        skill: 'Netlify'
+    },
+    {
+        id: 14,
+        skill: 'Figma'
     }
 ]
 

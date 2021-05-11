@@ -6,13 +6,17 @@ const Tools = () => {
         <React.Fragment>
             <h3 className='tools-header'>Tools</h3>
             <table className='tools-table'>
-                {
-                    skills.map((s) => {
-                        return (
-                            <td className='tools-element' key={s.id}>{s.skill}</td>
-                        );
-                    })
-                }
+                <tbody>
+                    <tr>
+                    {
+                        skills.map((s) => {
+                            return (
+                                <td className='tools-element' key={s.id}>{s.skill}</td>
+                            );
+                        })
+                    }
+                    </tr>
+                </tbody>
             </table>
         </React.Fragment>
     )
