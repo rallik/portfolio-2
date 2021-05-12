@@ -175,9 +175,8 @@ body {
     position: fixed;
     height: min-content;
     min-width: min-content;
-    // left: 24px;
-    // bottom: 32px;
-    left: 16px;
+    // left: 16px;
+    right: 16px;
     bottom: 24px;
     mix-blend-mode: difference;
     z-index: 11;
@@ -239,7 +238,8 @@ body {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 42px 1fr 1fr 42px;
+    grid-template-columns: 5px 1fr 1fr 5px;
+    gap: 12px 12px;
     // z-index: -10;
 }
 
@@ -248,19 +248,16 @@ body {
 .hero {
     background-color: $light-main-color;
     position: static;
-    grid-template-rows: minmax(50px, 100px) 1fr 2fr 0.75fr 0.25fr;
-    grid-template-columns: 8px 1fr 1fr 8px;
-    gap: 12px 12px;
+    grid-template-rows: minmax(50px, 90px) 1fr 2fr 0.75fr 0.25fr;
 }
 
 .my-name {
     color: $light-main-color;
-  text-shadow:1px 0 0 $dark-main-color,0 1px 0 $dark-main-color,-1px 0 0 $dark-main-color,0 -1px 0 $dark-main-color;
+    text-shadow:1px 0 0 $dark-main-color,0 1px 0 $dark-main-color,-1px 0 0 $dark-main-color,0 -1px 0 $dark-main-color;
     font-weight: 600;
     font-size: 2.8em;
     line-height: 1.1em;
     align-self: end;
-    padding: 1.5rem 0 0.5rem 0;
     grid-row: 2 / 3;
     grid-column: 2 / -2;
 }
@@ -273,7 +270,7 @@ body {
     line-height: 1.1em;
     grid-row: 3 / 4;
     grid-column: 2 / -2;
-    align-self: end;
+    align-self: center;
 }
 
 .emp {
@@ -300,7 +297,7 @@ body {
     font-weight: 400;
     font-size: 0.8em;
     align-self: end;
-    justify-self: end;
+    justify-self: start;
     cursor: pointer;
     grid-row: 4 / 5;
     grid-column: 2 / -2;
@@ -316,8 +313,8 @@ body {
 .about {
     color: $light-main-color;
     position: static;
-    grid-template-rows: minmax(50px, 100px) 0.25fr 2.5fr 0.75fr 0.25fr 2.5fr 0.5fr;
-    gap: 12px 12px;
+    grid-template-rows: minmax(50px, 90px) 0.25fr 2.5fr 0.75fr 0.25fr 2.5fr 0.5fr;
+    grid-template-columns: 8px 1fr 1fr 1fr 1fr 8px;
 }
 .about-header, .about-text, .tools-header, .tools-element {
     font-weight: 400;
@@ -445,23 +442,24 @@ body {
 
 
 /*************** MEDIA QUERIES ************************/
-@media screen and (max-height:321px) {
-    .social-links-el {
-        padding: 0.6rem 0;
 
-        a svg {
-            width: 20px;
-            height: 20px
-        }
+// iPhone 5/SE landscape
+@media screen and (max-height:321px) {
+    .logo {
+        width: 56px;
+        height: 56px;
+    }
+    .social-links-el  {
+        width: 20px;
+        height: 20px
     }
     .my-name {
-        font-size: 1em;
-        padding: 0 3.5rem;
+        font-size: 1.8em;
+        padding: 0;
     }
     .what-i-do {
-        font-size: 1.4em;
-        // text-align: right;
-        padding-left: 3.5rem;
+        font-size: 2em;
+        align-self: start;
     }
     .about {
         grid-template-rows: 30px 0.25fr 2.5fr 0.75fr 0.25fr 2.5fr 0.5fr;
@@ -480,23 +478,24 @@ body {
     }
 }
 
+// iPhone 7/8/X/11/12 landscape
 @media screen and (min-height: 321px) and (max-height:425px) {
+    .logo {
+        width: 56px;
+        height: 56px;
+    }
     .social-links-el {
-        padding: 0.6rem 0;
-
-        a svg {
-            width: 20px;
-            height: 20px
-        }
+     
     }
     .my-name {
-        font-size: 1.2em;
-        padding: 0 3.5rem;
+        font-size: 2.3em;
+        align-self: end;
+        padding: 0.3rem 0 0 0;
     }
     .what-i-do {
-        font-size: 1.7em;
-        // text-align: right;
-        padding: 0 3.5rem;
+        font-size: 2.8em;
+        align-self: start;
+        // padding: 0 4.2rem 0 4.6rem;
     }
 
     .about {
@@ -509,7 +508,14 @@ body {
     }
 }
 
-@media screen and (max-width:350px) {
+// iPhone 5/SE portrait
+
+
+@media screen and (max-width:360px) {
+    .logo {
+        width: 64px;
+        height: 64px;
+    }
     .social-links-el {
         padding: 0.8rem 0;
 
@@ -520,14 +526,16 @@ body {
 
     }
     .my-name {
-        font-size: 0.9em;
+        font-size: 2.1em;
+        padding-top: 1.5rem;
     }
     .what-i-do {
-        font-size: 1.2em;
+        font-size: 2.4em;
+        align-self: center;
     }
-    .my-work-btn {
-        align-self: start;
-    }
+    // .my-work-btn {
+    //     align-self: start;
+    // }
     .about {
         gap: 6px 12px;
     }
@@ -545,37 +553,39 @@ body {
 
 @media screen and (min-width: 540px) and (min-height: 425px) {
     .my-name {
-        font-size: 3em;
+        font-size: 3.8em;
+        padding-top: 1.8rem;
     }
     .what-i-do {
-        font-size: 2.3em;
+        font-size: 4.2em;
     }
 }
 
+
+// iPad Portrait
 @media screen and (min-width: 768px) and (min-height: 541px) {
     .logo {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
-    .nav-icon {
-        width: 36px;
-        height: 36px;
-    }
+   
     .section {
-        grid-template-columns: 42px 0.32fr 1fr 1fr 0.32fr 42px;
+        grid-template-columns: 32px 1fr 1fr 32px;
         gap: 16px;
     }
-    .my-name, .what-i-do, .about-header, .about-text, .tools-header, .tools-table {
-        grid-column: 3 / -3;
+    .hero {
+        grid-template-rows: minmax(50px, 100px) 1fr 2fr 0.75fr 0.25fr;
+
     }
+    
     .my-name {
-        font-size: 3em;
+        font-size: 5em;
         padding-bottom: 0;
     }
     .what-i-do {
-        font-size: 3em;
+        font-size: 5.6em;
         align-self: start;
-        padding-top: 0.5em;
+        padding-top: 0.2em;
     }
     .about-header, .about-text, .tools-header, .tools-element {
         font-size: 1.4em;
@@ -588,14 +598,28 @@ body {
     }
 }
 
-@media screen and (min-width: 960px) and (min-height: 635px) {
+// iPad Landscape
+@media screen and (max-width: 1024px) and (max-height: 768px) {
+    .my-name {
+        font-size: 4em;
+        padding-bottom: 0;
+    }
+    .what-i-do {
+        font-size: 4.5em;
+        align-self: start;
+        padding-top: 0.2em;
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (min-height: 635px) {
     .navbar {
         display: block;
         margin: 0;
         padding: 0;
         position: fixed;
         top: 32px;
-        right: 24px;
+        right: 20px;
         width: min-content;
         height: min-content;
         mix-blend-mode: difference;
@@ -632,7 +656,7 @@ body {
         display: flex;
     }
     .social-links-el {
-        padding: 0.95rem 0;
+        padding: 0.8rem 0;
 
         a svg {
             width: 20px;
@@ -648,9 +672,29 @@ body {
         padding-bottom: 0;
     }
 
+    .hero {
+        grid-template-rows: 110px 0.8fr 1.5fr 0.75fr 0.25fr;
+
+    }
+
+    .my-name, .what-i-do {
+        padding-left: 0.2rem;
+    }
+
+    .my-name {
+        font-size: 3.8em;
+        padding-bottom: 0;
+    }
+    .what-i-do {
+        font-size: 4em;
+        align-self: start;
+        padding-top: 0.2rem;
+    }
+
     .my-work-btn {
         font-size: 1em;
         padding: 0.8rem 2rem;
+        align-self: center;
     }
 
     .details-btn {
