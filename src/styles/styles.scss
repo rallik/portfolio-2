@@ -581,6 +581,7 @@ body {
     
     .nav-element-li {
         font-size: 1em;
+        font-weight: 400;
         padding: 0.8rem 2rem;
         a {
             color: $light-main-color;
@@ -597,6 +598,11 @@ body {
     }
     .social-links-el {
         padding: 0.95rem 0;
+
+        a svg {
+            width: 20px;
+            height: 20px;
+        }
     }
 
     .social-links-el:first-child {

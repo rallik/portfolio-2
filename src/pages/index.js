@@ -9,7 +9,7 @@ import '../styles/styles.scss'
 
 const index = () => {
   return (
-    <main>
+    <main className='home-page'>
       <Layout>
         <Hero />
         <About />

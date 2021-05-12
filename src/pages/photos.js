@@ -3,9 +3,9 @@ import Layout from '../layouts/layout'
 
 const photos = () => {
     return (
-        <main>
+        <main className='photo-page'>
             <Layout>
-                <h2>Photos</h2>
+                <h1>Photos</h1>
                 <div style={{backgroundColor: '#00ff00', width: '200px', height: '200px'}}></div>
             </Layout>
         </main>

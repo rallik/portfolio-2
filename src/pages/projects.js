@@ -3,9 +3,9 @@ import Layout from '../layouts/layout'
 
 const projects = () => {
     return (
-        <main>
+        <main className='projects-page'>
             <Layout>
-                <h2>Projects</h2>
+                <h1>Projects</h1>
                 <ul>
                     <li>project 1</li>
                     <li>project 2</li>

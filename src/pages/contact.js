@@ -4,7 +4,7 @@ import Form from '../components/Form'
 
 const contact = () => {
     return (
-        <main>
+        <main className='contact-page'>
             <Layout>
                 <h1>Contact me:</h1>
                 <Form />

@@ -3,9 +3,9 @@ import Layout from '../layouts/layout'
 
 const about = () => {
     return (
-        <main>
+        <main className='about-page'>
             <Layout>
-                <h2>About</h2>
+                <h1>About</h1>
                 <div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ullam illo quasi esse quis est a, cum harum quisquam tempora soluta autem consequatur veniam iste magnam, blanditiis, quo vero? Modi?
                     Nesciunt incidunt placeat ipsa recusandae odit ea, fugit ipsam quas, eaque eius iste temporibus at soluta magni atque rem magnam praesentium a. Consectetur vero sint obcaecati accusantium at repudiandae necessitatibus?
