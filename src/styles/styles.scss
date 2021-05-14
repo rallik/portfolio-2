@@ -138,7 +138,7 @@ body {
     height: 120%;
     top: -150%;
     right: -80%;
-    padding: 8rem 3rem 22rem 0;
+    padding: 8rem 3.4rem 22rem 0;
     transition: all 500ms ease;
     border-radius: 0 0 0 50% / 0 0 0 80%;
 }
@@ -175,6 +175,7 @@ body {
     position: fixed;
     height: min-content;
     min-width: min-content;
+    max-width: 100vw;
     // left: 16px;
     left: 16px;
     bottom: 24px;
@@ -193,17 +194,18 @@ body {
 .social-links.mobile {
     display: block;
     position: absolute;
-    margin-left: calc(16px + 30%);
-    width: 92%;
+    left: 30%;
+    width: 100vw;
 
     .social-links-list {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 
 .social-links-el {
-    width: min-content;
+    width: 100%;
     height: min-content;
+    text-align: center;
     padding: 0 1.95rem;
     // padding: 0.95rem 0;
     a svg {
@@ -217,13 +219,6 @@ body {
     }
 }
 
-.social-links-el:first-child {
-    padding-left: 0;
-}
-
-.social-links-el:last-child {
-    padding-right: 0;
-}
 
 .social-icon {
     display: none;
@@ -259,6 +254,7 @@ body {
     grid-column: 2 / -2;
 }
 
+
 .what-i-do {
     color: $dark-main-color;
     font-weight: 600;
@@ -278,6 +274,15 @@ body {
 .emp:hover {
     color: #BED1FE;
     font-style: italic;
+}
+
+.opposite-b {
+    color: $dark-main-color;
+    text-shadow: none;
+}
+.opposite-w {
+    color: $light-main-color;
+    text-shadow:1px 0 0 $dark-main-color,0 1px 0 $dark-main-color,-1px 0 0 $dark-main-color,0 -1px 0 $dark-main-color;
 }
 
 .my-work-btn {
@@ -446,6 +451,27 @@ body {
         width: 56px;
         height: 56px;
     }
+
+    .nav-elements {
+        padding: 6.5rem 5.25rem 13rem 0;
+    }
+    .nav-element-li {
+        font-size: 2.2em;
+        padding: 0.4rem 0;
+    }
+
+    .nav-element-li:first-child {
+        padding-top: 0;
+    }
+
+    .nav-element-li:last-child {
+        padding-bottom: 0;
+    }
+
+    .social-links.mobile {
+        left: 27%;
+    }
+
     .social-links-el  {
         width: 20px;
         height: 20px
@@ -455,7 +481,7 @@ body {
         padding: 0;
     }
     .what-i-do {
-        font-size: 2em;
+        font-size: 1.95em;
         align-self: start;
     }
     .about {
@@ -481,6 +507,22 @@ body {
         width: 56px;
         height: 56px;
     }
+
+    .nav-elements {
+        padding: 6rem 5.25rem 13rem 0;
+    }
+    .nav-element-li {
+        font-size: 2.4em;
+        padding: 0.5rem 0;
+    }
+
+    .nav-element-li:first-child {
+        padding-top: 0;
+    }
+
+    .nav-element-li:last-child {
+        padding-bottom: 0;
+    }
     .my-name {
         font-size: 2.3em;
         align-self: end;
@@ -503,12 +545,18 @@ body {
 }
 
 // iPhone 5/SE portrait
-
-
 @media screen and (max-width:360px) {
     .logo {
         width: 64px;
         height: 64px;
+    }
+
+    .nav-elements {
+        padding: 5.5rem 3rem 15rem 0;
+    }
+
+    .nav-element-li {
+        font-size: 2.2em;
     }
     .social-links-el {
 
@@ -604,14 +652,14 @@ body {
     }
 }
 
-
+//MB Pro 13
 @media screen and (min-width: 1025px) and (min-height: 635px) {
     .navbar {
         display: block;
         margin: 0;
         padding: 0;
         position: fixed;
-        top: 32px;
+        top: 12px;
         right: -10px;
         width: min-content;
         height: min-content;
@@ -656,9 +704,21 @@ body {
         }
     }
 
+    .social-links-el:first-child {
+        padding-left: 0;
+    }
+
+    .social-links-el:last-child {
+        padding-right: 0;
+    }
+
+    .section {
+        grid-template-columns: 8px 1fr 1fr 8px;
+        gap: 10px;
+    }
 
     .hero {
-        grid-template-rows: 110px 0.8fr 1.5fr 0.75fr 14px;
+        grid-template-rows: 110px 0.8fr 1.05fr 0.75fr 14px;
 
     }
 
@@ -673,6 +733,7 @@ body {
     .what-i-do {
         font-size: 4em;
         align-self: start;
+        // text-align: right;
         padding-top: 0.2rem;
     }
 
@@ -690,4 +751,55 @@ body {
 
 }
 
+@media screen and (min-width: 1366px) {
+    .my-name {
+        font-size: 4em;
+    }
+    .what-i-do {
+        font-size: 4.2em;
+        
+    }
+}
 
+
+@media screen and (min-width: 1440px) {
+    .my-name {
+        font-size: 4.2em;
+    }
+    .what-i-do {
+        font-size: 4.4em;
+        
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .my-name {
+        font-size: 4.4em;
+    }
+    .what-i-do {
+        font-size: 4.6em;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .my-name {
+        font-size: 4.8em;
+        padding-top: 0;
+    }
+    .what-i-do {
+        font-size: 5em;
+        
+    }
+}
+
+
+@media screen and (min-width: 2560px) {
+    .my-name {
+        font-size: 6.5em;
+        padding-top: 0;
+    }
+    .what-i-do {
+        font-size: 7em;
+        
+    }
+}
