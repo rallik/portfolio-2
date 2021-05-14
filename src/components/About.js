@@ -9,6 +9,8 @@ const About = () => {
             <p className='about-text'>
                 I'm a Boston-based Front-end developer,
                 currently seeking opportunities in the field.
+                In my free time I love taking photos, kayaking,
+                and hiking.
                 
             </p>
             

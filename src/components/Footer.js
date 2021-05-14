@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer hidden>
+        <footer className='footer'>
             © Reuben Allik
         </footer>
     )

@@ -224,6 +224,11 @@ body {
     display: none;
 }
 
+.footer {
+    height: 20vh;
+    color: $light-main-color;
+}
+
 
 /****************** ALL SECTIONS ********************/
 .section {
@@ -271,9 +276,16 @@ body {
     font-weight: 600;
 }
 
-.emp:hover {
-    color: #BED1FE;
+.emp.fast:hover {
+    transition: font-style 400ms ease;
     font-style: italic;
+    color: #15488A;
+}
+
+.emp.resp:hover {
+    transition: letter-spacing 400ms ease;
+    letter-spacing: -4px;
+    color: #15488A;
 }
 
 .opposite-b {
@@ -315,17 +327,17 @@ body {
 .about {
     color: $light-main-color;
     position: static;
-    grid-template-rows: minmax(50px, 90px) 0.25fr 2.5fr 0.75fr 0.25fr 2.5fr 0.5fr;
-    grid-template-columns: 8px 1fr 1fr 1fr 1fr 8px;
+    grid-template-rows: 1.5fr 0.25fr 1.5fr 1.7fr 0.25fr 2.25fr 0.25fr;
+    grid-template-columns: 14px 0.85fr 1fr 1fr 1fr 8px;
 }
 .about-header, .about-text, .tools-header, .tools-element {
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.06em;
 }
 
 .tools-header, .about-header {
     text-decoration: underline;
-    text-align: center;
+    text-align: start;
     // font-size: 32px;
     align-self: start;
 
@@ -333,14 +345,14 @@ body {
 
 .about-header {
     grid-row: 2 /  3;
-    grid-column: 2 / -2;
+    grid-column: 2 / 3;
 }
 
 .about-text {
-    grid-row: 3 / 4;
-    grid-column: 2 / -2;
-    // margin-top: -10px;
-    line-height: 1.80em;
+    grid-row: 2 / 4;
+    grid-column: 3 / 6;
+    margin-top: -0.3rem;
+    line-height: 1.9em;
     display: block;
 }
 
@@ -352,7 +364,7 @@ body {
     padding: 0.6rem 1.5rem;
     white-space: nowrap;
     grid-row: 4 / 5;
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
     border-radius: 30px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
@@ -377,12 +389,13 @@ body {
 
 .tools-header {
     grid-row: 5 / 6;
-    grid-column: 2 / -2;
+    grid-column: 2 / 3;
 }
 
 .tools-table {
-    grid-row: 6 / 7;
-    grid-column: 2 / -2;
+    grid-row: 5 / 7;
+    grid-column: 3 / 6;
+    margin-top: -0.5rem;
 
     tbody tr {
         display: flex;
@@ -398,20 +411,25 @@ body {
     // flex: 0 0 50%;
     width: min-content;
     height: min-content;
-    flex-basis: 45%;
+    padding: 0.6rem 0;
+    flex-basis: 50;
     white-space: nowrap;
     text-align: left;
 }
 
 /****************** PROJECTS SECTION ********************/
-
+.projects {
+    background-color: $light-main-color;
+}
 
 /****************** PHOTOS SECTION ********************/
 
 
 
 /****************** CONTACT SECTION ********************/
-
+.contact {
+    height: 80vh;
+}
 
 /*******************************************************
 *************************PAGES*************************
