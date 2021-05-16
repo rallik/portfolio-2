@@ -31,8 +31,10 @@ const Form = () => {
 
 
     return (
+      <section className="contact-form">
         <form
         name="contact"
+        className="form"
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
@@ -45,31 +47,32 @@ const Form = () => {
             Don’t fill this out: <input name="bot-field" onChange={handleChange} />
           </label>
         </p>
-        <p>
+        <p className='form-input less-pad'>
           <label>
             Name:
             <br />
             <input type="text" name="name" onChange={handleChange} />
           </label>
         </p>
-        <p>
+        <p className='form-input'>
           <label>
             Email:
             <br />
             <input type="email" name="email" onChange={handleChange} />
           </label>
-        </p>
-        <p>
+          </p>
+        <p className='form-input'>
           <label>
             Leave a Message:
             <br />
             <textarea name="message" onChange={handleChange} />
           </label>
         </p>
-        <p>
-          <button type="submit">Send</button>
+        <p className='form-submit'>
+          <button className="submit-btn" type="submit">Send</button>
         </p>
       </form>
+        </section>
     )
 }
 
