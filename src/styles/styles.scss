@@ -225,8 +225,19 @@ body {
 }
 
 .footer {
-    height: 20vh;
+    height: 10vh;
     color: $light-main-color;
+    display: grid;
+    grid-template-columns: 16px 1fr 1fr 1fr 16px;
+    grid-template-rows: 1fr 1fr 1fr 16px;
+
+}
+
+.copyright {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+    align-self: end;
+    justify-self: end;
 }
 
 
@@ -432,7 +443,7 @@ body {
 
 /****************** CONTACT SECTION ********************/
 .contact {
-    height: 80vh;
+    height: 90vh;
     color: $light-main-color;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -445,20 +456,28 @@ body {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     align-self: end;
-    justify-self: center;
+    padding: 0 3rem;
 }
 
 .in-touch-how {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    padding: 0 4rem;
+    padding: 1rem 2rem 0 3rem ;
+    font-size: 1.2em;
+    line-height: 1.2em;
 }
+
+.send-email {
+    text-decoration: underline;
+    color: $light-main-color;
+}
+
 .contact-btn {
     background-color: $dark-main-color;
     width: min-content;
     height: min-content;
     line-height: normal;
-    border: 2px solid;
+    border: 1.5px solid;
     border-color: $light-main-color;
     border-radius: 30px;
     // padding: 1rem 2.5rem;
@@ -467,10 +486,10 @@ body {
     white-space: nowrap;
     font-weight: 400;
     font-size: 1.1em;
-    align-self: end;
+    align-self: start;
     justify-self: end;
     cursor: pointer;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     grid-column: 2 / 3;
 
     a {
@@ -513,8 +532,8 @@ body {
     background-color: $light-main-color;
     display: grid;
     grid-template-columns: 36px 1fr 1fr 36px;
-    grid-template-rows: 82px 45px 0.5fr 1fr 1fr 1fr 1fr 1fr 45px 82px;
-    gap: 0;
+    grid-template-rows: 82px 45px 0.5fr 1fr 1fr 1fr 1fr 1fr 45px 82px; 
+    gap: 0 !important;
 }
 
 .contact-page-head {

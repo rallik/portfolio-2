@@ -9,10 +9,10 @@ const Contact = () => {
                 <a className='send-email' href="mailto:allikreuben@gmail.com">
                     Send me an email
                 </a>
-                or start a conversation by filling out the form (click the button below)
+                &nbsp;or start a conversation by filling out the form (click the button below)
             </h3>
             <button className='contact-btn'>
-                <Link to='/contact'>Contact Me</Link>
+                <Link to='/contact'>To form</Link>
             </button>
         </section>
     )
