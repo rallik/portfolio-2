@@ -19,7 +19,7 @@ const Hero = () => {
             </h2>
             <button className='my-work-btn'>
                 <Link to='/projects'>My work</Link>
-            </button>            
+            </button>
         </section>
     )
 }
