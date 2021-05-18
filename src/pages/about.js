@@ -1,11 +1,14 @@
 import React from 'react'
 import Layout from '../layouts/layout'
+import Image from 'gatsby-image'
+import Headshot from '../assets/images/headshot.jpg'
 
 const about = () => {
     return (
-        <main className='about-page'>
+        <main className='section about-page'>
             <Layout>
-                <h1>About</h1>
+                <img src="images/headshot.jpg" alt="me"/>
+                <h1 className='about-page-head'>About me</h1>
                 <div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ullam illo quasi esse quis est a, cum harum quisquam tempora soluta autem consequatur veniam iste magnam, blanditiis, quo vero? Modi?
                     Nesciunt incidunt placeat ipsa recusandae odit ea, fugit ipsam quas, eaque eius iste temporibus at soluta magni atque rem magnam praesentium a. Consectetur vero sint obcaecati accusantium at repudiandae necessitatibus?

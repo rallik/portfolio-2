@@ -31,7 +31,7 @@ const StickyHeader = (defaultSticky = false) => {
 
     const bottomBound = useWindowDimensions().height - 45;
 
-    console.log(topBound, bottomBound);
+    // console.log(topBound, bottomBound);
     
 
     const toggleSticky = useCallback(

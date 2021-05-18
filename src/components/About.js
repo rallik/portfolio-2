@@ -6,17 +6,6 @@ import about from '../pages/about';
 
 const About = () => {
     const { aboutRef, isSticky } = StickyHeader();
-    console.log(isSticky)
-    const handleScroll = (e) => {
-        console.log(aboutRef.current.getBoundingClientRect())
-    }
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    })
     return (
         <section className='section about'>
             <h2 className={isSticky ? 'about-header stuck' : 'about-header unstuck'}
