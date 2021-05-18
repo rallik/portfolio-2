@@ -621,7 +621,8 @@ body {
 
 .box-upper, .box-lower {
     z-index: 1;
-    background-color: $dark-main-color;
+    // background-color: $dark-main-color;
+    background-color: $contact-green;
 }
 
 
@@ -643,7 +644,8 @@ body {
     position: absolute;
     top: 82px;
     border-right: 100vw solid transparent;
-    border-top: 45px solid $dark-main-color;
+    // border-top: 45px solid $dark-main-color;
+    border-top: 45px solid $contact-green;
     
 }
 
@@ -672,6 +674,7 @@ body {
     bottom: 82px;
     border-left: 100vw solid transparent;
     border-bottom: 45px solid $dark-main-color;
+    border-bottom: 45px solid $contact-green;
 }
 
 // .triangle-lower {
