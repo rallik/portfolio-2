@@ -338,7 +338,7 @@ body {
 .about {
     color: $light-main-color;
     position: static;
-    grid-template-rows: 1.5fr 0.25fr 1.5fr 1.7fr 0.25fr 2.25fr 0.25fr;
+    grid-template-rows: 1.5fr 0.25fr 1.45fr 1.85fr 0.25fr 2.25fr 0.25fr;
     grid-template-columns: 14px 0.85fr 1fr 1fr 1fr 8px;
 }
 .about-header, .about-text, .tools-header, .tools-element {
@@ -439,11 +439,11 @@ body {
 }
 
 .tools-element {
-    // flex: 0 0 50%;
+    flex: 0 0 50%;
     width: min-content;
     height: min-content;
     padding: 0.6rem 0;
-    flex-basis: 50;
+    // flex-basis: 20;
     white-space: nowrap;
     text-align: left;
 }

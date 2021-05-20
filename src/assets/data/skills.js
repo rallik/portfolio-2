@@ -1,7 +1,7 @@
 const skills = [
     {
         id: 1,
-        skill: 'Javascript (ES6+)'
+        skill: 'Javascript'
     },
     {
         id: 2,
@@ -29,7 +29,7 @@ const skills = [
     },
     {
         id: 8,
-        skill: 'Mapbox GL JS'
+        skill: 'Mapbox'
     },
     {
         id: 9,
