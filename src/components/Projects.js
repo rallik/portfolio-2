@@ -1,11 +1,16 @@
 import React from 'react'
+import { Link, graphql } from 'gatsby';
+import ProjectCards from './ProjectCards'
 
 const Projects = () => {
     return (
         <section className="section projects">
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
+            <h2>Recent Projects</h2>
+            <ProjectCards />
+            
+            <button className='my-work-btn'>
+                <Link to='/projects'>See more</Link>
+            </button>
         </section>
     )
 }

@@ -27,7 +27,7 @@ const StickyHeader = (defaultSticky = false) => {
         return windowDimensions;
     }
 
-    const topBound = useWindowDimensions().height + 95;
+    const topBound = useWindowDimensions().height + 105;
 
     const bottomBound = useWindowDimensions().height - 45;
 

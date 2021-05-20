@@ -2,7 +2,6 @@ import React, {useEffect, useRef} from 'react';
 import { Link, graphql } from 'gatsby';
 import Tools from '../components/Tools';
 import StickyHeader from '../components/StickyHeaders'
-import about from '../pages/about';
 
 const About = () => {
     const { aboutRef, isSticky } = StickyHeader();
