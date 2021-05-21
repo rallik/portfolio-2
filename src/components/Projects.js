@@ -9,7 +9,7 @@ const Projects = () => {
             <ProjectCards  />
             
             <button className='more-projects my-work-btn'>
-                <Link to='/projects'>See more</Link>
+                <Link to='/projects'>All projects</Link>
             </button>
         </section>
     )
