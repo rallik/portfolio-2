@@ -5,7 +5,7 @@ import ProjectCards from './ProjectCards'
 const Projects = () => {
     return (
         <section className="section projects">
-            <h2>Recent Projects</h2>
+            <h2 className='projects-header'>Recent Projects</h2>
             <ProjectCards />
             
             <button className='my-work-btn'>

@@ -454,6 +454,15 @@ body {
     color: $dark-main-color;
 }
 
+.projects-header {
+    font-weight: 600;
+    font-size: 1.06em;
+    white-space: nowrap;
+    grid-column: 2 / -2;
+    grid-row: 1 / 2;
+    align-self: center;
+}
+
 /****************** PHOTOS SECTION ********************/
 
 
@@ -1025,7 +1034,7 @@ body {
         font-size: 4em;
     }
     .what-i-do {
-        font-size: 4.2em;
+        font-size: 4.6em;
         
     }
 }
@@ -1036,27 +1045,65 @@ body {
         font-size: 4.2em;
     }
     .what-i-do {
-        font-size: 4.4em;
+        font-size: 5em;
         
     }
 }
 
 @media screen and (min-width: 1536px) {
     .my-name {
-        font-size: 4.4em;
+        font-size: 4.5em;
     }
     .what-i-do {
-        font-size: 4.6em;
+        font-size: 5.5em;
+    }
+}
+@media screen and (min-width: 1648px) {
+    .my-name {
+        font-size: 4.75em;
+    }
+    .what-i-do {
+        font-size: 6em;
+    }
+}
+
+@media screen and (min-width: 1753px) {
+    .my-name {
+        font-size: 5em;
+    }
+    .what-i-do {
+        font-size: 6.4em;
     }
 }
 
 @media screen and (min-width: 1920px) {
     .my-name {
-        font-size: 4.8em;
+        font-size: 5.5em;
         padding-top: 0;
     }
     .what-i-do {
-        font-size: 5em;
+        font-size: 7em;
+        
+    }
+}
+@media screen and (min-width: 2045px) {
+    .my-name {
+        font-size: 5.75em;
+        padding-top: 0;
+    }
+    .what-i-do {
+        font-size: 7.5em;
+        
+    }
+}
+
+@media screen and (min-width: 2175px) {
+    .my-name {
+        font-size: 6em;
+        padding-top: 0;
+    }
+    .what-i-do {
+        font-size: 8em;
         
     }
 }
@@ -1068,7 +1115,7 @@ body {
         padding-top: 0;
     }
     .what-i-do {
-        font-size: 7em;
+        font-size: 8.9em;
         
     }
 }
