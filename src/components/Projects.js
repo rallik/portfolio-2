@@ -6,9 +6,9 @@ const Projects = () => {
     return (
         <section className="section projects">
             <h2 className='projects-header'>Recent Projects</h2>
-            <ProjectCards />
+            <ProjectCards  />
             
-            <button className='my-work-btn'>
+            <button className='more-projects my-work-btn'>
                 <Link to='/projects'>See more</Link>
             </button>
         </section>

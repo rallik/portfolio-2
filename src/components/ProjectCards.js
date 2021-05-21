@@ -5,26 +5,24 @@ const ProjectCards = () => {
     const cards = [
         {
             key: 1,
-            value: 'a'
+            cardclass: 'a',
+            header: 'PhotoWeather'
         },
         {
             key: 2,
-            value: 'b'
-        },
-        {
-            key: 3,
-            value: 'c'
+            cardclass: 'b',
+            header: 'MeterFinder'
         }]
     return (
-        <div>
+        <React.Fragment>
             {
                 cards.map((c) => {
                     return (
-                        <Card key={c.key} value={c.value} />
+                        <Card key={c.key} cardclass={c.cardclass} header={c.header} />
                     )
                 })
             }
-        </div>
+        </React.Fragment>
     )
 }
 
