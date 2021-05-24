@@ -3,9 +3,9 @@ import { Link, graphql } from 'gatsby';
 
 
 const Card = (props) => {
-    const { cardclass,  header } = props;
+    const { header } = props;
     return (
-        <article className={cardclass + ' ' + 'project-card'}>
+        <article className='project-card'>
             <h3 className='project-card-head'>{header}</h3>
             <div className='project-card-mockup'></div>
             <button className='project-card-details-btn'>

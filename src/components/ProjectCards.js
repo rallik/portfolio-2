@@ -14,7 +14,7 @@ const ProjectCards = () => {
             header: 'MeterFinder'
         }]
     return (
-        <React.Fragment>
+        <div className='project-card-list'>
             {
                 cards.map((c) => {
                     return (
@@ -22,7 +22,7 @@ const ProjectCards = () => {
                     )
                 })
             }
-        </React.Fragment>
+        </div>
     )
 }
 
