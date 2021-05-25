@@ -1100,6 +1100,18 @@ body {
 
     }
 
+    .about {
+        grid-template-columns: 8px 1fr 1.5fr 8px;
+    }
+
+    .about-header, .about-text, .tools-header, .tools-element {
+        font-size: 1.5em;
+    }
+
+    .tools-element {
+        flex: 0 0 25%;
+    }
+
     .project-card-list {
         flex-direction: row;
     }
@@ -1203,4 +1215,6 @@ body {
         font-size: 8.9em;
         
     }
+
+    
 }
