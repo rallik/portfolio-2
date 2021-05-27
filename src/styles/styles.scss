@@ -1106,6 +1106,10 @@ body {
         padding-right: 0;
     }
 
+    .footer-sitemap-mobile {
+        display: none;
+    }
+
     .section {
         grid-template-columns: 8px 1fr 1fr 8px;
         gap: 10px;
