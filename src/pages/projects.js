@@ -1,18 +1,16 @@
 import React from 'react'
 import Layout from '../layouts/layout'
+import ProjectCards from '../components/ProjectCards'
+
 import '../styles/styles.scss'
 
 
 const projects = () => {
     return (
-        <main className='projects-page'>
+        <main className='section projects-page'>
             <Layout>
                 <h1>Projects</h1>
-                <ul>
-                    <li>project 1</li>
-                    <li>project 2</li>
-                    <li>project 3</li>
-                </ul>
+                <ProjectCards styles={{ gridRow: 2 / -2}} />
             </Layout>
         </main>
     )
