@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: "http://localhost:9000/"
   },
   plugins: [
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",

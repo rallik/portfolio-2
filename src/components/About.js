@@ -28,4 +28,14 @@ const About = () => {
     )
 }
 
+export const query = graphql`
+  query HomePageQuery {
+    site {
+      siteMetadata {
+        description
+      }
+    }
+  }
+`
+
 export default About

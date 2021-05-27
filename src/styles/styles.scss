@@ -615,6 +615,26 @@ body {
 .about-page {
     // background-color: $about-blue;
     background-color: $light-main-color;
+    grid-template-rows: 96px 0.15fr 2fr 2fr 0.15fr;
+}
+
+.about-page-head {
+    font-weight: 600;
+    font-size: 1em;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.headshot {
+    grid-row: 3 / 4;
+    grid-column: 2 / -2;
+    max-width: 1600px;
+    justify-self: center;
+}
+
+.about-page-text {
+    grid-row: 4 / 5;
+    grid-column: 2 / -2;
 }
 
 
