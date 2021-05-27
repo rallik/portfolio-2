@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import Menu from '../assets/svg/menu.svg'
 import MenuX from '../assets/svg/menuX.svg'
-import Social from '../components/Social'
+import Social from './Social'
+import Navlist from './Navlist'
 
 
 const Nav = () => {
@@ -20,23 +21,7 @@ const Nav = () => {
                 <Menu/>
             </i>
             <nav className={clicked ? 'navbar active' : 'navbar'}>
-                <ul className={clicked ? 'nav-elements active': 'nav-elements'}>
-                    <li className='nav-element-li'>
-                        <Link to='/'>Home</Link>
-                    </li>
-                    <li className='nav-element-li'>
-                        <Link className='nav-link' to='/about'>About</Link>
-                    </li>
-                    <li className='nav-element-li'>
-                        <Link className='nav-link' to='/projects'>Projects</Link>
-                    </li>
-                    {/* <li className='nav-element-li'>
-                        <Link className='nav-link' to='/photos'>Photos</Link>
-                    </li> */}
-                    <li className='nav-element-li'>
-                        <Link className='nav-link' to='/contact'>Contact</Link>
-                    </li>
-                </ul>
+                <Navlist name={'nav-elements mobile'} elname={'nav-element-li'}/>
                 <Social name={'social-links mobile'}/>
             </nav>
         </React.Fragment>

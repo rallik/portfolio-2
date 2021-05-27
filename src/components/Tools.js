@@ -1,17 +1,20 @@
 import React from 'react'
 import skills from '../assets/data/skills'
-import StickyHeader from './StickyHeaders'
+// import StickyHeader from './StickyHeaders'
 
 
 const Tools = () => {
-    const { aboutRef, isSticky } = StickyHeader();
+    // const { aboutRef, isSticky } = StickyHeader();
 
     return (
         <React.Fragment>
-            
+            <h3 className='tools-header'>Tools</h3>
+
             {/* <h3 className='tools-header' ref={aboutRef}>Tools</h3> */}
-            <h3 className={isSticky ? 'tools-header stuck' : 'tools-header unstuck'} >Tools</h3>
-            <table className='tools-table' ref={aboutRef}>
+            {/* <h3 className={isSticky ? 'tools-header stuck' : 'tools-header unstuck'} >Tools</h3> */}
+            <table className='tools-table'>
+
+            {/* <table className='tools-table' ref={aboutRef}> */}
                 <tbody>
                     <tr>
                     {

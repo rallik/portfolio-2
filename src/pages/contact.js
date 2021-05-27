@@ -1,6 +1,8 @@
 import React from 'react';
 import Layout from '../layouts/layout'
 import Form from '../components/Form'
+import '../styles/styles.scss'
+
 
 const contact = () => {
     return (

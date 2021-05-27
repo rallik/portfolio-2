@@ -6,14 +6,14 @@ import InstagramLogo from '../assets/svg/instagram.svg'
 // import SocialMobile from '../assets/svg/social.svg'
 
 
-const Social = (props) => {
+const Social = ({name}) => {
     // const [ clicked, setClicked ] = useState(false);
 
     // const handleClick = () => {
     //     setClicked(!clicked);
     //     // console.log(clicked)
     // }
-    const { name } = props;
+    // const { name } = props;
 
     return (
         <React.Fragment>

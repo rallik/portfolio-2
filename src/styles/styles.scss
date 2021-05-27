@@ -143,7 +143,7 @@ body {
     border-radius: 0 0 0 50% / 0 0 0 80%;
 }
 
-.nav-elements.active {
+.nav-elements.mobile {
         // background-color: $dark-main-color;
         background-color: #15488a;
         top: -20%;
@@ -238,6 +238,25 @@ body {
     grid-row: 3 / 4;
     align-self: end;
     justify-self: end;
+}
+
+.footer-sitemap-mobile {
+    grid-column: 2 / -2;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: end;
+}
+
+.footer-sitemap-mobile-li {
+    width: min-content;
+    height: min-content;
+    cursor: pointer;
+    a {
+        text-decoration: none;
+        color: $light-main-color;
+    }
 }
 
 
@@ -1025,7 +1044,7 @@ body {
 
 //MB Pro 13
 @media screen and (min-width: 1025px) and (min-height: 635px) {
-    .navbar {
+    .navbar, .navbar.active {
         display: block;
         margin: 0;
         padding: 0;
@@ -1062,6 +1081,10 @@ body {
     .nav-icon, .social-links.mobile {
         display: none;
         transition: none;
+    }
+
+    .nav-elements.mobile {
+        background-color: inherit;
     }
 
     .social-links {

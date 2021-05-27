@@ -1,5 +1,7 @@
 import React from 'react'
 import Layout from '../layouts/layout'
+import '../styles/styles.scss'
+
 
 const projects = () => {
     return (
