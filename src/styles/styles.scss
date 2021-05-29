@@ -170,6 +170,11 @@ body {
     }
 }
 
+.nav-element-li .active-link {
+    text-decoration: underline;
+}
+
+
 .social-links {
     display: none;
     position: fixed;
@@ -357,10 +362,10 @@ body {
 .about {
     color: $light-main-color;
     position: static;
-    grid-template-rows: 1.5fr 0.25fr 1.45fr 1.85fr 0.25fr 2.25fr 0.25fr;
+    grid-template-rows: 1.5fr 0.25fr 1.45fr 1.6fr 0.25fr 2.5fr 0.25fr;
     grid-template-columns: 14px 0.85fr 1fr 1fr 1fr 8px;
 }
-.about-header, .about-text, .tools-header, .tools-element {
+.about-header, .about-text, .tools-header {
     font-weight: 600;
     font-size: 1.06em;
 }
@@ -405,7 +410,7 @@ body {
     display: block;
 }
 
-.details-btn {
+.abt-details-btn {
     background-color: $light-main-color;
     width: min-content;
     height: min-content;
