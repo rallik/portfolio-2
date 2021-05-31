@@ -6,12 +6,12 @@ import '../styles/styles.scss'
 
 
 
-const about = ({ data }) => {
+const about = ({ data, location }) => {
     console.log(data)
     const headshot = getImage(data.headshot);
     return (
         <main className='section about-page'>
-            <Layout>
+            <Layout location={location}>
                 <h1 className='about-page-head'>About me</h1>
                 <GatsbyImage className="headshot" image={headshot} alt="headshot" objectFit="contain"/>
                 <div className="about-page-text">

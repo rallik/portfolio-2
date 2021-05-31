@@ -3,10 +3,10 @@ import Layout from '../layouts/layout'
 import '../styles/styles.scss'
 
 
-const photos = () => {
+const photos = ({ location }) => {
     return (
         <main className='photo-page'>
-            <Layout>
+            <Layout location={location}>
                 <h1>Photos</h1>
                 <div style={{backgroundColor: '#00ff00', width: '200px', height: '200px'}}></div>
             </Layout>

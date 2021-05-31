@@ -7,19 +7,19 @@ const Navlist = ({ name, elname }) => {
     return (
         <ul className={name}>
             <li className={elname}>
-                <Link to='/'>Home</Link>
+                <Link className='nav-link' to='/'>Home</Link>
             </li>
             <li className={elname}>
-                <Link activeClassName="active-link" to='/about'>About</Link>
+                <Link className='nav-link' activeClassName='active-link' to='/about'>About</Link>
             </li>
             <li className={elname}>
-                <Link activeClassName="active-link" to='/projects'>Projects</Link>
+                <Link className='nav-link' activeClassName='active-link' to='/projects'>Projects</Link>
             </li>
             {/* <li className={elname}>
-                <Link activeClassName="active-link" to='/photos'>Photos</Link>
+                <Link className='nav-link' activeClassName='active-link' to='/photos'>Photos</Link>
             </li> */}
             <li className={elname}>
-                <Link activeClassName="active-link" to='/contact'>Contact</Link>
+                <Link className='nav-link' activeClassName='active-link' to='/contact'>Contact</Link>
             </li>
         </ul>
     )

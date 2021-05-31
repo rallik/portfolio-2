@@ -3,20 +3,16 @@ import Layout from '../layouts/layout'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import Projects from '../components/Projects'
-import Contact from '../components/Contact'
-import Footer from '../components/Footer'
 import '../styles/styles.scss'
 
 
-const index = () => {
+const index = ({ location }) => {
   return (
     <main className='home-page'>
-      <Layout>
+      <Layout location={location}>
         <Hero />
         <About />
         <Projects />
-        <Contact />
-        <Footer />
       </Layout>
     </main>
   )
