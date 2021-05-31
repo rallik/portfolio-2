@@ -5,10 +5,12 @@ import '../styles/styles.scss'
 
 const photos = ({ location }) => {
     return (
-        <main className='photo-page'>
+        <main>
             <Layout location={location}>
-                <h1>Photos</h1>
-                <div style={{backgroundColor: '#00ff00', width: '200px', height: '200px'}}></div>
+                <section className='photo-page'>
+                    <h1>Photos</h1>
+                    <div style={{backgroundColor: '#00ff00', width: '200px', height: '200px'}}></div>
+                </section>
             </Layout>
         </main>
     )

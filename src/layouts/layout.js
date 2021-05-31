@@ -12,7 +12,7 @@ const layout = ({ children, location }) => {
             <Header />
             <Nav />
             {children}
-            {location.pathname === "/contact" ? "" : <Contact />}
+            {location.pathname.includes("contact") ? "" : <Contact />}
             <Footer />
             <Social name={'social-links'} />
         </React.Fragment>

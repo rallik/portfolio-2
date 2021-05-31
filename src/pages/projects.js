@@ -7,10 +7,12 @@ import '../styles/styles.scss'
 
 const projects = ({ location }) => {
     return (
-        <main className='section projects-page'>
+        <main>
             <Layout location={location}>
-                <h1>Projects</h1>
-                <ProjectCards styles={{ gridRow: 2 / -2}} />
+                <section className='section projects-page'>
+                    <h1>Projects</h1>
+                    <ProjectCards styles={{ gridRow: 2 / -2}} />
+                </section>
             </Layout>
         </main>
     )
