@@ -1,9 +1,21 @@
 import React from 'react'
-import skills from '../assets/data/skills'
+import { useStaticQuery, graphql } from "gatsby"
 // import StickyHeader from './StickyHeaders'
 
 
 const Tools = () => {
+    const query = graphql`
+        {
+            allSkillsJson {
+                skills: nodes {
+                    id
+                    skill
+                }
+            }
+        }`
+    
+    const data = useStaticQuery(query);
+    const skills = data.allSkillsJson.skills;
     // const { aboutRef, isSticky } = StickyHeader();
 
     return (

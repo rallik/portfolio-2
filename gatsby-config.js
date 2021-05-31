@@ -9,14 +9,21 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-transformer-sharp",
+    "gatsby-transformer-json",
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/assets/images/",
+        path: `${__dirname}/src/assets/images/`,
       },
-      __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "data",
+        path: `${__dirname}/src/assets/data/`,
+      },
     },
     {
       resolve: "gatsby-plugin-react-svg",
@@ -27,9 +34,9 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        icon: `src/assets/images/favicon.png`
+        icon: `/${__dirname}/src/assets/images/favicon.png`
       }
     }
     

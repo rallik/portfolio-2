@@ -1,0 +1,55 @@
+{
+    "projects": [
+        {
+            "id": "MeterFinder",
+            "title": "MeterFinder",
+            "onhome": true,
+            "cardimg": "meterfinder.jpg",
+            "otherimg": [
+                {
+                    "img": ""
+                }
+            ],
+            "description": [
+                {
+                    "p": ""
+                }
+            ],
+            "nextsteps": ""
+        },
+        {
+            "id": "",
+            "title": "",
+            "onhome": true,
+            "cardimg": "",
+            "otherimg": [
+                {
+                    "img": ""
+                }
+            ],
+            "description": [
+                {
+                    "p": ""
+                }
+            ],
+            "nextsteps": ""
+        },
+        {
+            "id": "",
+            "title": "",
+            "onhome": true,
+            "cardimg": "",
+            "otherimg": [
+                {
+                    "img": ""
+                }
+            ],
+            "description": [
+                {
+                    "p": ""
+                }
+            ],
+            "nextsteps": ""
+        }
+    ] 
+}
