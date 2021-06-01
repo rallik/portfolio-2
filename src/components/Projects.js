@@ -2,11 +2,11 @@ import React from 'react'
 import { Link, graphql } from 'gatsby';
 import ProjectCards from './ProjectCards'
 
-const Projects = () => {
+const Projects = (props) => {
     return (
         <section className="section projects">
             <h2 className='projects-header'>Recent Projects</h2>
-            <ProjectCards  />
+            <ProjectCards {...props}/>
             
             <button className='more-projects my-work-btn'>
                 <Link to='/projects'>All projects</Link>

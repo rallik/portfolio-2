@@ -1,55 +1,121 @@
-{
-    "projects": [
+[
+    {
+        "id": "MeterFinder",
+        "title": "MeterFinder",
+        "subtitle": "Save $20+ on parking in Boston, MA",
+        "onhome": true,
+        "cardimg":
+            {
+                "img": "meterfinder.jpg",
+                "alt": "MeterFinder home screen"
+                
+            },
+        "tooltags": [
+            {
+                "tag": "Mapbox GL JS"
+            },
+            {
+                "tag": "React"
+            },
+            {
+                "tag": "TurfJS"
+            }
+        ],
+        "otherimg": [
+            {
+                "img": "meterfinder.jpg",
+                "alt": "MeterFinder home screen2"
+            },
+            {
+                "img": "meterfinder.jpg",
+                "alt": "MeterFinder home screen3"
+            }
+        ],
+        "description": [
+            {
+                "p": "I'm baby wolf sartorial subway tile, YOLO brooklyn squid man bun pug typewriter lo-fi put a bird on it tumblr. Pork belly craft beer banjo, iPhone four loko cornhole before they sold out squid vegan portland single-origin coffee bitters. Locavore brunch humblebrag beard. Tilde venmo gastropub intelligentsia."
+            }
+        ],
+        "nextsteps": "Glossier palo santo succulents four dollar toast vice sartorial. Food truck meggings flexitarian readymade cornhole lomo kitsch ugh asymmetrical 8-bit."
+    },
+    {
+        "id": "PhotoWeather",
+        "title": "PhotoWeather",
+        "subtitle": "Ensure perfect weather for every shot",
+        "onhome": true,
+        "cardimg":
         {
-            "id": "MeterFinder",
-            "title": "MeterFinder",
-            "onhome": true,
-            "cardimg": "meterfinder.jpg",
-            "otherimg": [
-                {
-                    "img": ""
-                }
-            ],
-            "description": [
-                {
-                    "p": ""
-                }
-            ],
-            "nextsteps": ""
+            "img": "photoweather.jpg",
+            "alt": "PhotoWeather home screen"
+            
         },
-        {
-            "id": "",
-            "title": "",
-            "onhome": true,
-            "cardimg": "",
-            "otherimg": [
-                {
-                    "img": ""
-                }
-            ],
-            "description": [
-                {
-                    "p": ""
-                }
-            ],
-            "nextsteps": ""
+        "tooltags": [
+            {
+                "tag": "React"
+            },
+            {
+                "tag": "React Context"
+            },
+            {
+                "tag": "Sass (SCSS)"
+            },
+            {
+                "tag": "OpenWeather"
+            },
+            {
+                "tag": "Leaflet"
+            }
+        ],
+        "otherimg": [
+            {
+                "img": "photoweather.jpg",
+                "alt": "PhotoWeather home screen2"
+            },
+            {
+                "img": "photoweather.jpg",
+                "alt": "PhotoWeather home screen3"
+            }
+        ],
+        "description": [
+            {
+                "p": "I'm baby wolf sartorial subway tile, YOLO brooklyn squid man bun pug typewriter lo-fi put a bird on it tumblr. Pork belly craft beer banjo, iPhone four loko cornhole before they sold out squid vegan portland single-origin coffee bitters. Locavore brunch humblebrag beard. Tilde venmo gastropub intelligentsia."
+            }
+        ],
+        "nextsteps": "Glossier palo santo succulents four dollar toast vice sartorial. Food truck meggings flexitarian readymade cornhole lomo kitsch ugh asymmetrical 8-bit."
+    },
+    {
+        "id": "Portfolio2",
+        "title": "Portfolio2",
+        "subtitle": "Second itteration of my portfolio",
+        "onhome": false,
+        "cardimg": {
+            "img": "favicon.jpg",
+            "alt": "Reuben Allik's logo"
+            
         },
-        {
-            "id": "",
-            "title": "",
-            "onhome": true,
-            "cardimg": "",
-            "otherimg": [
-                {
-                    "img": ""
-                }
-            ],
-            "description": [
-                {
-                    "p": ""
-                }
-            ],
-            "nextsteps": ""
-        }
-    ] 
-}
+        "tooltags": [
+            {
+                "tag": "Gatsby"
+            },
+            {
+                "tag": "Sass (SCSS)"
+            }
+        ],
+        "otherimg": [
+            {
+                "img": "favicon.jpg",
+                "alt": "Reuben Allik's logo2"
+            },
+            {
+                "img": "favicon.jpg",
+                "alt": "Reuben Allik's logo3"
+            }
+        ],
+        "description": [
+            {
+                "p": "I'm baby wolf sartorial subway tile, YOLO brooklyn squid man bun pug typewriter lo-fi put a bird on it tumblr. Pork belly craft beer banjo, iPhone four loko cornhole before they sold out squid vegan portland single-origin coffee bitters. Locavore brunch humblebrag beard. Tilde venmo gastropub intelligentsia."
+            }
+        ],
+        "nextsteps": "Glossier palo santo succulents four dollar toast vice sartorial. Food truck meggings flexitarian readymade cornhole lomo kitsch ugh asymmetrical 8-bit."
+    }
+] 

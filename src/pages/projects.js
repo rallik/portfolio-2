@@ -11,7 +11,7 @@ const projects = ({ location }) => {
             <Layout location={location}>
                 <section className='section projects-page'>
                     <h1>Projects</h1>
-                    <ProjectCards styles={{ gridRow: 2 / -2}} />
+                    <ProjectCards styles={{ gridRow: 2 / -2}} location={location}/>
                 </section>
             </Layout>
         </main>

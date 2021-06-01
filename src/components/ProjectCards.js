@@ -1,8 +1,9 @@
 import React from 'react'
 import Card from './Card'
 
-const ProjectCards = () => {
-    const cards = [
+const ProjectCards = (props) => {
+    const { location, cards } = props;
+    const cards2 = [
         {
             key: 1,
             cardclass: 'a',
@@ -16,7 +17,7 @@ const ProjectCards = () => {
     return (
         <div className='project-card-list'>
             {
-                cards.map((c) => {
+                cards2.map((c) => {
                     return (
                         <Card key={c.key} cardclass={c.cardclass} header={c.header} />
                     )

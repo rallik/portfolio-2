@@ -12,7 +12,7 @@ const index = ({ location }) => {
       <Layout location={location}>
         <Hero />
         <About />
-        <Projects />
+        <Projects location={location}/>
       </Layout>
     </main>
   )
