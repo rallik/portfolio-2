@@ -6,7 +6,7 @@
         "onhome": true,
         "cardimg":
             {
-                "img": "meterfinder.jpg",
+                "img": "meterfinder-card-home.jpg",
                 "alt": "MeterFinder home screen"
                 
             },
@@ -45,7 +45,7 @@
         "onhome": true,
         "cardimg":
         {
-            "img": "photoweather.jpg",
+            "img": "photoweather-card-home.jpg",
             "alt": "PhotoWeather home screen"
             
         },
@@ -89,7 +89,7 @@
         "subtitle": "Second itteration of my portfolio",
         "onhome": false,
         "cardimg": {
-            "img": "favicon.jpg",
+            "img": "favicon-card.jpg",
             "alt": "Reuben Allik's logo"
             
         },
