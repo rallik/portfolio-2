@@ -1,28 +1,39 @@
-import React from 'react'
-import Card from './Card'
+import React from 'react';
+import Card from './Card';
+import { mergeJsonPhoto } from '../utils/mergeJsonPhoto';
 
 const ProjectCards = (props) => {
     console.log(props)
     const { location, data } = props;
     const cardImgs = data.cardImgs.nodes;
     const projectCards = data.projectCards.nodes;
-    console.log(cardImgs)
-    console.log(projectCards)
+    // console.log(cardImgs)
+    // console.log(projectCards)
 
     // const combinedCards = []
-    let tempimg;
+    // let tempimg;
 
-    //Todo -> error checking this loop
-    projectCards.map((card) => {
-        cardImgs.forEach((img) => {
-            if (img.base === card.cardimg.img) {
-                tempimg = img
-                card = {tempimg, ...card}
-            }
-        })
+    // //Todo -> error checking this loop
+    // // projectCards.map((card) => {
+    // //     cardImgs.forEach((img) => {
+    // //         if (img.base === card.cardimg.img) {
+    // //             tempimg = img
+    // //             card = {tempimg, ...card}
+    // //         }
+    // //     })
         
-    })
-    console.log(projectCards)
+    // // })
+
+    // for (let proj = 0; proj < projectCards.length; proj++) {
+    //     let cardid = projectCards[proj].cardimg.img.split(".")[0];
+    //     combinedCards.push({
+    //         ...projectCards[proj],
+    //         ...(cardImgs.find((img) => img.base.split(".")[0] === cardid))
+    //     });
+    // }
+
+    const combinedCards = mergeJsonPhoto(projectCards, cardImgs);
+    console.log(combinedCards)
     const cards2 = [
         {
             key: 1,
@@ -37,9 +48,9 @@ const ProjectCards = (props) => {
     return (
         <div className='project-card-list'>
             {
-                cards2.map((c) => {
+                combinedCards.map((card) => {
                     return (
-                        <Card key={c.key} cardclass={c.cardclass} header={c.header} />
+                        <Card data={card} />
                     )
                 })
             }
