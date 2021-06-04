@@ -1,6 +1,6 @@
 [
     {
-        "id": "MeterFinder",
+        "id": "meterfinder",
         "title": "MeterFinder",
         "subtitle": "Save $20+ on parking in Boston, MA",
         "onhome": true,
@@ -39,7 +39,7 @@
         "nextsteps": "Glossier palo santo succulents four dollar toast vice sartorial. Food truck meggings flexitarian readymade cornhole lomo kitsch ugh asymmetrical 8-bit."
     },
     {
-        "id": "PhotoWeather",
+        "id": "photoweather",
         "title": "PhotoWeather",
         "subtitle": "Ensure perfect weather for every shot",
         "onhome": true,
@@ -84,7 +84,7 @@
         "nextsteps": "Glossier palo santo succulents four dollar toast vice sartorial. Food truck meggings flexitarian readymade cornhole lomo kitsch ugh asymmetrical 8-bit."
     },
     {
-        "id": "Portfolio2",
+        "id": "portfolio2",
         "title": "Portfolio2",
         "subtitle": "Second itteration of my portfolio",
         "onhome": false,

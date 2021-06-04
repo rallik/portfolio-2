@@ -18,7 +18,7 @@ const Hero = () => {
                 interfaces for the web<span className='opposite-w'>.</span>
             </h2>
             <button className='my-work-btn'>
-                <Link to='/projects'>My work</Link>
+                <Link className='btn-link' to='/projects/'>My work</Link>
             </button>
         </section>
     )
