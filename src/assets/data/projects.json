@@ -1,6 +1,7 @@
 [
     {
         "id": "meterfinder",
+        "regid": "/meterfinder/",
         "title": "MeterFinder",
         "subtitle": "Save $20+ on parking in Boston, MA",
         "onhome": true,
@@ -40,6 +41,7 @@
     },
     {
         "id": "photoweather",
+        "regid": "/photoweather/",
         "title": "PhotoWeather",
         "subtitle": "Ensure perfect weather for every shot",
         "onhome": true,
@@ -85,6 +87,7 @@
     },
     {
         "id": "portfolio2",
+        "regid": "/portfolio2/",
         "title": "Portfolio2",
         "subtitle": "Second itteration of my portfolio",
         "onhome": false,
