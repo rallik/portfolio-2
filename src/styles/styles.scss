@@ -483,7 +483,7 @@ body {
     background-color: $light-main-color;
     color: $dark-main-color;
     grid-template-columns: 8px 1fr 1fr 1fr 1fr 8px;
-    grid-template-rows: 0.75fr 0.2fr 1.5fr 0.01fr 1.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.2fr 1.5fr 0.01fr 1.5fr 0.5fr;
 }
 
 .projects-header {
@@ -515,7 +515,7 @@ body {
     height: 100%;
     background-color: $card-form-gray;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 1.5rem;
     flex: 0 1 50%;
 }
@@ -523,16 +523,24 @@ body {
 // .project-card:first-child {
 //     margin-bottom: 1rem;
 // }
-
+.project-card-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 100%;
+}
 
 .project-card-head {
     font-size: 1.02em;
+    width: 50%;
 }
 
 .project-card-mockup {
     height: 100%;
+    max-height: 10rem;
     width: 40%;
-    align-self: flex-end;
+    align-self: center;
     border-radius: 10px;
 }
 

@@ -50,7 +50,7 @@ const ProjectCards = (props) => {
             {
                 combinedCards.map((card) => {
                     return (
-                        <Card data={card} />
+                        <Card key={card.id} data={card} />
                     )
                 })
             }

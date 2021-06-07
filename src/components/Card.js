@@ -13,11 +13,14 @@ const Card = ({ data }) => {
 
     return (
         <article className='project-card'>
-            <h3 className='project-card-head'>{title}</h3>
-            <GatsbyImage className='project-card-mockup' image={cardImg} alt={alt}/>
-            <button className='project-card-details-btn'>
-                <Link to={`/projects/${slug}/`}>Details</Link>
-            </button>
+            <div className='project-card-info-wrapper'>
+                <h3 className='project-card-head'>{title}</h3>
+                <button className='project-card-details-btn'>
+                    <Link to={`/projects/${slug}/`}>Details</Link>
+                </button>
+            </div>
+            <GatsbyImage className='project-card-mockup' image={cardImg} alt={alt} imgStyle={{objectFit: "contain"}}/>
+
         </article>
         
     )
