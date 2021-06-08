@@ -1,10 +1,11 @@
 [
     {
         "id": "meterfinder",
-        "regid": "/meterfinder/",
         "title": "MeterFinder",
         "subtitle": "Save $20+ on parking in Boston, MA",
         "onhome": true,
+        "gitlink": "https://github.com/rallik/boston-metered-parking",
+        "livelink": "",
         "cardimg":
             {
                 "img": "meterfinder-card-home.jpg",
@@ -41,10 +42,11 @@
     },
     {
         "id": "photoweather",
-        "regid": "/photoweather/",
         "title": "PhotoWeather",
         "subtitle": "Ensure perfect weather for every shot",
         "onhome": true,
+        "gitlink": "https://github.com/rallik/weatherapp-react",
+        "livelink": "",
         "cardimg":
         {
             "img": "photoweather-card-home.jpg",
@@ -87,10 +89,11 @@
     },
     {
         "id": "portfolio2",
-        "regid": "/portfolio2/",
         "title": "Portfolio2",
         "subtitle": "Second itteration of my portfolio",
         "onhome": false,
+        "gitlink": "https://github.com/rallik/portfolio-2",
+        "livelink": "",
         "cardimg": {
             "img": "favicon-card.jpg",
             "alt": "Reuben Allik's logo"

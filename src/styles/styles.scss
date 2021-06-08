@@ -10,12 +10,6 @@ body {
     height: 100vh;
     background-color: $dark-main-color;
     font-family: 'Work Sans', sans-serif;
-    scrollbar-width: none;
-   -ms-overflow-style: none;
-   
-   ::-webkit-scrollbar {
-        display: none;
-   }
 }
 
 
@@ -23,8 +17,6 @@ body {
     width: min-content;
     height: min-content;
     position: fixed;
-    // top: 32px;
-    // left: 24px;
     top: 24px;
     left: 16px;
     z-index: 12;
@@ -55,7 +47,6 @@ body {
     top: -100%;
     right: -100%;
     position: fixed;
-    // mix-blend-mode: normal;
     isolation: isolate;
     transition: all 0.5s ease;
     z-index: 11;
@@ -159,7 +150,6 @@ body {
     height: min-content;
     text-align: right;
     box-sizing: border-box;
-    // padding: 0.8rem 2rem;
     text-decoration: none;
     cursor: pointer;
     font-size: 2.5em;
@@ -181,7 +171,6 @@ body {
     height: min-content;
     min-width: min-content;
     max-width: 100vw;
-    // left: 16px;
     left: 16px;
     bottom: 24px;
     mix-blend-mode: difference;
@@ -212,7 +201,6 @@ body {
     height: min-content;
     text-align: center;
     padding: 0 1.95rem;
-    // padding: 0.95rem 0;
     a svg {
         width: 25px;
         height: 25px;
@@ -265,10 +253,11 @@ body {
 }
 
 
+
+
 /****************** ALL SECTIONS ********************/
 .section {
-    width: 100vw;
-    height: 100vh;
+
     display: grid;
     grid-template-columns: 8px 1fr 1fr 8px;
     gap: 12px 12px;
@@ -280,6 +269,7 @@ body {
 .hero {
     background-color: $light-main-color;
     position: static;
+    height: 100vh;
     grid-template-rows: minmax(50px, 90px) 1fr 2fr 0.75fr 0.25fr;
 }
 
@@ -299,7 +289,6 @@ body {
     color: $dark-main-color;
     font-weight: 600;
     font-size: 3.4em;
-    // padding: 1rem 0 0.5rem 0;
     line-height: 1.1em;
     grid-row: 3 / 4;
     grid-column: 2 / -2;
@@ -339,7 +328,6 @@ body {
     line-height: normal;
     border: 0;
     border-radius: 30px;
-    // padding: 1rem 2.5rem;
     padding: 0.7rem 1.85rem;
     font-family: 'Work Sans', sans-serif;
     white-space: nowrap;
@@ -359,7 +347,6 @@ body {
         padding: 0.7rem 1.85rem;
         margin: -0.7rem -1.85rem;
         border-radius: 30px;
-
     }
 }
 
@@ -371,7 +358,7 @@ body {
     grid-template-rows: 1.5fr 0.25fr 1.45fr 1.6fr 0.25fr 2.5fr 0.25fr;
     grid-template-columns: 14px 0.85fr 1fr 1fr 1fr 8px;
 }
-.about-header, .about-text, .tools-header {
+.about-header, .tools-header {
     font-weight: 600;
     font-size: 1.06em;
 }
@@ -383,18 +370,14 @@ body {
     text-shadow:1px 0 0 $light-main-color,0 1px 0 $light-main-color,-1px 0 0 $light-main-color,0 -1px 0 $light-main-color;
     letter-spacing: +1px;
     text-align: start;
-    // font-size: 32px;
     align-self: start;    
 
 }
 
 .about-header {
-    // grid-row: 1 /  3;
     grid-row: 2 /  3;
     grid-column: 2 / 3;
     height: min-content;
-    // margin-top: 1rem;
-    // margin-bottom: -1rem;
 }
 
 .stuck {
@@ -417,22 +400,19 @@ body {
 }
 
 .abt-details-btn {
-    background-color: $light-main-color;
+    background-color: $dark-main-color;
     width: min-content;
     height: min-content;
-    border: 0;
+    border: 1px solid $light-main-color;
     padding: 0.6rem 1.5rem;
     white-space: nowrap;
     grid-row: 4 / 5;
-    grid-column: 2 / 4;
+    grid-column: 2 / -2;
     border-radius: 30px;
-    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: 0.8em;
-    color: $dark-main-color;
     align-self: start;
     justify-self: start;
-    text-decoration: none;
     z-index: 10;
     mix-blend-mode: difference;
     cursor: pointer;
@@ -442,8 +422,10 @@ body {
 
     a {
         text-decoration: none;
-        width: 100%;
-        height: 100%;
+        color: $light-main-color;
+        padding: 0.6rem 1.5rem;
+        margin: -0.6rem -1.5rem;
+
     }
 }
 

@@ -22,7 +22,7 @@ const About = () => {
             </p>
             
             <button className='abt-details-btn'>
-                <Link to='/about'>Details</Link>
+                <Link to='/about'>More info</Link>
             </button>
             
             <Tools />
