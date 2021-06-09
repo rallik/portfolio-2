@@ -358,16 +358,13 @@ body {
     grid-template-rows: 75px 0.45fr 1.9fr 1fr 0.45fr 2.5fr 0.35fr;
     grid-template-columns: 14px 0.85fr 1fr 1fr 1fr 8px;
 }
-.about-header, .tools-header {
-    font-weight: 600;
-    font-size: 1.06em;
-}
-
-
 
 .tools-header, .about-header {
-    color: $dark-main-color;
-    text-shadow:1px 0 0 $light-main-color,0 1px 0 $light-main-color,-1px 0 0 $light-main-color,0 -1px 0 $light-main-color;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: $light-main-color;
+    // color: $dark-main-color;
+    // text-shadow:1px 0 0 $light-main-color,0 1px 0 $light-main-color,-1px 0 0 $light-main-color,0 -1px 0 $light-main-color;
     letter-spacing: +1px;
     text-align: start;
     align-self: start;    
@@ -396,7 +393,7 @@ body {
     grid-row: 3 / 4;
     grid-column: 2 / -2;
     align-self: start;
-    line-height: 1.9em;
+    line-height: 1.8em;
     display: block;
 }
 
@@ -455,7 +452,7 @@ body {
     flex: 1 0 33%;
     width: min-content;
     height: min-content;
-    margin: 0.6rem 0;
+    margin: 0.55rem 0;
     white-space: nowrap;
     
 }
@@ -481,9 +478,11 @@ body {
 
 .projects-header {
     font-weight: 600;
-    font-size: 1.06em;
-    color: $light-main-color;
-    text-shadow:1px 0 0 $dark-main-color,0 1px 0 $dark-main-color,-1px 0 0 $dark-main-color,0 -1px 0 $dark-main-color;
+    font-size: 1.2em;
+    color: $dark-main-color;
+
+    // color: $light-main-color;
+    // text-shadow:1px 0 0 $dark-main-color,0 1px 0 $dark-main-color,-1px 0 0 $dark-main-color,0 -1px 0 $dark-main-color;
     white-space: nowrap;
     grid-column: 2 / -2;
     grid-row: 2 / 3;
@@ -576,28 +575,30 @@ body {
 
 /****************** CONTACT SECTION ********************/
 .contact {
-    height: 90vh;
+    height: 60vh;
     color: $light-main-color;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 75px 0.2fr 0.5fr 1.5fr;
 }
 
 .in-touch {
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: 600;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     grid-column: 1 / -1;
-    align-self: end;
+    align-self: start;
     padding: 0 3rem;
 }
 
 .in-touch-how {
     grid-column: 1 / -1;
-    grid-row: 2 / 3;
-    padding: 1rem 2rem 0 3rem ;
-    font-size: 1.2em;
-    line-height: 1.2em;
+    grid-row: 3 / 4;
+    align-self: start;
+
+    padding: 0 2rem 0 3rem ;
+    font-size: 1em;
+    line-height: 1.8em;
 }
 
 .send-email {
@@ -618,11 +619,11 @@ body {
     font-family: 'Work Sans', sans-serif;
     white-space: nowrap;
     font-weight: 400;
-    font-size: 1.1em;
-    align-self: start;
+    font-size: 1em;
+    align-self: center;
     justify-self: end;
     cursor: pointer;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     grid-column: 2 / 3;
 
     a {
