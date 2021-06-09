@@ -355,7 +355,7 @@ body {
 .about {
     color: $light-main-color;
     position: static;
-    grid-template-rows: 1.5fr 0.25fr 1.45fr 1.6fr 0.25fr 2.5fr 0.25fr;
+    grid-template-rows: 75px 0.45fr 1.9fr 1fr 0.45fr 2.5fr 0.35fr;
     grid-template-columns: 14px 0.85fr 1fr 1fr 1fr 8px;
 }
 .about-header, .tools-header {
@@ -376,8 +376,9 @@ body {
 
 .about-header {
     grid-row: 2 /  3;
-    grid-column: 2 / 3;
+    grid-column: 2 / -2;
     height: min-content;
+    justify-self: center;
 }
 
 .stuck {
@@ -392,9 +393,9 @@ body {
 }
 
 .about-text {
-    grid-row: 2 / 4;
-    grid-column: 3 / 6;
-    margin-top: -0.3rem;
+    grid-row: 3 / 4;
+    grid-column: 2 / -2;
+    align-self: start;
     line-height: 1.9em;
     display: block;
 }
@@ -431,33 +432,43 @@ body {
 
 .tools-header {
     grid-row: 5 / 6;
-    grid-column: 2 / 3;
+    grid-column: 2 / -2;
     align-self: start;
+    justify-self: center;
 }
 
 .tools-table {
-    grid-row: 5 / 7;
-    grid-column: 3 / 6;
-    margin-top: -0.5rem;
+    grid-row: 6 / 7;
+    grid-column: 2 / -2;
 
     tbody tr {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     
     max-width: 100vw;
 }
 
 .tools-element {
-    flex: 0 0 50%;
+    flex: 1 0 33%;
     width: min-content;
     height: min-content;
-    padding: 0.6rem 0;
-    // flex-basis: 20;
+    margin: 0.6rem 0;
     white-space: nowrap;
+    
+}
+
+.tools-element:first-child,  .tools-element:nth-child(3n-2) { 
     text-align: left;
+}
+
+.tools-element:nth-child(3n-1) {
+    text-align: center;
+}
+.tools-element:last-child, .tools-element:nth-child(3n) {
+    text-align: right;
 }
 
 /****************** PROJECTS SECTION ********************/
@@ -465,17 +476,19 @@ body {
     background-color: $light-main-color;
     color: $dark-main-color;
     grid-template-columns: 8px 1fr 1fr 1fr 1fr 8px;
-    grid-template-rows: 0.5fr 0.2fr 1.5fr 0.01fr 1.5fr 0.5fr;
+    grid-template-rows: 75px 0.45fr 2fr 0.01fr 2fr 0.5fr;
 }
 
 .projects-header {
     font-weight: 600;
     font-size: 1.06em;
+    color: $light-main-color;
+    text-shadow:1px 0 0 $dark-main-color,0 1px 0 $dark-main-color,-1px 0 0 $dark-main-color,0 -1px 0 $dark-main-color;
     white-space: nowrap;
     grid-column: 2 / -2;
     grid-row: 2 / 3;
     align-self: start;
-    justify-self: start;
+    justify-self: center;
 }
 
 .more-projects {
@@ -495,6 +508,7 @@ body {
     padding: 1.5rem;
     width: 100%;
     height: 100%;
+    min-height: 14rem;
     background-color: $card-form-gray;
     display: flex;
     flex-direction: row;
@@ -527,7 +541,7 @@ body {
 }
 
 .project-card-details-btn {
-    background-color: $light-main-color;
+    background-color: inherit;
     width: min-content;
     height: min-content;
     border: 0;
