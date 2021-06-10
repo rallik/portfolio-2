@@ -11,7 +11,7 @@ const Contact = () => {
                 </a>
                 &nbsp;or start a conversation by filling out the form (click the button below)
             </h3>
-            <button className='contact-btn'>
+            <button className='btn contact-btn'>
                 <Link to='/contact'>To form</Link>
             </button>
         </section>

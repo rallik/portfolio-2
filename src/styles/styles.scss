@@ -341,16 +341,14 @@ body {
 .about {
     color: $light-main-color;
     position: static;
-    grid-template-rows: 75px 0.45fr 1.9fr 1fr 0.45fr 2.5fr 0.35fr;
-    grid-template-columns: 14px 0.85fr 1fr 1fr 1fr 8px;
+
+    padding: 12px 14px;
 }
 
 .tools-header, .about-header {
     font-weight: 600;
     font-size: 1.2em;
     color: $light-main-color;
-    // color: $dark-main-color;
-    // text-shadow:1px 0 0 $light-main-color,0 1px 0 $light-main-color,-1px 0 0 $light-main-color,0 -1px 0 $light-main-color;
     letter-spacing: +1px;
     text-align: start;
     align-self: start;    
@@ -359,9 +357,10 @@ body {
 
 .about-header {
     grid-row: 2 /  3;
-    grid-column: 2 / -2;
+    grid-column: 1 / -1;
     height: min-content;
     justify-self: center;
+    align-self: start;
 }
 
 .stuck {
@@ -376,8 +375,8 @@ body {
 }
 
 .about-text {
-    grid-row: 3 / 4;
-    grid-column: 2 / -2;
+    grid-row: 3 / 6;
+    grid-column: 1 / -1;
     align-self: start;
     line-height: 1.8em;
     display: block;
@@ -387,8 +386,8 @@ body {
     background-color: $dark-main-color;
     border: 1px solid $light-main-color;
     padding: 0.6rem 1.5rem;
-    grid-row: 4 / 5;
-    grid-column: 2 / -2;
+    grid-row: 6 / 7;
+    grid-column: 1 / -1;
     font-size: 0.8em;
     align-self: start;
     justify-self: start;
@@ -402,15 +401,17 @@ body {
 }
 
 .tools-header {
-    grid-row: 5 / 6;
-    grid-column: 2 / -2;
-    align-self: start;
+    grid-row: -7 / -6;
+    grid-column: 1 / -1;
+    align-self: end;
     justify-self: center;
 }
 
 .tools-table {
-    grid-row: 6 / 7;
-    grid-column: 2 / -2;
+    grid-row: -6 / -2;
+    grid-column: 1 / -1;
+    align-self: end;
+
 
     tbody tr {
         display: flex;
@@ -471,7 +472,7 @@ body {
 }
 
 .project-card-list {
-    grid-column: 2 / -2;
+    grid-column: 1 / -1;
     grid-row: 3 / 6;
     display: flex;
     flex-direction: column;
@@ -524,7 +525,6 @@ body {
     justify-self: end;
     
     a {
-        text-decoration: none;
         color: $dark-main-color;
         padding: 0.5rem 1.3rem;
         margin: -0.5rem -1.3rem;
@@ -570,38 +570,22 @@ body {
 
 .contact-btn {
     background-color: $dark-main-color;
-    width: min-content;
-    height: min-content;
-    line-height: normal;
-    border: 1.5px solid;
-    border-color: $light-main-color;
+    border: 1px solid $light-main-color;
     border-radius: 30px;
-    // padding: 1rem 2.5rem;
     padding: 0.7rem 1.85rem;
-    font-family: 'Work Sans', sans-serif;
-    white-space: nowrap;
-    font-weight: 400;
     font-size: 1em;
     align-self: center;
     justify-self: end;
-    cursor: pointer;
     grid-row: 4 / 5;
     grid-column: 2 / 3;
 
     a {
-        text-decoration: none;
         color: $light-main-color;
+        padding: 0.7rem 1.85rem;
+        margin: -0.7rem -1.85rem;
     }
 }
 
-.contact-btn a {
-    text-decoration: none;
-}
-
-.contact-btn a:visited {
-    text-decoration: none;
-    color: $light-main-color;
-}
 
 
 /*******************************************************
@@ -844,11 +828,8 @@ body {
         width: 20px;
         height: 20px
     }
-    .my-name {
-        font-size: 1.8em;
-        padding: 0;
-    }
-    .what-i-do {
+
+    .hero-intro {
         font-size: 1.95em;
         align-self: start;
     }
@@ -981,14 +962,12 @@ body {
         }
 
     }
-    .my-name {
-        font-size: 2.1em;
-        padding-top: 1.5rem;
-    }
-    .what-i-do {
+
+    .hero-intro {
         font-size: 2.4em;
         align-self: center;
     }
+
     .my-work-btn {
         padding: 0.65rem 1.72rem;
         font-size: 0.7em;
