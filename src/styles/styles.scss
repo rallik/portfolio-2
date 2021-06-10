@@ -891,7 +891,7 @@ body {
         align-self: start;
     }
     .about {
-        grid-template-rows: 30px 0.25fr 2.5fr 0.75fr 0.25fr 2.5fr 0.5fr;
+        grid-template-rows: 50px 0.25fr 2.5fr 0.75fr 0.25fr 2.5fr 0.5fr;
         gap: 6px 12px;
 
     }
@@ -904,6 +904,24 @@ body {
     .about-text, .tools-table {
         padding: 0 0.1rem 0 2.8rem;
 
+    }
+
+    .projects {
+        // grid-template-columns: 8 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    .project-card-list {
+        flex-direction: row;
+    }
+
+    .project-card {
+        min-height: 7rem;
+        margin: 0 1rem 0 0;
+
+    }
+
+    .project-card:last-child {
+        margin: 0;
     }
 }
 
@@ -941,12 +959,43 @@ body {
     }
 
     .about {
-        grid-template-rows: 30px 0.25fr 2.5fr 0.75fr 0.25fr 2.5fr 0.5fr;
+        // grid-template-rows: 30px 0.25fr 2.5fr 0.75fr 0.25fr 2.5fr 0.5fr;
+        grid-template-rows: 30px 0.45fr 1fr 1fr 0.45fr 2.5fr 0.35fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 6px 12px;
     }
     .about-text, .tools-table {
-        padding: 0 3rem;
 
+    }
+
+    // .tools-element {
+    //     flex: 1 0 15%;
+    //     text-align: center;
+    // }
+
+    // .tools-element:first-child,  .tools-element:nth-child(10) { 
+    //     text-align: left;
+    // }
+    
+    // // .tools-element:nth-child(3n-1) {
+    // //     text-align: center;
+    // // }
+    // // .tools-element:last-child, .tools-element:nth-child(3n) {
+    // //     text-align: right;
+    // // }
+
+    .project-card-list {
+        flex-direction: row;
+    }
+
+    .project-card {
+        min-height: 7rem;
+        margin: 0 1rem 0 0;
+
+    }
+
+    .project-card:last-child {
+        margin: 0;
     }
 }
 
@@ -980,9 +1029,14 @@ body {
         font-size: 2.4em;
         align-self: center;
     }
-    // .my-work-btn {
-    //     align-self: start;
-    // }
+    .my-work-btn {
+        padding: 0.65rem 1.72rem;
+        font-size: 0.7em;
+        a {
+            padding: 0.65rem 1.72rem;
+            margin: -0.65rem -1.72rem;
+        }
+    }
     .about {
         gap: 6px 12px;
     }
@@ -995,6 +1049,10 @@ body {
     }
     .about-text {
         line-height: 1.6em;
+    }
+
+    .project-card {
+        min-height: 8rem;
     }
 }
 
