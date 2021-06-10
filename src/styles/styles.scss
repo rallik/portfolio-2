@@ -17,7 +17,7 @@ body {
     width: min-content;
     height: min-content;
     position: fixed;
-    top: 24px;
+    top: 32px;
     left: 16px;
     z-index: 12;
     mix-blend-mode: difference;
@@ -65,7 +65,7 @@ body {
     align-items: center;
     z-index: 12;
     position: fixed;
-    top: 16px;
+    top: 24px;
     right: 10px;
     width: 50px;
     height: 50px;
@@ -136,7 +136,7 @@ body {
 
 .nav-elements.mobile {
         // background-color: $dark-main-color;
-        background-color: #15488a;
+        background-color: $mobile-nav-blue;
         top: -20%;
         left: -20%;
         transition: all 500ms ease;
@@ -252,6 +252,23 @@ body {
     }
 }
 
+.btn {
+    width: min-content;
+    height: min-content;
+    line-height: normal;
+    border-radius: 30px;
+    white-space: nowrap;
+    font-weight: 400;
+    cursor: pointer;
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        border-radius: 30px;
+    }
+}
+
 
 
 
@@ -259,7 +276,9 @@ body {
 .section {
 
     display: grid;
-    grid-template-columns: 8px 1fr 1fr 8px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    padding: 12px 10px 12px 12px;
     gap: 12px 12px;
     // z-index: -10;
 }
@@ -270,29 +289,18 @@ body {
     background-color: $light-main-color;
     position: static;
     height: 100vh;
-    grid-template-rows: minmax(50px, 90px) 1fr 2fr 0.75fr 0.25fr;
-}
-
-.my-name {
-    color: $light-main-color;
-    text-shadow:1px 0 0 $dark-main-color,0 1px 0 $dark-main-color,-1px 0 0 $dark-main-color,0 -1px 0 $dark-main-color;
-    font-weight: 600;
-    font-size: 2.8em;
-    line-height: 1.1em;
-    align-self: end;
-    grid-row: 2 / 3;
-    grid-column: 2 / -2;
+    // grid-template-rows: minmax(50px, 90px) 1fr 2fr 0.75fr 0.25fr;
 }
 
 
-.what-i-do {
+.hero-intro {
     color: $dark-main-color;
-    font-weight: 600;
+    font-weight: 550;
     font-size: 3.4em;
-    line-height: 1.1em;
-    grid-row: 3 / 4;
-    grid-column: 2 / -2;
+    line-height: 1.05em;
     align-self: center;
+    grid-row: 3 / 10;
+    grid-column: 1 / -1;
 }
 
 .emp {
@@ -312,41 +320,19 @@ body {
     color: #15488A;
 }
 
-.opposite-b {
-    color: $dark-main-color;
-    text-shadow: none;
-}
-.opposite-w {
-    color: $light-main-color;
-    text-shadow:1px 0 0 $dark-main-color,0 1px 0 $dark-main-color,-1px 0 0 $dark-main-color,0 -1px 0 $dark-main-color;
-}
-
 .my-work-btn {
     background-color: $dark-main-color;
-    width: min-content;
-    height: min-content;
-    line-height: normal;
-    border: 0;
-    border-radius: 30px;
     padding: 0.7rem 1.85rem;
-    font-family: 'Work Sans', sans-serif;
-    white-space: nowrap;
-    font-weight: 400;
     font-size: 0.8em;
-    align-self: end;
+    align-self: start;
     justify-self: end;
-    cursor: pointer;
-    grid-row: 4 / 5;
-    grid-column: 3 / 4;
+    grid-row: -3 / -2;
+    grid-column: 1 / -1;
 
     a {
-        text-decoration: none;
         color: $light-main-color;
-        display: inline-block;
-        position: relative;
         padding: 0.7rem 1.85rem;
         margin: -0.7rem -1.85rem;
-        border-radius: 30px;
     }
 }
 
@@ -399,27 +385,15 @@ body {
 
 .abt-details-btn {
     background-color: $dark-main-color;
-    width: min-content;
-    height: min-content;
     border: 1px solid $light-main-color;
     padding: 0.6rem 1.5rem;
-    white-space: nowrap;
     grid-row: 4 / 5;
     grid-column: 2 / -2;
-    border-radius: 30px;
-    font-weight: 400;
     font-size: 0.8em;
     align-self: start;
     justify-self: start;
-    z-index: 10;
-    mix-blend-mode: difference;
-    cursor: pointer;
-    word-wrap: break-word;
-    display: block;
-    // margin: 20px 0;
 
     a {
-        text-decoration: none;
         color: $light-main-color;
         padding: 0.6rem 1.5rem;
         margin: -0.6rem -1.5rem;
@@ -541,31 +515,19 @@ body {
 
 .project-card-details-btn {
     background-color: inherit;
-    width: min-content;
-    height: min-content;
-    border: 0;
     padding: 0.5rem 1.3rem;
-    white-space: nowrap;
     grid-row: 4 / 5;
     grid-column: 2 / 4;
-    border-radius: 30px;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
     font-size: 0.8em;
     border: 1px solid $dark-main-color;
     align-self: end;
     justify-self: end;
-    z-index: 10;
-    cursor: pointer;
-    word-wrap: break-word;
-    display: block;
-    // margin: 20px 0;
-
+    
     a {
         text-decoration: none;
         color: $dark-main-color;
-        width: 100%;
-        height: 100%;
+        padding: 0.5rem 1.3rem;
+        margin: -0.5rem -1.3rem;
     }
 }
 
@@ -947,16 +909,13 @@ body {
     .nav-element-li:last-child {
         padding-bottom: 0;
     }
-    .my-name {
-        font-size: 2.3em;
+    
+    .hero-intro {
+        font-size: 2.9em;
         align-self: end;
-        padding: 0.3rem 0 0 0;
+        padding: 0 0 0 0.4rem;
     }
-    .what-i-do {
-        font-size: 2.8em;
-        align-self: start;
-        // padding: 0 4.2rem 0 4.6rem;
-    }
+
 
     .about {
         // grid-template-rows: 30px 0.25fr 2.5fr 0.75fr 0.25fr 2.5fr 0.5fr;
@@ -983,6 +942,7 @@ body {
     // // .tools-element:last-child, .tools-element:nth-child(3n) {
     // //     text-align: right;
     // // }
+    
 
     .project-card-list {
         flex-direction: row;

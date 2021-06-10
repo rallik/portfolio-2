@@ -15,7 +15,7 @@ const Card = ({ data }) => {
         <article className='project-card'>
             <div className='project-card-info-wrapper'>
                 <h3 className='project-card-head'>{title}</h3>
-                <button className='project-card-details-btn'>
+                <button className='btn project-card-details-btn'>
                     <Link to={`/projects/${slug}/`}>Details</Link>
                 </button>
             </div>

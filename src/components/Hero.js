@@ -7,17 +7,17 @@ import { Link, graphql } from 'gatsby';
 const Hero = () => {
     return (
         <section className='section hero'>
-            <h3 className='my-name'>
-                Hi<span className='opposite-b'>,</span> my name is Reuben Allik<span className='opposite-b'>.</span>
-            </h3>
-            <h2 className='what-i-do'>
+            <h2 className='hero-intro'>
+                Hello! I'm Reuben Allik.<br/>
                 I build
-                <strong className='emp fast'> fast</strong><span className='opposite-w'>,</span>
-                <strong className='emp resp'> responsive</strong><span className='opposite-w'> &#38;</span> 
-                <strong className='emp access'> accessible </strong> 
-                interfaces for the web<span className='opposite-w'>.</span>
+                <strong className='emp fast'> fast</strong>,
+                <strong className='emp resp'> responsive</strong> &#38;
+                <strong className='emp access'> accessible </strong>
+                <strong className="emp">interfaces </strong>
+                for the
+                <strong className="emp"> web</strong>.
             </h2>
-            <button className='my-work-btn'>
+            <button className='btn my-work-btn'>
                 <Link className='btn-link' to='/projects/'>My work</Link>
             </button>
         </section>

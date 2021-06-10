@@ -9,7 +9,7 @@ const Projects = (props) => {
             <h2 className='projects-header'>Recent Projects</h2>
             <ProjectCards {...props}/>
             
-            <button className='more-projects my-work-btn'>
+            <button className='btn more-projects my-work-btn'>
                 <Link to='/projects/'>All projects</Link>
             </button>
         </section>
