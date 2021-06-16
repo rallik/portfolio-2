@@ -1031,11 +1031,11 @@ body {
     }
    
     .section {
-        grid-template-columns: 32px 1fr 1fr 32px;
+        // grid-template-columns: 32px 1fr 1fr 32px;
         gap: 16px;
     }
     .hero {
-        grid-template-rows: minmax(50px, 120px) 1fr 2fr 0.75fr 0.25fr;
+        // grid-template-rows: minmax(50px, 120px) 1fr 2fr 0.75fr 0.25fr;
 
     }
     
@@ -1146,12 +1146,12 @@ body {
     }
 
     .section {
-        grid-template-columns: 8px 1fr 1fr 8px;
+        // grid-template-columns: 8px 1fr 1fr 8px;
         gap: 10px;
     }
 
     .hero {
-        grid-template-rows: 110px 0.8fr 1.05fr 0.75fr 14px;
+        // grid-template-rows: 110px 0.8fr 1.05fr 0.75fr 14px;
 
     }
 
@@ -1289,14 +1289,10 @@ body {
 
 
 @media screen and (min-width: 2560px) {
-    .my-name {
-        font-size: 6.5em;
-        padding-top: 0;
+    .hero-intro {
+        font-size: 9.2em;
     }
-    .what-i-do {
-        font-size: 8.9em;
-        
-    }
+
 
     
 }
