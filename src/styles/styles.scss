@@ -1171,9 +1171,10 @@ body {
 
     .hero-intro {
         grid-row: 4 / 10;
+        grid-column: 2 / 6;
         align-self: center;
-        font-size: 3.5em;
-        margin: 0 2em 0 3em;    
+        font-size: 3.8vw;
+        // margin: 0 2em 0 3em;    
     }
 
     .my-work-btn {
@@ -1197,6 +1198,9 @@ body {
         font-size: 1.3em;
     }
 
+    .about-header, .about-text {
+
+    }
 
     .project-card-list {
         flex-direction: row;
@@ -1213,65 +1217,65 @@ body {
 }
 
 @media screen and (min-width: 1366px) {
-    .my-name {
-        font-size: 4em;
-    }
-    .what-i-do {
-        font-size: 4.6em;
+    // .my-name {
+    //     font-size: 4em;
+    // }
+    // .what-i-do {
+    //     font-size: 4.6em;
         
-    }
+    // }
 }
 
 
 @media screen and (min-width: 1440px) {
-    .my-name {
-        font-size: 4.2em;
-    }
-    .what-i-do {
-        font-size: 5em;
+    // .my-name {
+    //     font-size: 4.2em;
+    // }
+    // .what-i-do {
+    //     font-size: 5em;
         
-    }
+    // }
 }
 
 @media screen and (min-width: 1536px) {
-    .my-name {
-        font-size: 4.5em;
-    }
-    .what-i-do {
-        font-size: 5.5em;
-    }
+    // .my-name {
+    //     font-size: 4.5em;
+    // }
+    // .what-i-do {
+    //     font-size: 5.5em;
+    // }
 }
 @media screen and (min-width: 1648px) {
-    .my-name {
-        font-size: 4.75em;
-    }
-    .what-i-do {
-        font-size: 6em;
-    }
+    // .my-name {
+    //     font-size: 4.75em;
+    // }
+    // .what-i-do {
+    //     font-size: 6em;
+    // }
 }
 
 @media screen and (min-width: 1753px) {
     .my-name {
-        font-size: 5em;
+        // font-size: 5em;
     }
     .what-i-do {
-        font-size: 6.4em;
+        // font-size: 6.4em;
     }
 }
 
 @media screen and (min-width: 1920px) {
     .my-name {
-        font-size: 5.5em;
+        // font-size: 5.5em;
         padding-top: 0;
     }
     .what-i-do {
-        font-size: 7em;
+        // font-size: 7em;
         
     }
 }
 @media screen and (min-width: 2045px) {
     .hero-intro {
-        font-size: 8.2em;
+        // font-size: 8.2em;
         // margin: 0 0 0 -0.45rem;
 
     }
@@ -1279,8 +1283,8 @@ body {
 
 @media screen and (min-width: 2175px) {
     .hero-intro {
-        // font-size: 8.8em;
-        // margin: 0 0 0 -0.45rem;
+        // font-size: 5.2em;
+
 
     }
 }
@@ -1288,8 +1292,7 @@ body {
 
 @media screen and (min-width: 2560px) {
     .hero-intro {
-        font-size: 7em;
-        margin: 0 2em 0 3em;
+        // font-size: 4.4vw;
     }
 
 

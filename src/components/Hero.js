@@ -11,7 +11,7 @@ const Hero = () => {
                 Hello! I'm Reuben Allik.<br/>
                 I build
                 <strong className='emp fast'> fast</strong>,
-                <strong className='emp resp'> responsive</strong> &#38;
+                <strong className='emp resp'> responsive</strong> &#38; <br/>
                 <strong className='emp access'> accessible </strong>
                 <strong className="emp">interfaces </strong>
                 for the
