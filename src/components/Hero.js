@@ -8,10 +8,11 @@ const Hero = () => {
     return (
         <section className='section hero'>
             <h2 className='hero-intro'>
-                Hello! I'm Reuben Allik.<br/>
+                <span className='intro-first-line'>Hello! I'm </span>
+                Reuben Allik. <br/>
                 I build
                 <strong className='emp fast'> fast</strong>,
-                <strong className='emp resp'> responsive</strong> &#38; <br/>
+                <strong className='emp resp'> responsive</strong> &#38;
                 <strong className='emp access'> accessible </strong>
                 <strong className="emp">interfaces </strong>
                 for the
