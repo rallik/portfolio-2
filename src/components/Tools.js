@@ -20,7 +20,7 @@ const Tools = () => {
 
     return (
         <React.Fragment>
-            <h3 className='tools-header'>Tools</h3>
+            <h3 className='tools-header heading-t'>Tools</h3>
 
             {/* <h3 className='tools-header' ref={aboutRef}>Tools</h3> */}
             {/* <h3 className={isSticky ? 'tools-header stuck' : 'tools-header unstuck'} >Tools</h3> */}

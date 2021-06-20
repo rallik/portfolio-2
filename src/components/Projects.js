@@ -6,10 +6,10 @@ const Projects = (props) => {
     console.log(props)
     return (
         <section className="section projects">
-            <h2 className='projects-header'>Recent Projects</h2>
+            <h2 className='projects-header heading-t'>Recent Projects</h2>
             <ProjectCards {...props}/>
             
-            <button className='btn more-projects my-work-btn'>
+            <button className='btn my-work-btn more-projects'>
                 <Link to='/projects/'>All projects</Link>
             </button>
         </section>

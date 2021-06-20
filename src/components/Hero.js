@@ -8,7 +8,7 @@ const Hero = () => {
     return (
         <section className='section hero'>
             <h2 className='hero-intro'>
-                <span className='intro-first-line'>Hello! I'm </span>
+                <span className='name'>Hello! I'm </span>
                 Reuben Allik. <br/>
                 I build
                 <strong className='emp fast'> fast</strong>,

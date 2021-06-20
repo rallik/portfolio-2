@@ -9,7 +9,7 @@ const About = () => {
         <section className='section about'>
             {/* <h2 className={isSticky ? 'about-header stuck' : 'about-header unstuck'}
             > */}
-            <h2 className='about-header unstuck'>
+            <h2 className='about-header heading-t unstuck'>
                 About
             </h2>
             {/* <p className='about-text' ref={aboutRef}> */}
