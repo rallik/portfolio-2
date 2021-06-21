@@ -4,6 +4,8 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from '../layouts/layout'
 import '../styles/styles.scss'
 
+const resumelink = '../assets/images/favicon.png'
+
 
 
 const about = ({ data, location }) => {
@@ -20,6 +22,9 @@ const about = ({ data, location }) => {
                         Nesciunt incidunt placeat ipsa recusandae odit ea, fugit ipsam quas, eaque eius iste temporibus at soluta magni atque rem magnam praesentium a. Consectetur vero sint obcaecati accusantium at repudiandae necessitatibus?
                         Dolore corporis aperiam dolor adipisci vero repudiandae, officiis expedita soluta? Delectus ullam iste necessitatibus! Rerum, dolore. Quo debitis doloremque nisi ea sunt, eveniet impedit incidunt. Animi cumque ipsum et ratione.</p>
                     </div>
+                    <button className='btn resume-btn'>
+                        <a href={resumelink}>Resume</a>
+                    </button>
                 </section>
             </Layout>
         </main>

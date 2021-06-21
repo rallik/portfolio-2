@@ -10,9 +10,7 @@ const contact = ({ location }) => {
         <main>
             <Layout location={location}>
                 <section className='section contact-page'>
-                    <div className='box-upper'></div>
-                    <h1 className='contact-page-head'>Say hello</h1>
-                    <div className='box-lower'></div>
+                    <h1 className='heading-t contact-page-head'>Say hello</h1>
                     <Form />
                 </section>
             </Layout>

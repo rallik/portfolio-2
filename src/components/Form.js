@@ -36,10 +36,10 @@ const Form = () => {
     //TODO error checking successful submit
     if (sent) {
       return (
-        <section className="contact-form">
+        <section className="contact-form submit-sucess">
           
-          <h2>Thanks for reaching out!</h2>
-          <button className="send-again-btn" onClick={() => setSent(false)}>Send another</button>
+          <h2 className='submit-msg'>Thanks for reaching out!</h2>
+          <button className="btn send-again-btn" onClick={() => setSent(false)}>Send another</button>
 
         </section>
         );
@@ -83,7 +83,7 @@ const Form = () => {
               </label>
             </p>
             <p className='form-submit'>
-              <button className="submit-btn" type="submit">Send</button>
+              <button className="btn submit-btn" type="submit">Send</button>
             </p>
           </form>
         </section>
