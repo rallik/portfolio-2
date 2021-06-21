@@ -284,10 +284,9 @@ body {
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: 50px 50px repeat(10, 1fr);
     padding: 12px;
     gap: 12px 12px;
-    // z-index: -10;
 }
 
 /****************** HERO SECTION ********************/
@@ -296,7 +295,6 @@ body {
     background-color: $light-main-color;
     position: static;
     height: 100vh;
-    // grid-template-rows: minmax(50px, 90px) 1fr 2fr 0.75fr 0.25fr;
 }
 
 
@@ -449,7 +447,6 @@ body {
 .projects {
     background-color: $light-main-color;
     color: $dark-main-color;
-
 }
 
 .projects-header {
@@ -475,9 +472,13 @@ body {
 
 .project-card-list {
     grid-column: 2 / -2;
-    grid-row: 3 / -3;
+    grid-row: 3 / -1;
     display: flex;
     flex-direction: column;
+}
+
+.home-list {
+    min-height: max-content;
 }
 
 .project-card {
@@ -492,9 +493,15 @@ body {
     flex: 0 1 50%;
 }
 
-// .project-card:first-child {
-//     margin-bottom: 1rem;
-// }
+.home-card {
+    min-height: 12rem;
+}
+
+.home-card:last-child {
+    margin-bottom: 50%;
+}
+
+
 .project-card-info-wrapper {
     display: flex;
     flex-direction: column;
@@ -510,7 +517,6 @@ body {
 
 .project-card-mockup {
     height: 100%;
-    max-height: 10rem;
     width: 40%;
     align-self: center;
     border-radius: 10px;
@@ -542,7 +548,6 @@ body {
     height: 60vh;
     color: $light-main-color;
     display: grid;
-
 }
 
 .in-touch {
@@ -655,7 +660,7 @@ body {
 /******************** Contact Page *********************/
 .contact-page {
     background-color: $light-main-color;
-    padding: 0;
+    height: 100vh;
 }
 
 .contact-page-head {
@@ -665,6 +670,12 @@ body {
     justify-self: center;
     align-self: center;
     color: $dark-main-color;
+}
+
+
+
+.contact-form, .form-input {
+    max-width: 22em;
 }
 
 .contact-form {
@@ -808,7 +819,7 @@ body {
 
 
 // iPhone 5/SE landscape
-@media screen and (max-height:321px) and (min-height: 300px) {
+@media screen and (max-height:321px) and (min-height: 300px) and (orientation: landscape) {
     .logo {
         width: 42px;
         height: 42px;
@@ -838,6 +849,7 @@ body {
         width: 20px;
         height: 20px
     }
+
 
     .hero-intro {
         font-size: 1.5em;
@@ -1008,6 +1020,14 @@ body {
 
     }
 
+    .section {
+        grid-template-rows: 32px 32px repeat(1fr, 10);
+    }
+
+    .heading-t {
+        font-size: 1em;
+    }
+
     .hero-intro {
         font-size: 2em;
         align-self: center;
@@ -1024,13 +1044,13 @@ body {
     .about {
         gap: 6px 12px;
     }
-    .about-header, .tools-header {
-        margin-top: -5px;
-    }
-    .about-header, .about-text, .tools-header, .tools-element {
-        font-weight: 400;
+
+
+    .about-text, .tools-element {
         font-size: 0.85em;
     }
+
+
     .about-text {
         line-height: 1.6em;
     }
@@ -1041,6 +1061,10 @@ body {
 
     .project-card {
         min-height: 8rem;
+    }
+
+    .contact {
+        height: 30em;
     }
 }
 

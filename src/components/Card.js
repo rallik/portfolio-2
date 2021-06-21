@@ -4,7 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
 
-const Card = ({ data }) => {
+const Card = ({ data, page }) => {
     const cardImg = getImage(data.childImageSharp)
     console.log(cardImg)
 
@@ -12,7 +12,7 @@ const Card = ({ data }) => {
     const slug = id;
 
     return (
-        <article className='project-card'>
+        <article className={page ? 'project-card' : 'home-card project-card'}>
             <div className='project-card-info-wrapper'>
                 <h3 className='project-card-head'>{title}</h3>
                 <button className='btn project-card-details-btn'>
