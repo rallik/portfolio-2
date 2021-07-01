@@ -72,8 +72,8 @@ body {
     mix-blend-mode: difference;
 
     .nav-icon-svg {
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
         position: absolute;
         overflow: visible;
     }
@@ -333,7 +333,7 @@ body {
     align-self: start;
     justify-self: end;
     grid-row: -3 / -2;
-    grid-column: 1 / -1;
+    grid-column: 2 / -1;
 
     a {
         color: $light-main-color;
