@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "portfolio",
-    siteUrl: "http://localhost:9000/"
+    title: "Reuben Allik",
+    description: "Boston-based frontend developer who specializes in building responsive and acessible web experiences",
+    siteUrl: "http://localhost:9000/",
+    image: '/socialshare.png'
   },
   plugins: [
     "gatsby-plugin-image",
