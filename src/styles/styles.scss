@@ -447,7 +447,6 @@ body {
 .projects {
     background-color: $light-main-color;
     color: $dark-main-color;
-    max-height: 100vh;
 }
 
 .projects-header {
@@ -1285,6 +1284,20 @@ body {
     }
 }
 
+@media screen and (min-width: 600px) and (orientation: landscape) {
+    .project-card-list {
+        flex-direction: row;
+    }
+
+    .project-card {
+        margin: 0 1.5rem 0 0;
+    }
+
+    .project-card:last-child {
+        margin-right: 0;
+    }
+}
+
 //MB Pro 13
 @media screen and (min-width: 1025px) and (min-height: 630px) {
     .header {
@@ -1430,16 +1443,8 @@ body {
         grid-row: 8 / -2;
     }
 
-    .project-card-list {
-        flex-direction: row;
-    }
-
-    .project-card {
-        margin: 0 1.5rem 0 0;
-    }
-
-    .project-card:last-child {
-        margin-right: 0;
+    .projects {
+        max-height: 100vh;
     }
 
     .in-touch-how {
