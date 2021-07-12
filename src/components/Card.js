@@ -1,6 +1,10 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import GithubLogo from '../assets/svg/github.svg'
+import ExternalLink from '../assets/svg/external.svg'
+
+
 
 
 
@@ -15,6 +19,10 @@ const Card = ({ data, page }) => {
         <article className={page ? 'project-card' : 'home-card project-card'}>
             <div className='project-card-info-wrapper'>
                 <h3 className='project-card-head'>{title}</h3>
+                <GithubLogo>
+
+                </GithubLogo>
+                <ExternalLink></ExternalLink>
                 <button className='btn project-card-details-btn'>
                     <Link to={`/projects/${slug}/`}>Details</Link>
                 </button>
