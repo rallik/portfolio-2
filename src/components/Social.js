@@ -11,7 +11,7 @@ const Social = ({name}) => {
 
     // const handleClick = () => {
     //     setClicked(!clicked);
-    //     // console.log(clicked)
+    //     // console.log(clicked);
     // }
     // const { name } = props;
 
