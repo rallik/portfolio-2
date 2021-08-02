@@ -11,20 +11,27 @@ const resumelink = '../assets/images/favicon.png'
 const about = ({ data, location }) => {
     console.log(data)
     const headshot = getImage(data.headshot);
+    const about = data.about.nodes;
+    
     return (
         <main>
             <Layout location={location}>
                 <section className='section about-page'>
                     <h1 className='about-page-head heading-t'>About me</h1>
-                    <GatsbyImage className="headshot" image={headshot} alt="headshot" objectFit="contain"/>
-                    <div className="about-page-text">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ullam illo quasi esse quis est a, cum harum quisquam tempora soluta autem consequatur veniam iste magnam, blanditiis, quo vero? Modi?
-                        Nesciunt incidunt placeat ipsa recusandae odit ea, fugit ipsam quas, eaque eius iste temporibus at soluta magni atque rem magnam praesentium a. Consectetur vero sint obcaecati accusantium at repudiandae necessitatibus?
-                        Dolore corporis aperiam dolor adipisci vero repudiandae, officiis expedita soluta? Delectus ullam iste necessitatibus! Rerum, dolore. Quo debitis doloremque nisi ea sunt, eveniet impedit incidunt. Animi cumque ipsum et ratione.</p>
-                    </div>
+                    <GatsbyImage className="headshot" image={headshot} alt="headshot" objectFit="contain" />
                     <button className='btn resume-btn'>
                         <a href={resumelink}>Resume</a>
                     </button>
+                    <div className="about-page-text">
+                        {
+                            about.map((para) => {
+                                return (
+                                    <p className='about-page-p' key={para.id}>{para.p}</p>
+                                );
+                            })
+                        }
+                    </div>
+                    
                 </section>
             </Layout>
         </main>
@@ -34,10 +41,16 @@ const about = ({ data, location }) => {
 export const query = graphql`
   {
     headshot: file(relativePath: {eq: "headshot.jpg"}) {
-        childImageSharp {
-          gatsbyImageData
-        }
+      childImageSharp {
+        gatsbyImageData
       }
+    }
+    about: allAboutJson {
+      nodes {
+        id
+        p
+      }
+    }
   }
 `
 

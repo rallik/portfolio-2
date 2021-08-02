@@ -629,13 +629,19 @@ body {
 .headshot {
     grid-row: 3 / 6;
     grid-column: 2 / -2;
-    max-width: 1600px;
+    max-width: 500px;
     justify-self: center;
 }
 
 .about-page-text {
-    grid-row: -7 / -1;
+    grid-row: 6 / -3;
     grid-column: 2 / -2;
+    max-width: 845px;
+    justify-self: center;
+}
+
+.about-page-p {
+    margin: 1rem 0;
 }
 
 .resume-btn {
