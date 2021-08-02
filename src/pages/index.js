@@ -26,6 +26,9 @@ export const query = graphql`
     nodes {
       id
       title
+      subtitle
+      gitlink
+      livelink
       cardimg {
         alt
         img
@@ -33,6 +36,14 @@ export const query = graphql`
       tooltags {
         tag
       }
+      otherimg {
+        alt
+        img
+      }
+      description {
+        p
+      }
+      nextsteps
     }
   }
   cardImgs: allFile(filter: {name: {glob: "*home*"}}) {

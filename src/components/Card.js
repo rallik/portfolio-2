@@ -12,17 +12,27 @@ const Card = ({ data, page }) => {
     const cardImg = getImage(data.childImageSharp)
     console.log(cardImg)
 
-    const { id, title, tooltags, gitlink, cardimg: { alt } } = data;
+    const { id, title, tooltags, gitlink, livelink, cardimg: { alt } } = data;
     const slug = id;
 
     return (
         <article className={page ? 'project-card' : 'home-card project-card'}>
             <div className='project-card-info-wrapper'>
                 <h3 className='project-card-head'>{title}</h3>
-                <a className='card-github-link' href={gitlink}>
-                    <GithubLogo/>
-                </a>
-                <ExternalLink></ExternalLink>
+                <ul className="card-external-links">
+                    <li className="card-external-links-li">
+                        <a href={gitlink} className='card-github-link'>
+                            <GithubLogo/>
+                        </a>
+                    </li>
+                    <li className="card-external-links-li">
+                        <a href={livelink} className="card-live-link">
+                            <ExternalLink />
+                        </a>
+                    </li>
+                </ul>
+
+
                 <button className='btn project-card-details-btn'>
                     <Link to={`/projects/${slug}/`}>Details</Link>
                 </button>

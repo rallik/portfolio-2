@@ -23,18 +23,30 @@ const projects = ({ location, data }) => {
 export const query = graphql`
 {
   projectCards: allProjectsJson {
-    nodes {
-      id
-      title
-      cardimg {
-        alt
-        img
-      }
-      tooltags {
-        tag
+      nodes {
+        id
+        title
+        subtitle
+        gitlink
+        livelink
+        cardimg {
+          alt
+          img
+        }
+        tooltags {
+          tag
+        }
+        otherimg {
+          alt
+          img
+        }
+        description {
+          p
+        }
+        nextsteps
       }
     }
-  }
+  
   cardImgs: allFile(filter: {name: {glob: "*card*"}}) {
     nodes {
       base

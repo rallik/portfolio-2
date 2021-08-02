@@ -5,7 +5,7 @@
         "subtitle": "Save $20+ on parking in Boston, MA",
         "onhome": true,
         "gitlink": "https://github.com/rallik/boston-metered-parking",
-        "livelink": "",
+        "livelink": "https://github.com/rallik/",
         "cardimg":
             {
                 "img": "meterfinder-card-home.jpg",
@@ -46,7 +46,7 @@
         "subtitle": "Ensure perfect weather for every shot",
         "onhome": true,
         "gitlink": "https://github.com/rallik/weatherapp-react",
-        "livelink": "",
+        "livelink": "https://github.com/rallik/",
         "cardimg":
         {
             "img": "photoweather-card-home.jpg",
@@ -88,12 +88,12 @@
         "nextsteps": "Glossier palo santo succulents four dollar toast vice sartorial. Food truck meggings flexitarian readymade cornhole lomo kitsch ugh asymmetrical 8-bit."
     },
     {
-        "id": "portfolio2",
-        "title": "Portfolio2",
-        "subtitle": "Second itteration of my portfolio",
+        "id": "portfolio",
+        "title": "Portfolio",
+        "subtitle": "View the different itterations of my portfolio",
         "onhome": false,
-        "gitlink": "https://github.com/rallik/portfolio-2",
-        "livelink": "",
+        "gitlink": "https://github.com/users/rallik/projects/1#column-15384212",
+        "livelink": "https://github.com/rallik",
         "cardimg": {
             "img": "favicon-card.jpg",
             "alt": "Reuben Allik's logo"
@@ -104,8 +104,17 @@
                 "tag": "Gatsby"
             },
             {
-                "tag": "Sass (SCSS)"
-            }
+                "tag": "Sass"
+            },
+            {
+                "tag": "Javascript"
+            },
+            {
+                "tag": "HTML"
+            },
+            {
+                "tag": "CSS"
+            }            
         ],
         "otherimg": [
             {
