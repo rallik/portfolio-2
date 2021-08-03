@@ -615,6 +615,7 @@ body {
 /******************** About Page *********************/
 .about-page {
     background-color: $light-main-color;
+    min-height: 100vh;
 }
 
 .about-page-head {
@@ -629,7 +630,7 @@ body {
 .headshot {
     grid-row: 3 / 6;
     grid-column: 2 / -2;
-    max-width: 500px;
+    max-width: 325px;
     justify-self: center;
 }
 
@@ -644,12 +645,32 @@ body {
     margin: 1rem 0;
 }
 
+.about-page .social-links.mobile {
+    grid-column: 2 / -2;
+    grid-row: -2 / -1;
+    align-self: flex-start;
+    position: static;
+    left: 0;
+    width: auto;
+    min-width: auto;
+
+    .social-links-list {
+        max-width: inherit;
+        justify-content: space-between;
+    }
+
+    .social-links-list .social-links-el {
+        width: min-content;
+        padding: 0;
+    }
+}
+
 .resume-btn {
     background-color: $dark-main-color;
     padding: 0.7rem 1.85rem;
     align-self: center;
     justify-self: start;
-    grid-row: -3 / -1;
+    grid-row: -3 / -2;
     grid-column: 2 / -2;
 
     a {
@@ -1196,6 +1217,15 @@ body {
     .contact {
         height: 30em;
     }
+
+    // .headshot {
+    //     grid-row: 3 / 6;
+    //     align-self: flex-start;
+    // }
+
+    // .about-page-text {
+    //     grid-row: 6 / -2;
+    // }
 }
 
 // galaxy s5 portrait
@@ -1410,9 +1440,43 @@ body {
         max-height: 100vh;
     }
 
+    .contact {
+        height: 55vh;
+    }
+
     .in-touch-how {
         margin: 0 auto;
     }
+
+
+    .about-page-text, .headshot {
+        grid-row: 3 / -3;
+        align-self: flex-start;
+    }
+
+    .about-page-text {
+        grid-column: 2 / 6;
+        justify-self: flex-start;
+    }
+
+    .about-page-p {
+        margin-right: 0.2rem;
+    }
+
+    .about-page-p:first-child {
+        margin-top: 0;
+    }
+
+    .headshot {
+        grid-column: 6 / -2;
+    }
+
+    .resume-btn {
+        margin-top: 1rem;
+        grid-row: 10 / -2;
+        align-self: center;
+    }
+    
 
 }
 
@@ -1420,6 +1484,14 @@ body {
     .hero-intro {
         font-size: 3.4em;
         max-width: 950px; 
+    }
+
+    .about-page-p {
+        // margin-right: 2rem;
+    }
+
+    .resume-btn {
+        margin-top: 0;
     }
 }
 

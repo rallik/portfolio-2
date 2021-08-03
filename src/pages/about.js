@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from '../layouts/layout'
+import Social from '../components/Social'
 import '../styles/styles.scss'
 
 const resumelink = '../assets/images/favicon.png'
@@ -19,9 +20,6 @@ const about = ({ data, location }) => {
                 <section className='section about-page'>
                     <h1 className='about-page-head heading-t'>About me</h1>
                     <GatsbyImage className="headshot" image={headshot} alt="headshot" objectFit="contain" />
-                    <button className='btn resume-btn'>
-                        <a href={resumelink}>Resume</a>
-                    </button>
                     <div className="about-page-text">
                         {
                             about.map((para) => {
@@ -31,7 +29,10 @@ const about = ({ data, location }) => {
                             })
                         }
                     </div>
-                    
+                    <button className='btn resume-btn'>
+                        <a href={resumelink}>Resume</a>
+                    </button>
+                    <Social name={'social-links mobile'}/>
                 </section>
             </Layout>
         </main>
