@@ -8,7 +8,7 @@ const contact = ({ location }) => {
     console.log(location)
     return (
         <main>
-            <Layout location={location}>
+            <Layout location={location} title={'Get in Touch with Reuben Allik'}>
                 <section className='section contact-page'>
                     <h1 className='heading-t contact-page-head'>Say hello</h1>
                     <Form />

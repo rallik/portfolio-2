@@ -10,7 +10,7 @@ const projects = ({ location, data }) => {
     console.log(data)
     return (
         <main>
-            <Layout location={location}>
+        <Layout location={location} title={"Reuben Allik's Projects"}>
                 <section className='section projects-page'>
                     <h1 className='projects-p-header heading-t'>Projects</h1>
                     <ProjectCards location={location} data={data}/>

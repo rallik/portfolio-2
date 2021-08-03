@@ -16,7 +16,7 @@ const about = ({ data, location }) => {
     
     return (
         <main>
-            <Layout location={location}>
+            <Layout location={location} title={'About Reuben Allik'}>
                 <section className='section about-page'>
                     <h1 className='about-page-head heading-t'>About me</h1>
                     <GatsbyImage className="headshot" image={headshot} alt="headshot" objectFit="contain" />

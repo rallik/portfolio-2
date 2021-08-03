@@ -13,7 +13,7 @@ const ProjectTemplate = (props) => {
 
     return (
         <main>
-            <Layout location={location}>
+        <Layout location={location} title={`${project.title}: by Reuben Allik`} description={project.subtitle}>
                 <section className='section individual-proj'>
                 <h1 className='heading-t individual-proj-head'>{project.title}</h1>
                 <h2 className='individual-proj-sub'>{project.subtitle}</h2>
