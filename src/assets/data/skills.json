@@ -1,62 +1,92 @@
 [
     {
-        "id": 1,
-        "skill": "Javascript"
-    },
-    {
-        "id": 2,
-        "skill": "React"
-    },
-    {
-        "id": 3,
-        "skill": "Gatsby"
-    },
-    {
-        "id": 4,
-        "skill": "HTML5"
-    },
-    {
-        "id": 5,
-        "skill": "CSS3"
-    },
-    {
-        "id": 6,
-        "skill": "Sass"
-    },
-    {
-        "id": 7,
-        "skill": "Leaflet"
-    },
-    {
-        "id": 8,
-        "skill": "Mapbox"
-    },
-    {
-        "id": 9,
-        "skill": "ThreeJS"
-    },
-    {
-        "id": 10,
-        "skill": "Webpack"
-    },
-    {
-        "id": 11,
-        "skill": "NPM"
-    },
-    {
-        "id": 12,
-        "skill": "Git/Github"
-    },
-    {
-        "id": 13,
-        "skill": "Netlify"
-    },
-    {
-        "id": 14,
-        "skill": "AWS"
-    },
-    {
-        "id": 15,
-        "skill": "Figma"
+        "skills": [
+            {
+                "id": 1,
+                "skill": "Javascript"
+            },
+            {
+                "id": 2,
+                "skill": "React"
+            },
+            {
+                "id": 3,
+                "skill": "Gatsby"
+            },
+            {
+                "id": 4,
+                "skill": "HTML5"
+            },
+            {
+                "id": 5,
+                "skill": "CSS3"
+            },
+            {
+                "id": 6,
+                "skill": "Sass"
+            },
+            {
+                "id": 7,
+                "skill": "Git/Github"
+            },
+            {
+                "id": 8,
+                "skill": "NPM"
+            },
+            {
+                "id": 9,
+                "skill": "Leaflet"
+            },
+            {
+                "id": 10,
+                "skill": "Mapbox"
+            },
+            {
+                "id": 11,
+                "skill": "Webpack"
+            },
+            {
+                "id": 12,
+                "skill": "Figma"
+            }
+        ],
+        "new_skills": [
+            {
+                "id": 1,
+                "skill": "NodeJS"
+            },
+            {
+                "id": 2,
+                "skill": "GraphQL"
+            },
+            {
+                "id": 3,
+                "skill": "Python"
+            },
+            {
+                "id": 4,
+                "skill": "SQL"
+            },
+            {
+                "id": 5,
+                "skill": "Java"
+            },
+            {
+                "id": 6,
+                "skill": "ThreeJS"
+            },
+            {
+                "id": 7,
+                "skill": "Netlify"
+            },
+            {
+                "id": 8,
+                "skill": "AWS"
+            },
+            {
+                "id": 9,
+                "skill": "Postman"
+            }
+        ]
     }
 ]

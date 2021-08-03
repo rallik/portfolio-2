@@ -13,9 +13,8 @@ const About = () => {
                 About
             </h2>
             {/* <p className='about-text' ref={aboutRef}> */}
-            <p className='about-text'>
-                I'm a Boston-based Front-end developer,
-                currently seeking opportunities in the field.
+            <p className='about-text-home'>
+                I'm a Boston-based Front-end developer.
                 In my free time I love taking photos, kayaking,
                 and hiking.
                 
