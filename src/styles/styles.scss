@@ -483,7 +483,8 @@ body {
     grid-row: 3 / -1;
     display: flex;
     flex-direction: column;
-    margin-bottom: 6rem;    
+    margin-bottom: 6rem;
+    width: 100%;    
 }
 
 .home-list {
@@ -526,7 +527,6 @@ body {
     height: 100%;
     width: 40%;
     align-self: center;
-    border-radius: 10px;
 }
 
 .card-external-links {
@@ -1135,11 +1135,6 @@ body {
         margin: 0;
     }
 
-    .project-card-list {
-        flex-direction: row;
-        margin-bottom: 5rem;
-    }
-
 
     .contact {
         height: 80vh;
@@ -1305,15 +1300,18 @@ body {
 @media screen and (min-width: 600px) and (orientation: landscape) {
     .project-card-list {
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-self: center;
     }
 
     .project-card {
-        margin: 0 1.5rem 0 0;
+        flex: 0 1 48%;
+        margin: 1% 1% 0 0;
+    }
+    .project-card:nth-child(2n) {
+        margin-left: 1%;
     }
 
-    .project-card:last-child {
-        margin-right: 0;
-    }
 }
 
 //MB Pro 13
@@ -1462,6 +1460,19 @@ body {
     .projects {
         height: fit-content;
         max-height: 100vh;
+    }
+
+    .project-card {
+        flex: 0 1 48.5%;
+        margin: 1% 0.75% 0 0;
+    }
+
+    .project-card-list.home-list {
+        flex-wrap: nowrap;
+    }
+
+    .project-card:nth-child(2n) {
+        margin-left: 0.75%;
     }
 
     .contact {

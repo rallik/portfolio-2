@@ -1,15 +1,62 @@
 [
     {
+        "id": "photoweather",
+        "title": "PhotoWeather",
+        "subtitle": "Ensure perfect weather for every shot",
+        "onhome": true,
+        "gitlink": "https://github.com/rallik/weatherapp-react",
+        "livelink": "https://github.com/rallik/",
+        "cardimg":
+        {
+            "img": "photoweather-card-home.jpg",
+            "alt": "PhotoWeather home screen showing map, radar, sun position, and weather data capabilities"
+            
+        },
+        "tooltags": [
+            {
+                "tag": "React"
+            },
+            {
+                "tag": "React Context"
+            },
+            {
+                "tag": "Sass (SCSS)"
+            },
+            {
+                "tag": "OpenWeather"
+            },
+            {
+                "tag": "Leaflet"
+            }
+        ],
+        "otherimg": [
+            {
+                "img": "photoweather.jpg",
+                "alt": "PhotoWeather home screen2"
+            },
+            {
+                "img": "photoweather.jpg",
+                "alt": "PhotoWeather home screen3"
+            }
+        ],
+        "description": [
+            {
+                "p": "I'm baby wolf sartorial subway tile, YOLO brooklyn squid man bun pug typewriter lo-fi put a bird on it tumblr. Pork belly craft beer banjo, iPhone four loko cornhole before they sold out squid vegan portland single-origin coffee bitters. Locavore brunch humblebrag beard. Tilde venmo gastropub intelligentsia."
+            }
+        ],
+        "nextsteps": "Glossier palo santo succulents four dollar toast vice sartorial. Food truck meggings flexitarian readymade cornhole lomo kitsch ugh asymmetrical 8-bit."
+    },
+    {
         "id": "meterfinder",
         "title": "MeterFinder",
         "subtitle": "Save $20+ on parking in Boston, MA",
-        "onhome": true,
+        "onhome": false,
         "gitlink": "https://github.com/rallik/boston-metered-parking",
         "livelink": "https://github.com/rallik/",
         "cardimg":
             {
                 "img": "meterfinder-card-home.jpg",
-                "alt": "MeterFinder home screen"
+                "alt": "MeterFinder home screen showing two pins: a blue one for the location the user selected and a green one for the nearest parking meter"
                 
             },
         "tooltags": [
@@ -41,43 +88,32 @@
         "nextsteps": "Glossier palo santo succulents four dollar toast vice sartorial. Food truck meggings flexitarian readymade cornhole lomo kitsch ugh asymmetrical 8-bit."
     },
     {
-        "id": "photoweather",
-        "title": "PhotoWeather",
-        "subtitle": "Ensure perfect weather for every shot",
+        "id": "teddy",
+        "title": "Ted Borgman Films",
+        "subtitle": "Custom portfolio for local filmmaker",
         "onhome": true,
-        "gitlink": "https://github.com/rallik/weatherapp-react",
-        "livelink": "https://github.com/rallik/",
-        "cardimg":
-        {
-            "img": "photoweather-card-home.jpg",
-            "alt": "PhotoWeather home screen"
+        "gitlink": "https://github.com/rallik/teddy-borgman",
+        "livelink": "https://boring-banach-557008.netlify.app/",
+        "cardimg": {
+            "img": "teddy-card-home.jpg",
+            "alt": "Minimalist homepage with the hero text: creator, storyteller, filmmaker."
             
         },
         "tooltags": [
             {
-                "tag": "React"
+                "tag": "Gatsby"
             },
             {
-                "tag": "React Context"
+                "tag": "Sass"
             },
             {
-                "tag": "Sass (SCSS)"
-            },
-            {
-                "tag": "OpenWeather"
-            },
-            {
-                "tag": "Leaflet"
-            }
+                "tag": "React-Helmet"
+            }        
         ],
         "otherimg": [
             {
-                "img": "photoweather.jpg",
-                "alt": "PhotoWeather home screen2"
-            },
-            {
-                "img": "photoweather.jpg",
-                "alt": "PhotoWeather home screen3"
+                "img": "favicon.jpg",
+                "alt": "Reuben Allik's logo2"
             }
         ],
         "description": [
