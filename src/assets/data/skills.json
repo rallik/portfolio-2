@@ -7,19 +7,19 @@
             },
             {
                 "id": 2,
-                "skill": "React"
-            },
-            {
-                "id": 3,
-                "skill": "Gatsby"
-            },
-            {
-                "id": 4,
                 "skill": "HTML5"
             },
             {
-                "id": 5,
+                "id": 3,
                 "skill": "CSS3"
+            },
+            {
+                "id": 4,
+                "skill": "React"
+            },
+            {
+                "id": 5,
+                "skill": "Gatsby"
             },
             {
                 "id": 6,
