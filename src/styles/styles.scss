@@ -717,16 +717,23 @@ body {
 .individual-proj {
     background-color: $light-main-color;
     color: $dark-main-color;
-    grid-template-rows: 50px 50px 1fr auto auto repeat(7, 1fr);
+    grid-template-rows: 50px 50px 1fr repeat(4, auto) repeat(3, 1fr);
     min-height: max-content;
 }
 
-.individual-proj-head {
+.individual-proj-head-wrapper {
     grid-row: 2 / 3;
     grid-column: 2 / -2;
     align-self: center;
-    justify-self: start;
+    display: flex;
+    flex-direction: row;
 }
+
+.individual-proj-head {
+    align-self: center;
+    margin-left: 1rem;
+}
+
 
 .individual-proj-sub {
     grid-row: 3 / 4;
@@ -734,17 +741,29 @@ body {
 }
 
 .individual-proj-btn {
-    background-color: $dark-main-color;
-    padding: 0.7rem 1.85rem;
-    align-self: center;
-    justify-self: start;
-    grid-row: -3 / -1;
-    grid-column: 1 / -1;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    margin: 1rem 0;
 
     a {
-        color: $light-main-color;
-        padding: 0.7rem 1.85rem;
-        margin: -0.7rem -1.85rem;
+        width: 2rem;
+        height: 2rem;
+        padding: 0.25rem;
+        border-radius: 50%;
+        background-color: $dark-main-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    svg path {
+        stroke: $light-main-color;
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -758,7 +777,6 @@ body {
 }
 
 .proj-img-gallery-li {
-    max-height: 14rem;
     margin-bottom: 2rem;
 }
 
@@ -766,9 +784,35 @@ body {
     height: 100%;
 }
 
-.proj-desc {
+.tools-used {
     grid-row: 5 / 6;
     grid-column: 2 / -2;
+    margin: 0.75rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-self: center;
+    width: 100%;
+}
+
+.tools-used-li {
+    // padding: 1rem;
+    margin: 0.5rem 0;
+    flex: 0 1 20%;
+    font-style: italic;
+    text-align: center;
+}
+
+.proj-desc {
+    grid-row: 6 / 7;
+    grid-column: 2 / -2;
+}
+
+.next-steps {
+    grid-row: 7 / 8;
+    grid-column: 2 / -2;
+    display: inline;
 }
 
 
