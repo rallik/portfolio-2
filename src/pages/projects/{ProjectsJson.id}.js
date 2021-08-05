@@ -7,7 +7,7 @@ const ProjectTemplate = (props) => {
     const { location, data, params: { id } } = props
     const pictures = data.allFile.pictures;
     const project = data.projectsJson;
-    const filteredpics = pictures.filter((pic) => pic.name.includes(id))
+    const filteredpics = pictures.filter((pic) => pic.name.includes(id) && !pic.name.includes('home'))
     console.log(filteredpics)
     console.log(project)
 

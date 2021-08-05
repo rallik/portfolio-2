@@ -17,26 +17,25 @@
                 "tag": "React"
             },
             {
-                "tag": "React Context"
+                "tag": "Context API"
             },
             {
-                "tag": "Sass (SCSS)"
+                "tag": "NodeJS"
+            },
+            {
+                "tag": "Sass"
             },
             {
                 "tag": "OpenWeather"
             },
             {
-                "tag": "Leaflet"
+                "tag": "React-Leaflet"
             }
         ],
         "otherimg": [
             {
-                "img": "photoweather.jpg",
+                "img": "photoweather-card.png",
                 "alt": "PhotoWeather home screen2"
-            },
-            {
-                "img": "photoweather.jpg",
-                "alt": "PhotoWeather home screen3"
             }
         ],
         "description": [
@@ -131,7 +130,7 @@
         "gitlink": "https://github.com/users/rallik/projects/1#column-15384212",
         "livelink": "https://github.com/rallik",
         "cardimg": {
-            "img": "favicon-card.jpg",
+            "img": "portfolio-card-home.jpg",
             "alt": "Reuben Allik's logo"
             
         },

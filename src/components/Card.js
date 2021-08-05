@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import GithubLogo from '../assets/svg/github.svg'
 import ExternalLink from '../assets/svg/external.svg'
