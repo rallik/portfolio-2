@@ -14,16 +14,14 @@ const ProjectTemplate = (props) => {
 
     return (
       <main className={`${project.id}-page`}>
+            <button className='btn individual-proj-btn'>
+                <Link to='/projects'>
+                    <Back/>
+                </Link>
+            </button>
             <Layout location={location} title={`${project.title}: by Reuben Allik`} description={project.subtitle}>
                 <section className='section individual-proj'>
-                    <div className='individual-proj-head-wrapper'>
-                        <button className='btn individual-proj-btn'>
-                            <Link to='/projects'>
-                                <Back/>
-                            </Link>
-                        </button>
-                        <h1 className='heading-t individual-proj-head'>{project.title}</h1>
-                    </div>
+                    <h1 className='heading-t individual-proj-head'>{project.title}</h1>
                     <h2 className='individual-proj-sub'>{project.subtitle}</h2>
                     <ul className='proj-img-gallery'>
                         {
