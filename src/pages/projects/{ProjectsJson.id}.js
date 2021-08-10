@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby';
 import Layout from '../../layouts/layout'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Back from '../../assets/svg/back.svg'
+import '../../styles/styles.scss'
 
 const ProjectTemplate = (props) => {
     const { location, data, params: { id } } = props
