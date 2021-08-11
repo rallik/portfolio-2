@@ -5,7 +5,7 @@ import Layout from '../layouts/layout'
 import Social from '../components/Social'
 import '../styles/styles.scss'
 
-const resumelink = '../assets/images/favicon.png'
+const resumelink = 'https://reubenallik.com';
 
 
 
@@ -29,8 +29,8 @@ const about = ({ data, location }) => {
                             })
                         }
                     </div>
-                    <button className='btn resume-btn'>
-                        <a href={resumelink}>Resume</a>
+                    <button className='btn resume-btn' aria-controls='resume-link'>
+                        <a id='resume-link' href={resumelink} aria-label='resume'>Resume</a>
                     </button>
                     <Social name={'social-links mobile'}/>
                 </section>
