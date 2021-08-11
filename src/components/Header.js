@@ -6,7 +6,6 @@ const Header = () => {
     return (
         <header className='header'>
             <h1 hidden>Reuben Allik's Portfolio</h1>
-            <h2>Click "o" to toggle Mobile Nav Menu</h2>
             <Link to="/" aria-label='home page from logo'>
                 <Logo className='logo' />
             </Link>
