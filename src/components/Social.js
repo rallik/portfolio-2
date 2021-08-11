@@ -24,22 +24,22 @@ const Social = ({name}) => {
             <section className={name}>
                 <ul className='social-links-list'>
                     <li className="social-links-el">
-                        <a href="https://www.linkedin.com/in/reuben-allik/">
+                        <a href="https://www.linkedin.com/in/reuben-allik/" aria-label='linkedin'>
                             <LinkedinLogo/>
                         </a>
                     </li>
                     <li className="social-links-el">
-                        <a href="https://github.com/rallik">
+                        <a href="https://github.com/rallik" aria-label='github'>
                             <GithubLogo />
                         </a>
                     </li>
                     <li className="social-links-el">
-                        <a href="https://twitter.com/reubenallik">
+                        <a href="https://twitter.com/reubenallik" aria-label='twitter'>
                             <TwitterLogo/>
                         </a>
                     </li>
                     <li className="social-links-el">
-                        <a href="https://www.instagram.com/rallikphoto/">
+                        <a href="https://www.instagram.com/rallikphoto/" aria-label='instagram'>
                             <InstagramLogo/>
                         </a>
                     </li>

@@ -30,7 +30,7 @@ const Nav = () => {
 
     return (
         <React.Fragment>
-            <i className={clicked ? 'nav-icon active' : 'nav-icon'} aria-controls='nav' aria-label='nav-icon, o key to toggle' onKeyDown={openCloseNav} onClick={openCloseNav}>
+            <i className={clicked ? 'nav-icon active' : 'nav-icon'} aria-label='nav-icon, o key to toggle' onKeyDown={openCloseNav} onClick={openCloseNav}>
                 <Menu/>
             </i>
             <nav id='nav' className={clicked ? 'navbar active' : 'navbar'}>
