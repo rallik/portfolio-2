@@ -10,7 +10,7 @@ import '../styles/styles.scss'
 const index = ({ location, data }) => {
   console.log(data)
   return (
-    <main className='home-page'>
+    <main className='home-page' aria-label='home page'>
       <Layout location={location}>
         <Hero />
         <About />

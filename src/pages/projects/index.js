@@ -9,7 +9,7 @@ import '../../styles/styles.scss'
 const projects = ({ location, data }) => {
     console.log(data)
     return (
-        <main>
+        <main aria-label='projects page'>
         <Layout location={location} title={"Reuben Allik's Projects"}>
                 <section className='section projects-page'>
                     <h1 className='projects-p-header heading-t'>Projects</h1>

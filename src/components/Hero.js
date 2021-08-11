@@ -1,12 +1,11 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby';
-
+import { Link } from 'gatsby';
 
 //to-do demostrate accessibility with hover effect
 
 const Hero = () => {
     return (
-        <section className='section hero'>
+        <section className='section hero' aria-label='hero section'>
             <h2 className='hero-intro'>
                 <span className='name'>Hello! I'm </span>
                 Reuben Allik. <br/>
@@ -18,8 +17,8 @@ const Hero = () => {
                 for the
                 <strong className="emp"> web</strong>.
             </h2>
-            <button className='btn my-work-btn'>
-                <Link className='btn-link' to='/projects/'>My work</Link>
+            <button className='btn my-work-btn' aria-controls='my-work-btn'>
+                <Link id='my-work-btn' className='btn-link' to='/projects/' aria-label='projects page from home page hero'>My work</Link>
             </button>
         </section>
     )

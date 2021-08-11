@@ -21,6 +21,12 @@ body {
     left: 16px;
     z-index: 12;
     mix-blend-mode: difference;
+
+    a {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .logo {
@@ -529,7 +535,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
-    z-index: 11;
+    z-index: 10;
 }
 
 .card-external-links-li {

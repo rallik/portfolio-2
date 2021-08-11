@@ -15,7 +15,7 @@ const about = ({ data, location }) => {
     const about = data.about.nodes;
     
     return (
-        <main>
+        <main aria-label='about page'>
             <Layout location={location} title={'About Reuben Allik'}>
                 <section className='section about-page'>
                     <h1 className='about-page-head heading-t'>About me</h1>

@@ -142,6 +142,9 @@
                 "tag": "Sass"
             },
             {
+                "tag": "React-Helmet"
+            },
+            {
                 "tag": "Javascript"
             },
             {
