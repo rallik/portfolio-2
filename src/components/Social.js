@@ -29,12 +29,12 @@ const Social = ({name}) => {
                         </a>
                     </li>
                     <li className="social-links-el">
-                        <a href="https://github.com/rallik" aria-label='github'>
+                        <a href="https://github.com/rallik/" aria-label='github'>
                             <GithubLogo />
                         </a>
                     </li>
                     <li className="social-links-el">
-                        <a href="https://twitter.com/reubenallik" aria-label='twitter'>
+                        <a href="https://twitter.com/reubenallik/" aria-label='twitter'>
                             <TwitterLogo/>
                         </a>
                     </li>

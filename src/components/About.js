@@ -15,7 +15,7 @@ const About = () => {
                 and hiking.
             </p>
             <button className='btn abt-details-btn' aria-controls='about-page-btn'>
-                <Link id='about-page-btn' to='/about' aria-label='about page from home'>More info</Link>
+                <Link id='about-page-btn' to='/about' aria-label='about page from home'>More about me</Link>
             </button>
             <Tools />
         </section>
