@@ -574,8 +574,6 @@ body {
     grid-row: 4 / 5;
     grid-column: 2 / 4;
     border: 1px solid $dark-main-color;
-    align-self: end;
-    justify-self: end;
     
     a {
         color: $dark-main-color;
@@ -712,6 +710,7 @@ body {
 
 .projects-page {
     background-color: $light-main-color;
+    height: auto;
 }
 
 .projects-p-header {
