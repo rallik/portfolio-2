@@ -29,9 +29,9 @@ const about = ({ data, location }) => {
                             })
                         }
                     </div>
-                    <button className='btn resume-btn' aria-controls='resume-link'>
+                    {/* <button className='btn resume-btn' aria-controls='resume-link'>
                         <a id='resume-link' href={resumelink} aria-label='resume'>Resume</a>
-                    </button>
+                    </button> */}
                     <Social name={'social-links mobile'}/>
                 </section>
             </Layout>
