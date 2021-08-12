@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby';
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import GithubLogo from '../assets/svg/github.svg'
-import ExternalLink from '../assets/svg/external.svg'
+import ProjExternalLinks from './ProjExternalLinks'
+
+
 
 
 
@@ -19,20 +20,12 @@ const Card = ({ data, page }) => {
         <article className={page ? 'project-card' : 'home-card project-card'}>
             <div className='project-card-info-wrapper'>
                 <h3 className='project-card-head'>{title}</h3>
-                <ul className="card-external-links">
-                    <li className="card-external-links-li">
-                        <a href={gitlink} className='card-github-link' aria-label={`${id} on github`}>
-                            <GithubLogo/>
-                        </a>
-                    </li>
-                    <li className="card-external-links-li">
-                        <a href={livelink} className="card-live-link" aria-label={`${id} live application`}>
-                            <ExternalLink />
-                        </a>
-                    </li>
-                </ul>
-
-
+                <ProjExternalLinks
+                    card_or_proj={'card'} 
+                    proj_id={id}
+                    proj_gitlink={gitlink}
+                    proj_livelink={livelink}
+                />
                 <button className='btn project-card-details-btn' aria-controls={`${id}-details-btn`}>
                     <Link id={`${id}-details-btn`} to={`/projects/${slug}/`} aria-label={`more info about ${id}`}>Details</Link>
                 </button>

@@ -791,9 +791,15 @@ body {
     height: 100%;
 }
 
-.tools-used {
+.proj-tools-and-links {
     grid-row: 5 / 6;
     grid-column: 2 / -2;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tools-used {
     margin: 0.75rem 0;
     display: flex;
     flex-direction: row;
@@ -809,6 +815,16 @@ body {
     flex: 0 1 20%;
     font-style: italic;
     text-align: center;
+}
+
+.proj-external-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.proj-external-links-li {
+    margin: 1rem;
 }
 
 .proj-desc {

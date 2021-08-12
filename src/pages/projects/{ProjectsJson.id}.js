@@ -1,7 +1,8 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby';
-import Layout from '../../layouts/layout'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import Layout from '../../layouts/layout'
+import ProjExternalLinks from '../../components/ProjExternalLinks'
 import Back from '../../assets/svg/back.svg'
 import '../../styles/styles.scss'
 
@@ -36,25 +37,34 @@ const ProjectTemplate = (props) => {
                               })
                         }
                     </ul>
-                    <ul className="tools-used">
-                        {
-                          project.tooltags.map((tool) => {
-                            return (
-                              <li className="tools-used-li" key={tool.tag}>{tool.tag}</li>
-                            );         
-                          })
-                        }
-                    </ul>
-                    <div className='proj-desc'>
+                    <div className='proj-tools-and-links'>
+                        <ProjExternalLinks
+                          card_or_proj={'proj'} 
+                          proj_id={project.id}
+                          proj_gitlink={project.gitlink}
+                          proj_livelink={project.livelink}
+                        />
+                        <ul className="tools-used">
+                            {
+                              project.tooltags.map((tool) => {
+                                return (
+                                  <li className="tools-used-li" key={tool.id}>{tool.tag}</li>
+                                );         
+                              })
+                            }
+                        </ul>
+                    </div>
+                      
+                    {/* <div className='proj-desc'>
                         {
                         project.description.map((desc) =>
-                          <p key={new Date().getMilliseconds} className='proj-desc-p'>{desc.p}</p>
+                          <p key={desc.id} className='proj-desc-p'>{desc.p}</p>
                         )
                         }
                     </div>
                     <div className='next-steps'>
                         <p>Next steps: {project.nextsteps}</p>
-                    </div>
+                    </div> */}
                 </section>
             </Layout>
         </main>
@@ -72,9 +82,11 @@ query getSingleProject($id: String) {
         img
       }
       tooltags {
+        id
         tag
       }
       description {
+        id
         p
       }
       nextsteps
