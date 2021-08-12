@@ -83,7 +83,7 @@ query getSingleProject($id: String) {
         pictures: nodes {
           name
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData(placeholder: TRACED_SVG, sizes: "100px, 200px, 300px, 500px, 1000px")
           }
         }
       }
