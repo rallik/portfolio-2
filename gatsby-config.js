@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Reuben Allik",
     description: "Boston-based frontend developer who specializes in building responsive and acessible web experiences",
-    siteUrl: "http://reubenallik.com",
+    siteUrl: "https://reubenallik.com",
     image: '/socialshare.png',
     twitterUsername: '@reubenallik'
   },
