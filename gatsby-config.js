@@ -7,13 +7,21 @@ module.exports = {
     twitterUsername: '@reubenallik'
   },
   plugins: [
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-transformer-sharp",
     "gatsby-transformer-json",
     "gatsby-plugin-sass",
+    "gatsby-plugin-preact",
+    "gatsby-plugin-image",
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        defaults: {
+          breakpoints: [400, 750, 1025, 1500]
+        }
+      }
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {

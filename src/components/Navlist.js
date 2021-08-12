@@ -15,9 +15,6 @@ const Navlist = ({ name, elname }) => {
             <li className={elname}>
                 <Link className='nav-link' activeClassName='active-link' to='/projects' aria-label='projects page from nav'>Projects</Link>
             </li>
-            {/* <li className={elname}>
-                <Link className='nav-link' activeClassName='active-link' to='/photos'>Photos</Link>
-            </li> */}
             <li className={elname}>
                 <Link className='nav-link' activeClassName='active-link' to='/contact' aria-label='contact page from nav'>Contact</Link>
             </li>

@@ -30,7 +30,7 @@ const ProjectTemplate = (props) => {
                             const picdata = getImage(pic)
                             return (
                               <li key={pic.name} className='proj-img-gallery-li'>
-                                <GatsbyImage className='proj-img' image={picdata} alt={pic.name} objectFit="contain"></GatsbyImage>
+                                <GatsbyImage className='proj-img' image={picdata} alt={pic.name} objectFit="contain" />
                               </li>
                             );
                               })
@@ -83,7 +83,9 @@ query getSingleProject($id: String) {
         pictures: nodes {
           name
           childImageSharp {
-            gatsbyImageData(placeholder: TRACED_SVG, sizes: "100px, 200px, 300px, 500px, 1000px")
+            gatsbyImageData(
+              placeholder: TRACED_SVG
+            )
           }
         }
       }

@@ -15,8 +15,8 @@ const layout = ({ children, location, title, description, image }) => {
             <Nav />
             {children}
             {location.pathname.includes("contact") ? "" : <Contact />}
-            <Footer />
             <Social name={'social-links'} />
+            <Footer />
         </React.Fragment>
     )
 }
