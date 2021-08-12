@@ -4,6 +4,7 @@ import ExternalLink from '../assets/svg/external.svg'
 
 
 const ProjExternalLinks = (props) => {
+    console.log(props)
     const { card_or_proj, proj_id, proj_gitlink, proj_livelink } = props;
     console.log(proj_livelink)
     return (
@@ -16,10 +17,10 @@ const ProjExternalLinks = (props) => {
             {
                 proj_livelink &&
                 <li className={`${card_or_proj}-external-links-li`}>
-                <a href={proj_livelink} className="card-live-link" aria-label={`${proj_id} live application`}>
-                    <ExternalLink />
-                </a>
-            </li>
+                    <a href={proj_livelink} className="card-live-link" aria-label={`${proj_id} live application`}>
+                        <ExternalLink />
+                    </a>
+                </li>
             }
         </ul>
 

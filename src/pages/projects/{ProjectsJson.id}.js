@@ -81,6 +81,8 @@ query getSingleProject($id: String) {
         alt
         img
       }
+      gitlink
+      livelink
       tooltags {
         id
         tag

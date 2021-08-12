@@ -796,6 +796,15 @@ body {
     grid-column: 2 / -2;
     display: flex;
     flex-direction: column;
+    height: auto;
+}
+
+.proj-external-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    z-index: 10;
 }
 
 
@@ -807,6 +816,7 @@ body {
     justify-content: space-evenly;
     justify-self: center;
     width: 100%;
+    height: auto;
 }
 
 .tools-used-li {
@@ -817,14 +827,21 @@ body {
     text-align: center;
 }
 
-.proj-external-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 .proj-external-links-li {
     margin: 1rem;
+    height: min-content;
+    width: min-content;
+    cursor: pointer;
+    text-align: center;
+}
+
+.proj-github-link svg {
+    width: 30px;
+    height: 30px;
+}
+.proj-live-link svg {
+    width: 28px;
+    height: 28px;
 }
 
 .proj-desc {
