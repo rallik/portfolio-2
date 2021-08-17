@@ -26,33 +26,25 @@ const Tools = () => {
     return (
         <React.Fragment>
             <h3 className='tools-header heading-t'>Tools I Love</h3>
-            <table className='tools-table'>
-                <tbody>
-                    <tr>
-                    {
-                        skills.map((s) => {
-                            return (
-                                <td className='tools-element' key={s.id}>{s.skill}</td>
-                            );
-                        })
-                    }
-                    </tr>
-                </tbody>
-            </table>
+            <div className='tools-table'>
+            {
+                skills.map((s) => {
+                    return (
+                        <div className='tools-element' key={s.id}>{s.skill}</div>
+                    );
+                })
+            }
+            </div>
             <h3 className='new-tools-header heading-t'>I've Also Used</h3>
-            <table className='new-tools-table'>
-                <tbody>
-                    <tr>
-                    {
-                        new_skills.map((s) => {
-                            return (
-                                <td className='tools-element' key={s.id}>{s.skill}</td>
-                            );
-                        })
-                    }
-                    </tr>
-                </tbody>
-            </table>
+            <div className='new-tools-table'>
+            {
+                new_skills.map((s) => {
+                    return (
+                        <div className='tools-element' key={s.id}>{s.skill}</div>
+                    );
+                })
+            }
+            </div>
         </React.Fragment>
     )
 }

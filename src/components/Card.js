@@ -27,7 +27,7 @@ const Card = ({ data, page }) => {
                     proj_livelink={livelink}
                 />
                 <button className='btn project-card-details-btn' aria-controls={`${id}-details-btn`}>
-                    <Link id={`${id}-details-btn`} to={`/projects/${slug}/`} aria-label={`more info about ${id}`}>Details</Link>
+                    <Link id={`${id}-details-btn`} to={`/projects/${slug}/`} aria-label={`more info about ${id}`}>Project details</Link>
                 </button>
             </div>
             <GatsbyImage className='project-card-mockup' image={cardImg} alt={alt} imgStyle={{objectFit: "contain"}}/>

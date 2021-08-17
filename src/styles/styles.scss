@@ -445,14 +445,10 @@ body {
 
 .tools-table, .new-tools-table {
     align-self: flex-start;
-
-    tbody tr {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     max-width: 100vw;
 }
 
