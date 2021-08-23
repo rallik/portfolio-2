@@ -3,7 +3,7 @@ module.exports = {
     title: "Reuben Allik",
     description: "Boston-based frontend developer who specializes in building responsive and acessible web experiences",
     siteUrl: "https://reubenallik.com",
-    image: '/socialshare.png',
+    image: 'static/socialshare.png',
     twitterUsername: '@reubenallik'
   },
   plugins: [
