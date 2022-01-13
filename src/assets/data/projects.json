@@ -5,7 +5,7 @@
         "subtitle": "Ensure perfect weather for every shot",
         "onhome": true,
         "gitlink": "https://github.com/rallik/weatherapp-react",
-        "livelink": "https://confident-clarke-ddd6fc.netlify.app/",
+        "livelink": "",
         "cardimg":
         {
             "img": "photoweather-card-home.jpg",
