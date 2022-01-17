@@ -5,7 +5,7 @@
         "subtitle": "Ensure perfect weather for every shot",
         "onhome": true,
         "gitlink": "https://github.com/rallik/weatherapp-react",
-        "livelink": "",
+        "livelink": "https://photo-weather.netlify.app/",
         "cardimg":
         {
             "img": "photoweather-card-home.jpg",
